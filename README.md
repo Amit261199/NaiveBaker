@@ -5,6 +5,7 @@ User Stories at `/documents/Lab3/UserStories.docx`
 
 ### Status:
 **Current Sprint : Sprint 1**
+
 **User Stories to be done :**
 - **As a** User, **I should** be able to build my pantry(enter ingredients with autocompletion) and apply filters like Veg/Non-Veg, type of cuisine, etc. **so that** I can get a set of recipes that I can cook 
 - **As a** User, **I should** be able to search ingredients from ingredient list **so that** can add them to the ingredients for searching recipes(Autocompletion) 
