@@ -1,3 +1,5 @@
+
+{%load static%}
 <!DOCTYPE html>
 <html>
 
@@ -11,8 +13,8 @@
 
 	<title>User Profile Page</title>
 
-	<link rel="stylesheet" type="text/css" href="./styles/User_Profile_Page.css">
-	<link rel="stylesheet" type="text/css" href="./styles/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="{%static './styles/User_Profile_Page.css' %}">
+	<link rel="stylesheet" type="text/css" href="{%static './styles/bootstrap.css' %}">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
@@ -21,11 +23,11 @@
 
 <div class="main">
 	<div class="logo1">
-		<a href="User_Profile_page.html"><img src="./images/logoNB.png" alt="logo" height="175" class="img1"></a>
+		<a href=""><img src="{%static './images/logoNB.png' %}" alt="logo" height="175" class="img1"></a>
 	</div>
 	<h2 class="heading">The Naive Baker</h2>
 	<div class="logo2">
-		<a href="User_Profile_page.html"><img src="./images/logoNB.png" alt="logo" height="175" class="img2"></a>
+		<a href=""><img src="{%static './images/logoNB.png' %}" alt="logo" height="175" class="img2"></a>
 	</div>
 </div>
 
@@ -45,7 +47,7 @@
 <div class="row">
 	
 	<div class="photo">
-		<img src="avatar.webp" alt="Avatar" style="width:100px" style="height:100px" class="pp">
+		<img src="{%static './images/avatar.webp' %}" alt="Avatar" style="width:100px" style="height:100px" class="pp">
 		<div class="p-image">
 			<i class="fa fa-camera upload-button" class="camera"></i>
 			<input class="file-upload" type="file" accept="image/*"/>
@@ -63,7 +65,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
 
-<script src="./js/User_Profile_Page_Image.js"></script>
+<script src="{%static './js/User_Profile_Page_Image.js' %}"></script>
 
 </body>
 

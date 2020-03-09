@@ -1,5 +1,5 @@
 body{
-	background-image: url(../images/bg1.jpg);
+	background-image: url("../images/bg2.jpg");
 	background-size: cover;
 	margin-left:10%;
 	margin-right:10%;
@@ -88,7 +88,7 @@ input[type=text] {
   border-radius: 4px;
   font-size: 16px;
   background-color: white;
-  background-image: url(../images/searchicon.png);
+  background-image: url("../images/searchicon.png");
   background-position: 10px 10px; 
   padding: 12px 20px 12px 40px;
   -webkit-transition: width 0.4s ease-in-out;
