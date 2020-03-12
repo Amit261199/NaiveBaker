@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Naive Baker</title>
+</head>
+<body>
+	<h1>The Naive Baker</h1>
+	<form>
+		<div>
+		<input list="recipes" name="recipes" placeholder="Search by recipes">
+		<!-- following dataset is temporary demo data set, we can modify it later -->
+				<datalist id="recipes">
+					<option value="Palak paneer">
+					<option value="lasagne">
+					<option value="pasta">
+					<option value="french fries">
+					<option value="dosa">
+					<option value="lassi">
+					<option value="biryani">
+					<option value="samosa">
+					<option value="noodles">
+					<option value="soup">
+					<option value="veg roll">	
+				</datalist>
+		</div>
+		<div>
+		<!-- following dataset is temporary demo data set, we can modify it later -->	
+		<input list="ingredients" name="ingredients" placeholder="Search by ingredients">
+				<datalist id="ingredients">
+					<option value="tomato">
+					<option value="onion">
+					<option value="ginger">
+					<option value="chickpeas">
+					<option value="butter">
+					<option value="cheese">
+					<option value="honey">
+					<option value="apple">
+					<option value="egg">
+					<option value="rice">
+					<option value="sugar">	
+				</datalist>
+		</div>
+		<div>
+			<label>Apply filter: 
+
+				<select name="v/nv">
+					<option value="" disabled selected hidden>Veg/Non-veg</option>
+					<option>Any</option>
+					<option>Veg</option>
+					<option>Non-veg</option>
+				</select>
+				<select name="cuisine">
+					<option value="" disabled selected hidden>Cuisine</option>
+					<option>All</option>
+					<option>Indian</option>
+					<option>Italian</option>
+					<option>Chinese</option>
+				</select>
+				<select name="time">
+					<option value="" disabled selected hidden>Time to cook</option>
+					<option>All</option>
+					<option>less than 5 minutes</option>
+					<option>5-10 minutes</option>
+					<option>10-15 minutes</option>
+					<option>15-30 minutes</option>
+					<option>30-60 minutes</option>
+					<option>more than 60 minutes</option>	
+				</select>
+			</label>
+		</div>
+		<button>Go!</button>
+	</form>
+</body>
+</html>
