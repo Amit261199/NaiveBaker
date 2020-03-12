@@ -9,7 +9,7 @@ for i in range(ing.shape[0]):
             
             
 df=pd.read_excel('recipes_f.xlsx')
-for i in range(16,min(df.shape[0],25)):
+for i in range(25,min(df.shape[0],50)):
     s=df['ingredients'].iloc[i]
     lists=s.split(';')
     for k in range(len(lists)):
