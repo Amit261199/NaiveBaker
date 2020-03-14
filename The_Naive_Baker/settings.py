@@ -9,7 +9,6 @@ https://docs.djangoproject.com/en/2.2/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/2.2/ref/settings/
 """
-
 import os
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
@@ -76,9 +75,14 @@ WSGI_APPLICATION = 'The_Naive_Baker.wsgi.application'
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'default': {
+        'ENGINE': 'djongo',
+        'NAME': 'admin',
+        'CLIENT':{
+            'host':'mongodb+srv://AmitAgarwal:AmitAgarwal@amittaiwan-bk4uh.gcp.mongodb.net/test?authSource=admin&replicaSet=AmitTaiwan-shard-0&readPreference=primary&appname=MongoDB%20Compass%20Community&ssl=true',
+            'username':'AmitAgarwal',
+            'password':'AmitAgarwal',
+        }
     }
 }
 

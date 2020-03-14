@@ -1,4 +1,14 @@
 import pandas as pd
+import json
+
+def abc(s):
+    i=0
+    j=len(s)-1
+    while s[i]==' ':
+        i=i+1
+    while s[j]==' ':
+        j=j-1
+    return s[i:j+1]
 
 df=pd.read_excel('recipes.xlsx')
 cols=list(df.columns)
@@ -54,7 +64,8 @@ for i in range(df.shape[0]):
     error=False
     for col in cols:
         if col=='image':
-            g[col]=df[col].iloc[i].split(',')
+            map_obj=map(lambda x: abc(x),df[col].iloc[i].split(','))
+            g[col]=list(map_obj)
         elif col in risk:
             if df[col].iloc[i]=='NA':
                 if col=='mark':
@@ -76,7 +87,7 @@ for i in range(df.shape[0]):
                     print(3,arr)
                     break
                 qty=arr[0]
-                h['quantity']=qty
+                h['quantity']=abc(qty)
                 itemlist=arr[1].split(',')
                 filter_object = filter(lambda x: x != "", itemlist)
                 itemlist=list(filter_object)
@@ -85,11 +96,12 @@ for i in range(df.shape[0]):
                     print(4,itemlist[0])
                 h['ingredient']=itemlist[0]
                 if len(itemlist)>1:
-                    h['directions']=itemlist[1:]
+                    map_obj=map(lambda x: abc(x),itemlist[1:])
+                    h['directions']=list(map_obj)
                 ingredients_list.append(h)
             g[col]=ingredients_list
         else:
-            g[col]=df[col].iloc[i]
+            g[col]=abc(df[col].iloc[i])
         
     if error:
         errors=errors+1
@@ -99,5 +111,15 @@ for i in range(df.shape[0]):
 print('total errors='+str(errors))
 
 
- 
-
+if errors==0:
+    f=open('recipes.json','w')
+    f.write('[\n')
+    string=json.dumps(jsonlist[0],indent=4)
+    f.write(string)
+    if len(jsonlist)>1:
+        for obj in jsonlist[1:]:      
+            string=json.dumps(obj,indent=4)
+            f.write(',\n')
+            f.write(string)
+        
+    f.write(']')
