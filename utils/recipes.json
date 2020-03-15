@@ -118,7 +118,10 @@
             }
         }
     ],
-    "timetocook": "15 m",
+    "timetocook": {
+        "hh": 0,
+        "mm": 15
+    },
     "instructions": "Prep5 m\nCook10 m\nReady In15 m\n\n  In a small bowl, combine the soy sauce, rice wine, brown sugar and cornstarch. Set aside.                  \n Heat oil in a wok or skillet over medium high heat. Stir-fry ginger and garlic for 30 seconds. Add the steak and stir-fry for 2 minutes or until evenly browned. Add the snow peas and stir-fry for an additional 3 minutes. Add the soy sauce mixture, bring to a boil, stirring constantly. Lower heat and simmer until the sauce is thick and smooth. Serve immediately.",
     "cuisine": "Chinese",
     "dishtype": "Main Dish",
@@ -277,7 +280,10 @@
             ]
         }
     ],
-    "timetocook": "2 h 20 m",
+    "timetocook": {
+        "hh": 2,
+        "mm": 20
+    },
     "instructions": "Prep15 m\nCook5 m\n Ready In2 h 20 m\n In a large bowl, mix together the soy sauce, sesame oil, brown sugar, garlic, and red onion. Stir in the black pepper, red pepper flakes, sesame seeds, leeks and carrot. Mix in the meat by hand to ensure even coating. Cover and let marinate for at least 2 hours or overnight.\n Brush the bottom half of a wok with cooking oil, and heat over medium-high heat. Put in all of the meat and marinade at once, and cook stirring constantly. The meat will be cooked after just a few minutes. Remove from heat and serve with rice or noodles. For Korean-style fire meat, roll the meat mixture up in a leaf of red lettuce.",
     "cuisine": "Chinese",
     "dishtype": "Main Dish",
@@ -513,7 +519,10 @@
             ]
         }
     ],
-    "timetocook": "45 m",
+    "timetocook": {
+        "hh": 0,
+        "mm": 45
+    },
     "instructions": "Prep25 m\nCook20 m\nReady In45 m\n  In a large skillet over medium-high heat, brown beef, then mix in onion, garlic, 2 tablespoons soy sauce, 1/2 teaspoon salt, 1/2 teaspoon pepper, 2 tablespoons sherry, and ginger. Continue to saute just until onions are tender. Transfer mixture to a bowl and set aside.\n In the same skillet, saute cabbage with water, 1 tablespoon oil, sugar, and remaining soy sauce, sherry, salt, and pepper. Continue to saute until cabbage is crisp-tender, about 5 minutes. Return meat mixture to pan and stir together with cabbage over low heat until heated through. Remove from heat.\n Pour oil into a deep pan and heat to 350 degrees F (175 degrees C). Fill each egg roll wrapper with approximately 1/4 cup of filling and roll up according to package directions. Fry in preheated oil until golden brown. Drain on paper towels and serve hot.",
     "cuisine": "Chinese",
     "dishtype": "Appetizers & Snacks",
@@ -686,7 +695,10 @@
             ]
         }
     ],
-    "timetocook": "40 m",
+    "timetocook": {
+        "hh": 0,
+        "mm": 40
+    },
     "instructions": "Prep15 m\nCook25 m\nReady In40 m\n Bring a large pot of lightly salted water to a boil. Cook spaghetti in the boiling water until cooked through but firm to the bite, about 12 minutes; drain and transfer to a large bowl. Drizzle sesame oil over the spaghetti; toss to coat. Place a plate atop the bowl to keep the noodles warm.\n Heat peanut oil in a wok or large skillet over medium-high heat. Cook and stir garlic and ginger in hot oil until fragrant, about 30 seconds. Add mixed vegetables to the skillet; cook and stir until slightly tender, about 3 minutes. Stir flank steak into the vegetable mixture; cook and stir until the beef is cooked through, about 5 minutes.\nMix soy sauce, brown sugar, oyster sauce, and chile paste together in a small bowl; pour over the spaghetti. Dump spaghetti and sauce mixture into the wok with the vegetables and steak; cook and stir until the spaghetti is hot, 2 to 3 minutes.",
     "cuisine": "Chinese",
     "dishtype": "Appetizers & Snacks",
@@ -824,7 +836,10 @@
             }
         }
     ],
-    "timetocook": "35 m",
+    "timetocook": {
+        "hh": 0,
+        "mm": 35
+    },
     "instructions": "Prep30 m             \nCook5 m\nReady In35 m\n In a large bowl, mix together beef, cabbage, carrot, and onion. Stir in the egg, sugar, salt, soy sauce, and vegetable oil.\nPlace a large teaspoonful of filling in the center of a dumpling skin. Moisten the edges of a wonton with a few drops of water. Then fold the dumpling in half, and pinch the edges together to seal. Create a ripple pattern along the pinched edge by pinching and gently pushing together small segments of it. Repeat with remaining dumplings.\nBoil the dumplings in water until they float to the top, about 5 minutes.",
     "cuisine": "Chinese",
     "dishtype": "Main Dish",
@@ -967,7 +982,10 @@
             }
         }
     ],
-    "timetocook": "30 m",
+    "timetocook": {
+        "hh": 0,
+        "mm": 30
+    },
     "instructions": "Prep15 m\nCook15 m\nReady In30 m\n Heat a wok or large skillet over medium-high heat, and add oil. Saute garlic for about 5 seconds, then add ground beef. Stir-fry until beef is evenly brown, 5 to 7 minutes; drain excess fat.\nStir in cabbage and pepper, and cook until vegetables are tender and beef is fully cooked. Stir in soy sauce. Mix together cornstarch and water, and stir in. Season with pepper; add salt to taste. Cook, stirring, until sauce has thickened.",
     "cuisine": "Chinese",
     "dishtype": "Main Dish",
@@ -1075,7 +1093,10 @@
             ]
         }
     ],
-    "timetocook": "20 m",
+    "timetocook": {
+        "hh": 0,
+        "mm": 20
+    },
     "instructions": "Prep10 m\nCook10 m\nReady In20 m\n In a large saucepan, dissolve bouillon in hot water. Mix cornstarch with a small amount of water, and stir into bouillon. Add soy sauce, vinegar, and green onion. Bring to a boil, then simmer, stirring occasionally. Gradually pour the beaten eggs into the saucepan while stirring. Serve at once.",
     "cuisine": "Chinese",
     "dishtype": "Soups, Stews, and Chili",
@@ -1227,7 +1248,10 @@
             ]
         }
     ],
-    "timetocook": "45 m",
+    "timetocook": {
+        "hh": 0,
+        "mm": 45
+    },
     "instructions": "Prep15 m\nCook10 m\nReady In45 m\n In a small saucepan, cook the vinegar and sugar over medium heat until dissolved. Remove from heat and stir in salt, pepper, ramen seasoning packet and oil. Set aside to cool.\nIn a large bowl, combine the uncooked ramen noodles, broccoli coleslaw mix, and green onions. Pour dressing over salad; toss evenly to coat. Refrigerate until chilled.\nSprinkle with almonds and sesame seeds before serving.",
     "cuisine": "Chinese",
     "dishtype": "Salad",
@@ -1361,7 +1385,10 @@
             }
         }
     ],
-    "timetocook": "40 m",
+    "timetocook": {
+        "hh": 0,
+        "mm": 40
+    },
     "instructions": "Prep15 m\nCook25 m\nReady In40 m\n Boil ramen noodles for 3 minutes, or until softened, without flavor packets. Reserve flavor packets. Drain noodles, and set aside.\n  Heat 1 tablespoon oil in a small skillet. Scramble eggs in a bowl. Cook and stir in hot oil until firm. Set aside.\n In a separate skillet, heat 1 teaspoon of oil over medium heat. Cook and stir green onions in oil for 2 to 3 minutes, or until softened. Transfer to a separate dish, and set aside. Heat another teaspoon of cooking oil in the same skillet. Cook and stir the the carrots, peas, and bell peppers separately in the same manner, setting each aside when done.\n Combine 2 tablespoons sesame oil with 1 tablespoon of vegetable oil in a separate skillet or wok. Fry noodles in oil for 3 to 5 minutes over medium heat, turning regularly. Sprinkle soy sauce, sesame oil, and desired amount of reserved ramen seasoning packets over noodles, and toss to coat. Add vegetables, and continue cooking, turning frequently, for another 5 minutes.",
     "cuisine": "Chinese",
     "dishtype": "Side Dish",
@@ -1476,7 +1503,10 @@
             ]
         }
     ],
-    "timetocook": "35 m",
+    "timetocook": {
+        "hh": 0,
+        "mm": 35
+    },
     "instructions": "Prep20 m\nCook15 m\nReady In35 m\nIn a large wok, heat oil over medium-high heat. Stir in green beans; cook, stirring frequently, for 1 to 2 minutes. Stir in garlic and ginger; cook, stirring frequently, for 3 to 4 minutes. Season with salt and pepper, and then stir in black bean sauce. Continue cooking until green beans are tender.",
     "cuisine": "Chinese",
     "dishtype": "Side Dish",
@@ -1607,7 +1637,10 @@
             ]
         }
     ],
-    "timetocook": "30 m",
+    "timetocook": {
+        "hh": 0,
+        "mm": 30
+    },
     "instructions": "Prep15 m\nCook15 m\nReady In30 m\n Slice the steak into 1/2-inch thick slices across the grain.\n  Whisk together soy sauce, sugar, cornstarch, and ginger in a bowl until the sugar has dissolved and the mixture is smooth. Place the steak slices into the marinade, and stir until well-coated.\n  Heat 1 tablespoon of vegetable oil in a wok or large skillet over medium-high heat, and place 1/3 of the steak strips into the hot oil. Cook and stir until the beef is well-browned, about 3 minutes, and remove the beef from the wok to a bowl. Repeat twice more, with the remaining beef, and set the cooked beef aside.\n  Return all the cooked beef to the hot wok, and stir in the onion. Toss the beef and onion together until the onion begins to soften, about 2 minutes, then stir in the green pepper. Cook and stir the mixture until the pepper has turned bright green and started to become tender, about 2 minutes, then add the tomatoes, stir everything together, and serve.",
     "cuisine": "Chinese",
     "dishtype": "Main Dish",
@@ -1743,7 +1776,10 @@
             }
         }
     ],
-    "timetocook": "4 h",
+    "timetocook": {
+        "hh": 4,
+        "mm": 0
+    },
     "instructions": "Prep30 m\nCook30 m\nReady In4 h\n Mix together yeast, 1 teaspoon sugar, 1/4 cup flour, and 1/4 cup warm water.  Allow to stand for 30 minutes.\n Mix in 1/2 cup warm water, flour, salt, 2 tablespoons sugar, and vegetable oil.  Knead until dough surface is smooth and elastic.  Roll over in a greased bowl, and let stand until triple in size, about 2 1/2 to 3 hours.\n Punch down dough, and spread out on a floured board.  Sprinkle baking powder evenly on surface, and knead for 5 minutes.  Divide dough into 2 parts, and place the piece you are not working with in a covered bowl.  Divide each half into 12 parts. Shape each part into a ball with smooth surface up. Put each ball on a wax paper square.   Let stand covered until double, about 30 minutes.\n Bring water to a boil in wok, and reduce heat to medium; the water should still be boiling.  Place steam-plate on a small wire rack in the middle of the wok. Transfer as many buns on wax paper as will comfortably fit onto steam-plate leaving 1 to 2 inches between the buns.  At least 2 inches space should be left between steam-plate and the wok.  Cover wok with lid.  Steam buns over boiling water for 15 minutes.\nREMOVE LID BEFORE you turn off heat, or else water will drip back onto bun surface and produce yellowish \"blisters\" on bun surfaces. Continue steaming batches of buns until all are cooked.",
     "cuisine": "Chinese",
     "dishtype": "Bread Recipes",
@@ -1870,7 +1906,10 @@
             ]
         }
     ],
-    "timetocook": "20 m",
+    "timetocook": {
+        "hh": 0,
+        "mm": 20
+    },
     "instructions": "Prep10 m\nCook10 m\nReady In20 m\n            \n  In a saucepan, mix together sugar and cornstarch. Stir in chicken broth, water, vinegar, soy sauce, sesame oil, chile paste, and garlic. Bring to a boil over medium heat, stirring constantly. Reduce heat, and simmer 5 minutes.",
     "cuisine": "Chinese",
     "dishtype": "Side Dish",
@@ -2033,7 +2072,10 @@
             ]
         }
     ],
-    "timetocook": "35 m",
+    "timetocook": {
+        "hh": 0,
+        "mm": 35
+    },
     "instructions": "Prep20 m\nCook15 m\nReady In35 m\n            \nIn a bowl, mix together the oyster sauce, soy sauce, and brown sugar until the sugar has dissolved. Mix the potato starch and water in a small bowl, and stir it into the oyster sauce mixture until smooth.\n                            \n  Fill a pot with water, bring to a boil, and stir in salt and vegetable oil. Place the bok choy into the boiling water, and cook until tender, shiny, and bright green, 2 to 3 minutes. Drain the bok choy, and arrange attractively on a serving platter.\n                            \n  Heat the olive oil in a large skillet or wok until the oil shimmers, then toss the green onion and garlic in the hot oil until fragrant, about 20 seconds; stir in the mushrooms. Cook and stir until the mushrooms begin to shrink slightly. Sprinkle the mushrooms lightly with salt. Continue to cook the mushrooms, stirring often, until they are tender, about 5 minutes. Pour in the oyster sauce mixture, then stir until the sauce is thickened and coats the mushrooms, 30 seconds to 1 minute. Pour the thickened mushroom sauce over the bok choy; serve immediately.",
     "cuisine": "Chinese",
     "dishtype": "Side Dish",
@@ -2165,7 +2207,10 @@
             ]
         }
     ],
-    "timetocook": "30 m",
+    "timetocook": {
+        "hh": 0,
+        "mm": 30
+    },
     "instructions": "Prep20 m\nCook10 m\nReady In30 m\n Heat oil in a large heavy skillet or deep fryer to 360 degrees F (180 degrees C).\n In a small bowl, mix together cream cheese, soy sauce, ginger, garlic, parsley, cilantro and crabmeat.\n                            \n Place 1/2 to 1 teaspoon of the cream cheese mixture into the center of each wonton wrapper. Fold the won ton wrapper over the stuffing to make a triangle or a half moon, depending on the shape of the won ton wrappers you have purchased. Moisten the edges with a little water, and seal.  Place prepared won tons under a slightly moist paper towel until ready for frying.\n                            \n  Add 3 or 4 wontons to the hot oil, and cook until golden brown, turning once. Set aside on paper towels to drain. Repeat until all wontons have been fried.  Serve hot.",
     "cuisine": "Chinese",
     "dishtype": "Appetizers & Snacks",
@@ -2385,7 +2430,10 @@
             }
         }
     ],
-    "timetocook": "45 m",
+    "timetocook": {
+        "hh": 0,
+        "mm": 45
+    },
     "instructions": "Prep25 m\nCook20 m\nReady In45 m\n Place cornstarch in a large bowl; gradually whisk in water until smooth. Whisk eggs into cornstarch mixture; toss steak strips in mixture to coat.\n  Pour canola oil into wok 1-inch deep; heat oil over high heat until hot but not smoking. Place 1/4 of the beef strips into hot oil; separate strips with a fork. Cook, stirring frequently, until coating is crisp and golden, about 3 minutes. Remove beef to drain on paper towels; repeat with remaining beef.\n  Drain off all but 1 tablespoon oil; cook and stir carrot, green bell pepper, red bell pepper, green onions, ginger, and garlic over high heat until lightly browned but still crisp, about 3 minutes.\n Whisk sugar, rice vinegar, soy sauce, sesame oil, and red pepper together in a small bowl. Pour sauce mixture over vegetables in wok; bring mixture to a boil. Stir beef back into vegetable mixture; cook and stir just until heated through, about 3 minutes.",
     "cuisine": "Chinese",
     "dishtype": "Side Dish",
@@ -2583,7 +2631,10 @@
             ]
         }
     ],
-    "timetocook": "1 h 5 m",
+    "timetocook": {
+        "hh": 1,
+        "mm": 5
+    },
     "instructions": "Prep20 m\nCook15 m\nReady In1 h 5 m\n Lay beef strips out in a single layer on a baking sheet lined with paper towels. Allow to dry in the refrigerator for 30 minutes. In a small bowl, mix together the sugar, rice vinegar, orange juice concentrate, salt and soy sauce. Set aside.\n Meanwhile, combine rice and water in a medium saucepan. Bring to a boil, then reduce heat to medium-low and simmer for 20 minutes, or until rice is tender. Add more water at the end if necessary.\n Heat oil in a wok over medium-high heat. Toss dried beef in cornstarch to coat. Fry in the hot oil in small batches until crispy and golden brown; set aside. Drain all of the oil from the wok except about 1 tablespoon.\n Add orange zest, ginger and garlic to the remaining oil, and cook briefly until fragrant. Add the soy sauce mixture to the wok, bring to a boil, and cook until thick and syrupy, about 5 minutes. Add beef, and heat through, stirring to coat. Serve immediately over steamed rice, and garnish with broccoli.",
     "cuisine": "Chinese",
     "dishtype": "Main Dish",
@@ -2666,7 +2717,10 @@
             }
         }
     ],
-    "timetocook": "15 m",
+    "timetocook": {
+        "hh": 0,
+        "mm": 15
+    },
     "instructions": "Prep5 m\nCook10 m\nReady In15 m\nIn a saucepan, combine the cream style corn and chicken broth. Bring to a boil over medium-high heat. In a small bowl or cup, mix together the cornstarch and water; pour into the boiling corn soup, and continue cooking for about 2 minutes, or until thickened. Gradually add the beaten egg while stirring the soup. Remove from heat and serve.",
     "cuisine": "Chinese",
     "dishtype": "Soups, Stews, and Chili",
@@ -2814,7 +2868,10 @@
             ]
         }
     ],
-    "timetocook": "10 m",
+    "timetocook": {
+        "hh": 0,
+        "mm": 10
+    },
     "instructions": "Prep5 m\nCook5 m\nReady In10 m\n In a small saucepan, combine the chicken broth, soy sauce and sesame oil. Bring to a boil. Stir together the cornstarch and water to dissolve cornstarch; pour into the boiling broth. Stir gently while you pour in the egg and yellow food coloring if using. Season with chives, salt and pepper before serving.",
     "cuisine": "Chinese",
     "dishtype": "Soups, Stews, and Chili",
@@ -2902,7 +2959,10 @@
             }
         }
     ],
-    "timetocook": "20m",
+    "timetocook": {
+        "hh": 0,
+        "mm": 20
+    },
     "instructions": "In a medium saucepan, combine water, bouillon, and parsley and onion flakes.  Bring to a boil.\n                            \n Lightly beat eggs together. Gradually stir into soup.\n                            \n Remove about half a cup of the soup.  Stir in cornstarch until there are no lumps, and return to the soup.  Boil until soup thickens.",
     "cuisine": "Chinese",
     "dishtype": "Soups, Stews, and Chili",
@@ -2971,7 +3031,10 @@
             ]
         }
     ],
-    "timetocook": "20m",
+    "timetocook": {
+        "hh": 0,
+        "mm": 20
+    },
     "instructions": "In a medium stock pot, mix cold chicken broth with cornstarch. Slowly heat over medium heat, stirring frequently.\n                            \nPour beaten egg into soup, and stir once around stock pot very gently, in order to break up egg. Remove soup from heat immediately, divide into four portions and garnish with green onions.",
     "cuisine": "Chinese",
     "dishtype": "Soups, Stews, and Chili",
@@ -3099,7 +3162,10 @@
             }
         }
     ],
-    "timetocook": "25 m",
+    "timetocook": {
+        "hh": 0,
+        "mm": 25
+    },
     "instructions": "Prep10 m\nCook15 m\nReady In25 m\n            \n    \n Heat the canola oil in a skillet over high heat. Cook and stir the eggplant until soft, about 4 minutes. Stir in the water, red pepper flakes, and garlic powder. Cover and simmer until all the water is absorbed. Meanwhile, mix sugar, cornstarch, soy sauce, and oyster sauce in a bowl until sugar and cornstarch have dissolved. Stir sauce into the eggplant, making sure to evenly coat the eggplant. Cook until the sauce has thickened.",
     "cuisine": "Chinese",
     "dishtype": "Side Dish",
@@ -3338,7 +3404,10 @@
             }
         }
     ],
-    "timetocook": "1 h 10 m",
+    "timetocook": {
+        "hh": 1,
+        "mm": 10
+    },
     "instructions": "Prep10 m\nCook1 h\nReady In1 h 10 m\n            \n Bring brown rice and water to a boil in a saucepan over high heat. Reduce heat to medium-low, cover, and simmer until rice is tender, and liquid has been absorbed, 45 to 50 minutes.\n                            \n                        \n Combine cornstarch, sugar, soy sauce, and wine in a small bowl until smooth. Stir in ginger; toss beef in sauce to coat.\n                            \n Heat 1 tablespoon oil in a large skillet over medium-high heat. Cook and stir broccoli, carrots, pea pods, and onion for 1 minute. Stir in water chestnuts, Chinese cabbage, and bok choy; cover and simmer until vegetables are tender, about 4 minutes. Remove from skillet and keep warm.\n                            \n                        \n In same skillet, heat 1 tablespoon oil over medium-high heat. Cook and stir beef until desired degree of doneness, about 2 minutes per side for medium. Return vegetables to skillet; cook and stir until heated through, about 3 minutes. Serve over rice.",
     "cuisine": "Chinese",
     "dishtype": "Main Dish",
@@ -3481,7 +3550,10 @@
             ]
         }
     ],
-    "timetocook": "30 m",
+    "timetocook": {
+        "hh": 0,
+        "mm": 30
+    },
     "instructions": "Prep15 m\nCook15 m\nReady In30 m\n Stir together the water and sugar in a small saucepan. Bring to a boil and add the walnuts. Boil for 2 minutes, then drain and place walnuts on a cookie sheet to dry.\n Whip egg whites in a medium bowl until foamy. Stir in the mochiko until it has a pasty consistency. Heat the oil in a heavy deep skillet over medium-high heat. Dip shrimp into the mochiko batter, and then fry in the hot oil until golden brown, about 5 minutes. Remove with a slotted spoon and drain on paper towels.\n  In a medium serving bowl, stir together the mayonnaise, honey and sweetened condensed milk. Add shrimp and toss to coat with the sauce. Sprinkle the candied walnuts on top and serve.",
     "cuisine": "Chinese",
     "dishtype": "Main Dish",
@@ -3609,7 +3681,10 @@
             }
         }
     ],
-    "timetocook": "35 m",
+    "timetocook": {
+        "hh": 0,
+        "mm": 35
+    },
     "instructions": "Prep30 m\nCook5 m\nReady In35 m\nPlace the eggplant cubes into a large bowl, and sprinkle with salt. Fill with enough water to cover, and let stand for 30 minutes. Rinse well, and drain on paper towels.\nIn a small bowl, stir together the soy sauce, red wine vinegar, sugar, chili pepper, cornstarch and chili oil. Set the sauce aside.\nHeat the vegetable oil in a large skillet or wok over medium-high heat. Fry the eggplant until it is tender and begins to brown, 5 to 10 minutes. Pour in the sauce, and cook and stir until the sauce is thick and the eggplant is evenly coated. Serve immediately.",
     "cuisine": "Chinese",
     "dishtype": "Side Dish",
@@ -3779,7 +3854,10 @@
             ]
         }
     ],
-    "timetocook": "35m",
+    "timetocook": {
+        "hh": 0,
+        "mm": 35
+    },
     "instructions": "Cut beef across grain into thin slices. Combine 1 Tbsp. each cornstarch and soy sauce with garlic and sugar in medium bowl; stir in beef. Let stand 10 minutes.\n                            \nMeanwhile, remove flowerets from broccoli; cut into bite-size pieces. Peel stalks; cut diagonally into thin slices.\n                            \nCombine 1 cup water, remaining 2 Tbsp. soy sauce, 4 teaspoons cornstarch and crushed red pepper in small bowl. Set aside.\nHeat 1 Tbsp. oil in hot wok or large skillet over high heat. Add beef and stir-fry 1 minute; remove.\n                            \nHeat remaining 2 Tbsp. oil in same pan. Add broccoli and onion; stir-fry 2 minutes. Sprinkle 1 Tbsp. water over vegetables; cover and cook 2 minutes, stirring occasionally.\n                            \nAdd beef and soy sauce mixture; cook and stir until sauce boils and thickens. Remove from heat; stir in vinegar.",
     "cuisine": "Chinese",
     "dishtype": "Main Dish",
@@ -3885,7 +3963,10 @@
             ]
         }
     ],
-    "timetocook": "35m",
+    "timetocook": {
+        "hh": 0,
+        "mm": 35
+    },
     "instructions": "Cut steak across grain into thin strips, then into 1-inch squares; coat with 1 Tbsp. hoisin sauce.\nHeat 1 Tbsp. oil in hot wok or large skillet over high heat. Add beef and stir-fry about 1 minute; remove.\nHeat remaining 1 Tbsp. oil in same pan. Add peppers and onions; stir-fry 5 minutes. Stir in beef and remaining 1/4 cup hoisin sauce; cook and stir just until beef and vegetables are coated with sauce. Serve immediately.",
     "cuisine": "Chinese",
     "dishtype": "Main Dish",
@@ -4033,7 +4114,10 @@
             ]
         }
     ],
-    "timetocook": "30 m",
+    "timetocook": {
+        "hh": 0,
+        "mm": 30
+    },
     "instructions": "Prep12 m\nCook8 m\nReady In30 m\n            \n Heat 2 teaspoons of vegetable oil in a saucepan over medium heat, and cook and stir the garlic and ginger until they release their fragrance, about 30 seconds. Pour in the soy sauce, water, and brown sugar. Raise the heat to medium-high, and stir 4 minutes, until the sugar has dissolved and the sauce boils and slightly thickens. Remove sauce from the heat, and set aside.\n                            \n  Place the sliced beef into a bowl, and stir the cornstarch into the beef, coating it thoroughly. Allow the beef and cornstarch to sit until most of the juices from the meat have been absorbed by the cornstarch, about 10 minutes.\nHeat the vegetable oil in a deep-sided skillet or wok to 375 degrees F (190 degrees C).\n                            \n  Shake excess cornstarch from the beef slices, and drop them into the hot oil, a few at a time. Stir briefly, and fry until the edges become crisp and start to brown, about 2 minutes. Remove the beef from the oil with a large slotted spoon, and allow to drain on paper towels to remove excess oil.\n  Pour the oil out of the skillet or wok, and return the pan to medium heat. Return the beef slices to the pan, stir briefly, and pour in the reserved sauce. Stir once or twice to combine, and add the green onions. Bring the mixture to a boil, and cook until the onions have softened and turned bright green, about 2 minutes.",
     "cuisine": "Chinese",
     "dishtype": "Side Dish",
@@ -4211,7 +4295,10 @@
             ]
         }
     ],
-    "timetocook": "45 m",
+    "timetocook": {
+        "hh": 0,
+        "mm": 45
+    },
     "instructions": "Prep35 m\nCook10 m\nReady In45 m\n  In a dry skillet over medium heat, toast sesame seeds for 1 to2 minutes, or until the seeds begin to turn golden brown; set aside.\n   In a medium bowl, mix together 1 tablespoon soy sauce, 1 tablespoon cornstarch, and minced garlic. Stir in beef strips. Let stand for at least 10 minutes.\n  In a separate small bowl, mix together water, 2 tablespoons soy sauce, 2 1/2 teaspoons cornstarch, sugar, sesame seeds, and red pepper flakes; set aside.\n  Heat 1 tablespoon of oil in a wok or skillet over high heat. Cook and stir beef in hot oil for 1 minute; remove, and set aside. Heat remaining tablespoon of oil in the same pan. Saute carrots and white part of green onions for 2 minutes. Stir in green parts of the green onion, and saute for 1 minute. Stir in sesame seed mixture and beef. Cook and stir until sauce boils and thickens.",
     "cuisine": "Chinese",
     "dishtype": "Side Dish",
@@ -4356,7 +4443,10 @@
             ]
         }
     ],
-    "timetocook": "1 h",
+    "timetocook": {
+        "hh": 1,
+        "mm": 0
+    },
     "instructions": "Prep20 m\nCook20 m\nReady In1 h\n Partially freeze the roast for easier slicing. Slice the roast into 3x1/2 inch strips, and set aside.\n   In a large bowl, combine well the soy sauce, sherry, sesame oil, cornstarch, brown sugar, crushed red pepper and whole chili peppers. Place beef in the mixture and coat well. Cover and refrigerate for 20 to 30 minutes.\n   Heat 2 tablespoons of the oil in a large skillet or wok over medium high heat. Place green onions in the hot oil. Cover, reduce heat to low and cook 6 minutes, or until tender. Remove green onions and set aside.\n   In the same skillet or wok, heat remaining 1/4 cup of oil over medium high heat. Add beef mixture and saute for 5 minutes, or until the beef is thoroughly cooked. Return green onions to the pan and saute for 30 seconds more, or until heated through.",
     "cuisine": "Chinese",
     "dishtype": "Side Dish",
@@ -4475,7 +4565,10 @@
             }
         }
     ],
-    "timetocook": "1 h 10 m",
+    "timetocook": {
+        "hh": 1,
+        "mm": 10
+    },
     "instructions": "Prep30 m\nCook40 m\nReady In1 h 10 m\n   Dissolve salt in warm water, and mix in 1 cup of flour to make a soft dough. Turn the dough out onto a well-floured work surface, and knead until slightly springy, about 5 minutes. If the dough is sticky, knead in 1/4 teaspoon of vegetable oil. Divide the dough into 8 equal-size pieces, and keep the pieces covered with a cloth.\n  In a bowl, mix 1/4 cup of flour with 1 tablespoon vegetable oil to make a mixture like fine crumbs.\n    On a floured work surface, roll a piece of dough out into a thin square about 5x7 inches in size, brush the dough with toasted sesame oil, and sprinkle lightly with about 1 1/2 teaspoon of the flour-oil mixture. Sprinkle about 1 tablespoon of chopped green onion onto the dough, and spread the onion out evenly. Starting with a long end, roll the dough up into a rope shape, and pinch the seam and the ends closed. Roll the rope shape into a flat spiral, and press lightly with your hands to compact the spiral and keep it from unrolling.\n    Place the spiral down onto the floured work surface, and gently roll it out into a pancake with the onions folded inside, turning the pancake over often as you roll it out. Roll gently and turn often to avoid making holes in the pancakes. Finished pancakes should be about 5 inches in diameter. Repeat with the rest of the dough pieces, making 8 onion pancakes.\n     Heat a non-stick skillet over medium heat, and brush with vegetable oil. Pan-fry each pancake in the hot skillet until golden brown on both sides, about 5 minutes per side. Cut into wedges and serve warm.",
     "cuisine": "Chinese",
     "dishtype": "Bread Recipes",
@@ -4686,7 +4779,10 @@
             ]
         }
     ],
-    "timetocook": "3 h 50 m",
+    "timetocook": {
+        "hh": 3,
+        "mm": 50
+    },
     "instructions": "Prep15 m\nCook1 h 35 m\nReady In3 h 50 m\n   Rinse the duck inside and out, and pat dry. Cut off tail and discard. In a small bowl, mix together the cinnamon, ginger, nutmeg, white pepper and cloves. Sprinkle one teaspoon of the mixture into the cavity of the duck. Stir one tablespoon of the soy sauce into the remaining spice mixture and rub evenly over the entire outside of the bird. Cut one of the green onions in half and tuck inside the cavity. Cover and refrigerate the bird for at least 2 hours, or overnight.\n    Place duck breast side up on a rack in a big enough wok or pot and steam for an hour adding a little more water, if necessary, as it evaporates. Lift duck with two large spoons, and drain juices and green onion.\n     Preheat the oven to 375 degrees F (190 degrees C). Place duck breast side up in a roasting pan and prick skin all over using a fork.\n      Roast for 30 minutes in the preheated oven. While the duck is roasting, mix together the remaining 2 tablespoons of soy sauce and honey. After 30 minutes, brush the honey mixture onto the duck and return it to the oven. Turn the heat up to 500 degrees F (260 degrees C). Roast for 5 minutes, or until the skin is richly browned. Do not allow the skin to char.\n      Prepare the duck sauce by mixing the plum jam with the sugar, vinegar and chutney in a small serving bowl. Chop remaining green onions and place them into a separate bowl. Place whole duck onto a serving platter and garnish with orange slices and fresh parsley. Use plum sauce and onions for dipping.",
     "cuisine": "Chinese",
     "dishtype": "Main Dish",
@@ -4869,7 +4965,10 @@
             }
         }
     ],
-    "timetocook": "1 h 5 m",
+    "timetocook": {
+        "hh": 1,
+        "mm": 5
+    },
     "instructions": "Prep15 m\nCook30 m\nReady In1 h 5 m\n   Bring the rice and water to a boil in a saucepan over high heat. Reduce heat to medium-low, cover, and simmer until the rice is tender, and the liquid has been absorbed, 20 to 25 minutes. Spread cooked rice out on a rimmed baking sheet and refrigerate until cooled, about 20 minutes.\n    Heat sesame oil in a large skillet or wok over medium-high heat.  Cook and stir the green onions, ham, and peas in the hot oil until onions have softened, about 2 minutes. Stir the pineapple chunks into the wok; cook until pineapple begins to darken, about 2 minute.  Push ingredients to the side of the wok, and pour beaten egg in the center. Cook until egg begins to set, about 30 seconds. Stir together all contents of the wok.\n    Mix the cooled rice, sugar, salt, white pepper, and garlic powder into the wok; stir constantly to keep from sticking. Cook until heated through, about 3 minutes. Sprinkle the rice with the soy sauce, and stir to combine.",
     "cuisine": "Chinese",
     "dishtype": "Main Dish",
@@ -5066,7 +5165,10 @@
             }
         }
     ],
-    "timetocook": "1 h 2 m",
+    "timetocook": {
+        "hh": 1,
+        "mm": 2
+    },
     "instructions": "Prep50 m\nCook12 m\nReady In1 h 2 m\n     Place the shrimp in the work bowl of a food processor, and process until the shrimp are finely ground. Set aside in a large bowl. Working in batches, process the ground beef to a fine grind, and set aside with the shrimp. Combine the shrimp and ground beef with ginger, shallot, green onions, napa cabbage, soy sauce, sesame oil, salt and pepper, and white sugar, and mix the ingredients until thoroughly combined.\n      To fill the pot stickers, place a wrapper on a work surface in front of you, and place a scant teaspoon of filling in the center. With a wet finger, dampen the edges of the wrapper. Fold the dough into a half-moon shape, enclosing the filling, and press and seal to remove extra air and tightly seal the edges together. It's nice to fold several small pleats in the top half of the wrapper for a traditional look before you seal in the filling. Refrigerate the filled wrappers on a parchment-lined baking sheet while you finish filling and sealing the pot stickers.\n      Heat the oil in a large nonstick skillet with a lid over medium heat. Place pot stickers into the hot oil, flat sides down, without crowding, and let fry until the bottoms are golden brown, 1 to 2 minutes. Turn the dumplings over, and pour the water over them. Cover the pan with a lid and let the dumplings steam until the water has nearly evaporated and the dumplings have begun to fry in oil again, 5 to 7 minutes. Uncover the skillet, and let the pot stickers cook until all the water is evaporated and the wrapper has shrunk down tightly onto the filling, another 2 to 3 minutes.",
     "cuisine": "Chinese",
     "dishtype": "Main Dish",
@@ -5203,7 +5305,10 @@
             ]
         }
     ],
-    "timetocook": "25 m",
+    "timetocook": {
+        "hh": 0,
+        "mm": 25
+    },
     "instructions": "Prep15 m\nCook10 m\nReady In25 m\n   Heat vegetable oil in a large wok or skillet over medium-high heat; cook and stir beef until browned, 3 to 4 minutes. Move beef to the side of the wok and add broccoli, bell pepper, carrots, green onion, and garlic to the center of the wok. Cook and stir vegetables for 2 minutes.\n      Stir beef into vegetables and season with soy sauce and sesame seeds. Continue to cook and stir until vegetables are tender, about 2 more minutes.",
     "cuisine": "Chinese",
     "dishtype": "Main Dish",
@@ -5320,7 +5425,10 @@
             ]
         }
     ],
-    "timetocook": "18 m",
+    "timetocook": {
+        "hh": 0,
+        "mm": 18
+    },
     "instructions": "Prep15 m\nCook3 m\nReady In18 m\n     Bring a large pot of water to a boil. Add rice noodles, and cook for 2 to 3 minutes or until al dente; do not overcook, or they will become mushy. Drain.\n     Heat oil in a large skillet over medium heat. Saute garlic until tender. Stir in noodles, and season with soy sauce, chili sauce, salt and pepper. Sprinkle top with chopped green onion.",
     "cuisine": "Chinese",
     "dishtype": "Side Dish",
@@ -5422,7 +5530,10 @@
             ]
         }
     ],
-    "timetocook": "20 m",
+    "timetocook": {
+        "hh": 0,
+        "mm": 20
+    },
     "instructions": "Prep10 m\nCook10 m\nReady In20 m\n     Reserve 3/4 cup of chicken broth, and pour the rest into a large saucepan. Stir the salt, ginger and chives into the saucepan, and bring to a rolling boil. In a cup or small bowl, stir together the remaining broth and cornstarch until smooth. Set aside.\n     In a small bowl, whisk the eggs and egg yolk together using a fork. Drizzle egg a little at a time from the fork into the boiling broth mixture. Egg should cook immediately. Once the eggs have been dropped, stir in the cornstarch mixture gradually until the soup is the desired consistency.",
     "cuisine": "Chinese",
     "dishtype": "Soups, Stews, and Chili",
@@ -5576,7 +5687,10 @@
             }
         }
     ],
-    "timetocook": "4 h 30 m",
+    "timetocook": {
+        "hh": 4,
+        "mm": 30
+    },
     "instructions": "Prep10 m\nCook4 h 10 m\nReady In4 h 30 m\n    Place flank steak and cornstarch into a resealable plastic bag. Shake the bag to evenly coat the flank steak with the cornstarch. Allow to steak rest for 10 minutes.\n     Heat olive oil in a large skillet over medium-high heat. Cook and stir steak until evenly browned, 2 to 4 minutes. Place onion, garlic, flank steak, green onions, soy sauce, water, brown sugar, ginger, and hoisin sauce in a slow cooker. Cook on Low setting for about 4 hours.",
     "cuisine": "Chinese",
     "dishtype": "Main Dish",
@@ -5802,7 +5916,10 @@
             ]
         }
     ],
-    "timetocook": "45 m",
+    "timetocook": {
+        "hh": 0,
+        "mm": 45
+    },
     "instructions": "Prep20 m\nCook20 m\nReady In45 m\n            \n    \n    Heat oil in deep-fryer to 375 degrees F (190 degrees C).\n  Meanwhile, in a mixing bowl, combine cornstarch, salt and pepper together. Mix thoroughly. Toss the steak slices in the cornstarch mixture and coat well.\n   Deep fry the coated steak slices until golden brown. Check to make sure they are cooked through. Remove from oil, and set aside.\n    In another mixing bowl, combine the soy sauce, rice vinegar, rice wine and honey. Add sugar, chili paste, water, and ginger. Mix well and set aside.\n                            \n    Heat a wok or deep frying pan over medium high heat. Add 1 tablespoon of oil, and quickly saute the onion, garlic and red pepper for 30 seconds. Add the sauce mixture, and cook another 30 seconds. Finally, add the strips of fried steak and toss to heat through and coat with sauce.",
     "cuisine": "Chinese",
     "dishtype": "Side Dish",
@@ -5994,7 +6111,10 @@
             ]
         }
     ],
-    "timetocook": "2 h",
+    "timetocook": {
+        "hh": 2,
+        "mm": 0
+    },
     "instructions": "Prep20 m\nCook5 m\nReady In2 h\n      Combine beef, orange juice, rice vinegar, soy sauce, hot chili paste, brown sugar, and garlic in a large bowl. Cover and refrigerate for 1 to 2 hours.\n    Strain beef in a colander set over a large bowl, allowing beef to drain thoroughly, about 5 minutes. Reserve marinade.\n Stir water and cornstarch into the bowl of marinade. Whisk until cornstarch is dissolved, set aside.\n  Spray skillet with cooking spray and place over high heat. Cook beef for 1 minute without stirring; cook and stir for an additional minute.\n  Stir in light parts of green onion and orange zest; cook for 30 seconds.\n  Stir in marinade and green onion tops; cook and stir until beef is no longer pink inside and sauce is reduced and thick, about 2 to 3 minutes.\n  Season with salt and black pepper to taste.",
     "cuisine": "Chinese",
     "dishtype": "Main Dish",
@@ -6138,7 +6258,10 @@
             ]
         }
     ],
-    "timetocook": "25 m",
+    "timetocook": {
+        "hh": 0,
+        "mm": 25
+    },
     "instructions": "Prep15 m\nCook10 m\nReady In25 m\n  Pat halibut dry with paper towels.  Rub both sides of fillet with salt. Scatter the ginger over the top of the fish and place onto a heatproof ceramic dish.\n  Place into a bamboo steamer set over several inches of gently boiling water, and cover. Gently steam for 10 to 12 minutes.\n  Pour accumulated water out of the dish and sprinkle the fillet with green onion.  Drizzle both soy sauces over the surface of the fish.\n  Heat peanut and sesame oils in a small skillet over medium-high heat until they begin to smoke. When the oil is hot, carefully pour on top of the halibut fillet. The very hot oil will cause the green onions and water on top of the fish to pop and spatter all over; be careful. Garnish with cilantro sprigs and serve immediately.",
     "cuisine": "Chinese",
     "dishtype": "Main Dish",
@@ -6270,7 +6393,10 @@
             ]
         }
     ],
-    "timetocook": "1 h 21 m",
+    "timetocook": {
+        "hh": 1,
+        "mm": 21
+    },
     "instructions": "Prep15 m\nCook6 m\nReady In1 h 21 m\n    Whisk together soy sauce, hoisin sauce, sesame oil, sugar, garlic, and red pepper flakes in a bowl. Toss beef with marinade, cover, and refrigerate 1 hour to overnight.\n   Heat peanut oil in a wok or large, nonstick skillet over high heat. Add the green onions, and cook for 5 to 10 seconds before stirring in the beef. Cook and stir until the beef is no longer pink and is beginning to brown, about 5 minutes.",
     "cuisine": "Chinese",
     "dishtype": "Main Dish",
@@ -6477,7 +6603,10 @@
             ]
         }
     ],
-    "timetocook": "55 m",
+    "timetocook": {
+        "hh": 0,
+        "mm": 55
+    },
     "instructions": "Prep20 m\nCook35 m\nReady In55 m\n   Cut tenderloin into 4 pieces. Arrange in a single layer between two sheets of plastic wrap and pound with a meat mallet until each is about 1-inch thick. Generously season with salt and black pepper.\n     Whisk ketchup, rice vinegar, reserved pineapple juice, brown sugar, garlic, hot chili sauce, soy sauce, and red pepper flakes in a bowl. Set aside.\n   Heat vegetable oil in a skillet over high heat. Place pork in pan; reduce heat to medium. Cook until browned on both sides and cooked through, 5 to 6 minutes per side. Transfer to a plate.\n   Return skillet to medium heat. Stir butter into hot pan. When butter melts and starts to brown, stir in pineapple chunks. Cook, stirring, until pineapple is golden brown, 3 to 4 minutes.\n Stir in ketchup mixture and 1/4 cup green onion (white parts). Reduce heat to low and simmer until garlic and onion have softened, 5 minutes.\n  Return pork to skillet; cook, stirring, until pork is heated through. Garnish with 2 tablespoons green onion tops.",
     "cuisine": "Chinese",
     "dishtype": "Main Dish",
@@ -6635,7 +6764,10 @@
             }
         }
     ],
-    "timetocook": "40 m",
+    "timetocook": {
+        "hh": 0,
+        "mm": 40
+    },
     "instructions": "Prep10 m\nCook10 m\nReady In40 m\n  Toss beef with soy sauce, cornstarch, crushed red pepper and garlic in non-metal bowl.  Cover and refrigerate 20 minutes.\n   Heat oil in wok or large skillet over high heat.  Stir fry beef until no longer pink, 5 minutes.  Stir in broccoli, onions and water chestnuts; cook 2 minutes.  Pour in broth, and bring to a boil.  Stir in peanuts, cook one minute more, and serve.",
     "cuisine": "Chinese",
     "dishtype": "Main Dish",
@@ -6782,7 +6914,10 @@
             ]
         }
     ],
-    "timetocook": "20 m",
+    "timetocook": {
+        "hh": 0,
+        "mm": 20
+    },
     "instructions": "Prep10 m\nCook10 m\nReady In20 m\n   In a bowl, stir together water, ketchup, soy sauce, cornstarch, honey, crushed red pepper, and ground ginger. Set aside.\n Heat oil in a large skillet over medium-high heat. Stir in green onions and garlic; cook 30 seconds. Stir in shrimp, and toss to coat with oil. Stir in sauce. Cook and stir until sauce is bubbly and thickened.",
     "cuisine": "Chinese",
     "dishtype": "Main Dish",
@@ -7030,7 +7165,10 @@
             }
         }
     ],
-    "timetocook": "35 m",
+    "timetocook": {
+        "hh": 0,
+        "mm": 35
+    },
     "instructions": "Prep10 m\nCook25 m\nReady In35 m\n Bring a large pot of lightly salted water to a boil. Add pasta and cook for 8 to 10 minutes or until al dente; drain.\n  Heat oil in a large wok or saute pan. Stir fry mushrooms, carrots, peppers, onion and garlic until tender. Stir in bean sprouts and green onions; cook one minute. Mix cornstarch and chicken broth in a small bowl and add to stir fry. Stir in hoisin sauce, honey, soy sauce, ginger, cayenne pepper and curry powder. Cook and stir until thickened and bubbly.\n   Add cooked spaghetti, and toss. Serve immediately.",
     "cuisine": "Chinese",
     "dishtype": "Side Dish",
@@ -7115,7 +7253,10 @@
             }
         }
     ],
-    "timetocook": "35 m",
+    "timetocook": {
+        "hh": 0,
+        "mm": 35
+    },
     "instructions": "Prep5 m\nCook30 m\nReady In35 m\nBring the milk and water to a simmer in a saucepan over medium-low heat; stir the cardamom into the mixture. Set aside.\nMelt the ghee in a shallow skillet over medium heat; stir the chickpea flour into the melted ghee and cook until fragrant, about 10 minutes. Add the sugar and stir to incorporate. Slowly pour the milk mixture into the skillet while stirring to avoid lumps. Continue cooking and stirring until the halwa pulls away from the sides of the pan, 10 to 15 minutes. Serve hot or spread the mixture into a rimmed plate and allow to cool. Cut into squares and serve.",
     "cuisine": "Indian",
     "mark": "green",
@@ -7199,7 +7340,10 @@
             ]
         }
     ],
-    "timetocook": "8 h 20 m",
+    "timetocook": {
+        "hh": 8,
+        "mm": 20
+    },
     "instructions": "Prep20 m\nReady In8 h 20 m\nCombine evaporated milk, condensed milk and whipped topping in a blender and blend in pieces of bread until smooth.\nPour mixture into a 9x13 inch baking dish or two plastic ice cube trays, sprinkle with cardamom and freeze for 8 hours or overnight.",
     "cuisine": "Indian",
     "mark": "green",
@@ -7337,9 +7481,95 @@
             }
         }
     ],
-    "timetocook": "2 h 55 m",
+    "timetocook": {
+        "hh": 2,
+        "mm": 55
+    },
     "instructions": "Prep10 m\nCook45 m\nReady In2 h 55 m\nHeat oil in a deep-fryer or large saucepan to 350 degrees F (175 degrees C). Fry the bread slices in the hot oil until deep, golden brown; drain on a plate lined with paper towels. Fry the cashews, almonds, and pistachio nuts in the hot oil until golden brown; remove from oil and set aside to cool. Chop roughly.\nBring the milk to a gentle boil in a heavy-bottomed pan over medium-low heat; continue boiling until the volume of milk reduces by about half. Pour the evaporated milk into the pan and add the sugar, cardamom, and saffron; simmer together 5 to 10 minutes. Remove from heat and allow to cool completely.\nArrange the fried bread pieces in a shallow dish large enough to allow them to be laid in a single layer. Evenly pour the milk mixture over the bread. Scatter the chopped nuts over the bread. Chill in refrigerator until completely cold, 1 to 2 hours.",
     "cuisine": "Indian",
     "mark": "green",
     "mealtype": "Desserts"
-}
+},
+{
+    "title": "Besan Laddu",
+    "description": "\"A delicious Indian sweet, commonly gifted during celebrations like Diwali. I got this recipe from my neighbor when I lived in India. She always brought me sweets that she made herself.\"",
+    "image": [
+        {
+            "url": "https://images.media-allrecipes.com/userphotos/560x315/4450789.jpg"
+        }
+    ],
+    "ingredientdetails": [
+        {
+            "quantity": "2 cups",
+            "ingredient": {
+                "_id": {
+                    "$oid": "5e6ddc43ec8c0e2d32b85d64"
+                },
+                "name": "chickpea flour",
+                "category": "Baking & Grains",
+                "image": "http://t1.gstatic.com/images?q=tbn:ANd9GcT_3Or9Jy1wwpcGdzsNAak5imrLEvB2p8kxP87zM3DsLOB6VSydV7Db941g"
+            },
+            "directions": [
+                "(besan)"
+            ]
+        },
+        {
+            "quantity": "1 cup",
+            "ingredient": {
+                "_id": {
+                    "$oid": "5e6ddc43ec8c0e2d32b85c4d"
+                },
+                "name": "ghee",
+                "category": "Dairy",
+                "image": "http://t1.gstatic.com/images?q=tbn:ANd9GcQjcgM7dCiAzXtq-Bf0_5T1wSfqPL40iKR5zM8y1sIzEoMn0FTRDUdO7zci"
+            }
+        },
+        {
+            "quantity": "1 cup or to taste",
+            "ingredient": {
+                "_id": {
+                    "$oid": "5e6ddc43ec8c0e2d32b85a32"
+                },
+                "name": "sugar",
+                "category": "Added Sweetners",
+                "image": "http://t1.gstatic.com/images?q=tbn:ANd9GcQIsShhUov7gQaNUE6tJ42N0q_uUugpPjYiTl9mmzEy_C3aPlb5ptiaPZc"
+            }
+        },
+        {
+            "quantity": "2 teaspoons",
+            "ingredient": {
+                "_id": {
+                    "$oid": "5e6ddc43ec8c0e2d32b85add"
+                },
+                "name": "pistachio",
+                "category": "Nuts",
+                "image": "http://t1.gstatic.com/images?q=tbn:ANd9GcQfPV4ROhe5LBY44JSZN2JIRjtED1oPA90qBWU8aIuOxF7s3AXLXpXJzkaU1w"
+            },
+            "directions": [
+                "finely chopped"
+            ]
+        },
+        {
+            "quantity": "1 teaspoon",
+            "ingredient": {
+                "_id": {
+                    "$oid": "5e6ddc43ec8c0e2d32b85aa2"
+                },
+                "name": "cashew",
+                "category": "Nuts",
+                "image": "http://t1.gstatic.com/images?q=tbn:ANd9GcRXbBinz6ZLdGSeBkdfuflADqvcOiSxSlR1x1krE9-0ieA97sfjezJ0tlw"
+            },
+            "directions": [
+                "finely chopped"
+            ]
+        }
+    ],
+    "timetocook": {
+        "hh": 0,
+        "mm": 45
+    },
+    "instructions": "Prep5 m\nCook10 m\nReady In45 m\nStir the chickpea flour and clarified butter together in a saucepan over medium-low heat until the mixture smells toasty, about 10 minutes. Set aside until cool enough to handle.\nStir in the sugar, pistachios, and cashews until evenly mixed. Form the mixture into small balls the size of large cherries. Use some pressure when forming the balls so they don't come apart.",
+    "cuisine": "Indian",
+    "mark": "green",
+    "mealtype": "Desserts"
+}]

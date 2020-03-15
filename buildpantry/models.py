@@ -75,11 +75,8 @@ class directions(models.Model):
 
 class ingredientused(models.Model):
     quantity=models.CharField(max_length=30)
-    ingredient=models.EmbeddedModelField(
-            model_container=ingredient,
-        )
-
-    directions=models.EmbeddedModelField(model_container=directions,)
+    ingredient=models.EmbeddedField(model_container=ingredient)
+    directions=models.ArrayField(model_container=directions)
     class Meta:
         abstract=True
 
@@ -89,16 +86,15 @@ class time(models.Model):
     class Meta:
         abstract=True
 
-
 class recipe(models.Model):
-    _id=models.ObjectField()
+    _id=models.ObjectIdField()
     title=models.CharField(max_length=60)
     description=models.TextField()
-    image=models.ArrayModelField(model_container=image)
-    ingredientdetails=models.ArrayModelField(model_container=ingredientused)
-    timetocook=models.EmbeddedModelField(model_container=time)
+    image=models.ArrayField(model_container=image)
+    ingredientdetails=models.ArrayField(model_container=ingredientused)
+    timetocook=models.EmbeddedField(model_container=time)
     instructions=models.TextField()
     cuisine=models.CharField(max_length=25,choices=cuisines)
     dishtype=models.CharField(max_length=25,choices=dishtypes)
-    mark=models.CharField(max_length=7,choice=marks)
+    mark=models.CharField(max_length=7,choices=marks)
 

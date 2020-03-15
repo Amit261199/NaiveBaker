@@ -7,6 +7,8 @@ f.close()
     
 
 def abc(s):
+    if s==' ':
+        return None
     i=0
     j=len(s)-1
     while s[i]==' ':
@@ -91,6 +93,21 @@ for i in range(df.shape[0]):
                 else:
                     error=True
                     print(2,col,df[col].iloc[i])
+        elif col=='timetocook':
+            #print(df[col].iloc[i])
+            time=df[col].iloc[i]
+            hh=0
+            mm=0
+            if time.find('h')!=-1:
+                hh=int(abc(time.split('h')[0]))
+                if time.split('h')[-1].find('m')!=-1:
+                    mm=int(abc(time.split('h')[-1].split('m')[0]))
+            else:
+                mm=int(abc(time.split('m')[0]))
+            j={}
+            j['hh']=hh
+            j['mm']=mm
+            g[col]=j
         elif col =='ingredients':
             ingredients_list=[]
             for couple in df[col].iloc[i].split(';'):
