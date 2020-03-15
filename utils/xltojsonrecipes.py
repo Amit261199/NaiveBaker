@@ -1,6 +1,11 @@
 import pandas as pd
 import json
 
+f=open('buildpantry_ingredient.json')
+ingobj=json.load(f)
+f.close()
+    
+
 def abc(s):
     i=0
     j=len(s)-1
@@ -9,6 +14,12 @@ def abc(s):
     while s[j]==' ':
         j=j-1
     return s[i:j+1]
+
+
+def imgdict(x):
+    j={}
+    j['url']=x
+    return j
 
 df=pd.read_excel('recipes.xlsx')
 cols=list(df.columns)
@@ -47,7 +58,10 @@ mealtype=[
         ]
 
 ing=pd.read_excel('ingredients.xlsx')
-inglist=list(ing['ingredients'].values)
+inglist=list(ing['name'].values)
+_id={}
+for obj in ingobj:
+    _id[obj['name']]=obj
 
 check={}
 check['dishtype']=dishtype
@@ -64,7 +78,7 @@ for i in range(df.shape[0]):
     error=False
     for col in cols:
         if col=='image':
-            map_obj=map(lambda x: abc(x),df[col].iloc[i].split(','))
+            map_obj=map(lambda x: imgdict(abc(x)),df[col].iloc[i].split(','))
             g[col]=list(map_obj)
         elif col in risk:
             if df[col].iloc[i]=='NA':
@@ -94,12 +108,12 @@ for i in range(df.shape[0]):
                 if itemlist[0] not in check['ingredients']:
                     error=True
                     print(4,itemlist[0])
-                h['ingredient']=itemlist[0]
+                h['ingredient']=_id[itemlist[0]]
                 if len(itemlist)>1:
                     map_obj=map(lambda x: abc(x),itemlist[1:])
                     h['directions']=list(map_obj)
                 ingredients_list.append(h)
-            g[col]=ingredients_list
+            g['ingredientdetails']=ingredients_list
         else:
             g[col]=abc(df[col].iloc[i])
         
@@ -123,3 +137,7 @@ if errors==0:
             f.write(string)
         
     f.write(']')
+
+
+
+

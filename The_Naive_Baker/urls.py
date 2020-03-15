@@ -20,4 +20,5 @@ from django.urls import include
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('userprofile.urls')),
+    path('buildpantry/', include('buildpantry.urls')),
 ]

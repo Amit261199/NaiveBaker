@@ -30,6 +30,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'buildpantry.apps.BuildpantryConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -77,7 +78,7 @@ WSGI_APPLICATION = 'The_Naive_Baker.wsgi.application'
 DATABASES = {
         'default': {
         'ENGINE': 'djongo',
-        'NAME': 'admin',
+        'NAME': 'NaiveBaker',
         'CLIENT':{
             'host':'mongodb+srv://AmitAgarwal:AmitAgarwal@amittaiwan-bk4uh.gcp.mongodb.net/test?authSource=admin&replicaSet=AmitTaiwan-shard-0&readPreference=primary&appname=MongoDB%20Compass%20Community&ssl=true',
             'username':'AmitAgarwal',

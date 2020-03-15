@@ -1,11 +1,11 @@
 import pandas as pd
 
 ing=pd.read_excel('ingredients.xlsx')
-inglist=list(ing['ingredients'].values)
+inglist=list(ing['name'].values)
 categories=list(set(list(ing['category'].values)))
 category={}
 for i in range(ing.shape[0]):
-    category[ing['ingredients'].iloc[i]]=ing['category'].iloc[i]
+    category[ing['name'].iloc[i]]=ing['category'].iloc[i]
             
             
 df=pd.read_excel('recipes_f.xlsx')
