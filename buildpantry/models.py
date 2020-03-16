@@ -62,6 +62,9 @@ class ingredient(models.Model):
     category=models.CharField(max_length=25,choices=categories)
     image=models.TextField()
 
+    def __unicode__(self):
+        return self.name
+
 class image(models.Model):
     url=models.TextField()
 
@@ -75,7 +78,7 @@ class directions(models.Model):
 
 class ingredientused(models.Model):
     quantity=models.CharField(max_length=30)
-    ingredient=models.EmbeddedField(model_container=ingredient)
+    ingredient=models.CharField(max_length=40)
     directions=models.ArrayField(model_container=directions)
     class Meta:
         abstract=True
@@ -95,6 +98,9 @@ class recipe(models.Model):
     timetocook=models.EmbeddedField(model_container=time)
     instructions=models.TextField()
     cuisine=models.CharField(max_length=25,choices=cuisines)
-    dishtype=models.CharField(max_length=25,choices=dishtypes)
+    dishtype=models.CharField(max_length=35,choices=dishtypes)
     mark=models.CharField(max_length=7,choices=marks)
+
+    def __unicode__(self):
+        return self.title
 
