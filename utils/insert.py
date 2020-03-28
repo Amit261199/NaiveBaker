@@ -26,5 +26,5 @@ elif(x=='recipes'):
     f.close()
     for recipe in recipes:
         for instr in recipe['ingredientdetails']:
-            instr['ingredient']=objectid.ObjectId(instr['ingredient']['_id']['$oid'])
+            instr['ingredient']=objectid.ObjectId(instr['ingredient']['$oid'])
     response=db.buildpantry_recipe.insert_many(recipes)

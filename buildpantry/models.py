@@ -28,7 +28,7 @@ cuisines=[
     ('Indian','Indian'),
     ('Italian','Italian'),
     ('Mexican','Mexican'),
-    ('Southern','Southen'),
+    ('Southern','Southern'),
     ('Thai','Thai')
 ]
 categories=[
@@ -62,7 +62,7 @@ class ingredient(models.Model):
     category=models.CharField(max_length=25,choices=categories)
     image=models.TextField()
 
-    def __unicode__(self):
+    def __str__(self):
         return self.name
 
 class image(models.Model):
@@ -71,15 +71,10 @@ class image(models.Model):
     class Meta:
         abstract=True
 
-class directions(models.Model):
-    direction=models.CharField(max_length=30)
-    class Meta:
-        abstract=True
-
 class ingredientused(models.Model):
     quantity=models.CharField(max_length=30)
     ingredient=models.CharField(max_length=40)
-    directions=models.ArrayField(model_container=directions)
+    directions=models.CharField(max_length=50,default=None,null=True,blank=True)
     class Meta:
         abstract=True
 
@@ -94,13 +89,13 @@ class recipe(models.Model):
     title=models.CharField(max_length=60)
     description=models.TextField()
     image=models.ArrayField(model_container=image)
-    ingredientdetails=models.ArrayField(model_container=ingredientused)
     timetocook=models.EmbeddedField(model_container=time)
     instructions=models.TextField()
-    cuisine=models.CharField(max_length=25,choices=cuisines)
-    dishtype=models.CharField(max_length=35,choices=dishtypes)
+    cuisine=models.CharField(max_length=25,choices=cuisines,default='',null=True,blank=True)
+    dishtype=models.CharField(max_length=35,choices=dishtypes,default='',null=True,blank=True)
     mark=models.CharField(max_length=7,choices=marks)
-
-    def __unicode__(self):
+    ingredientdetails=models.ArrayField(model_container=ingredientused)
+    
+    def __str__(self):
         return self.title
 

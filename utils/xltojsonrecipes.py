@@ -63,14 +63,15 @@ ing=pd.read_excel('ingredients.xlsx')
 inglist=list(ing['name'].values)
 _id={}
 for obj in ingobj:
-    _id[obj['name']]=obj
+    _id[obj['name']]=obj['_id']
 
 check={}
 check['dishtype']=dishtype
 check['mealtype']=mealtype
 check['ingredients']=inglist
 check['mark']=mark
-df.fillna('NA',inplace=True)
+df.fillna('None',inplace=True)
+df=df.replace(['None'],[None])
 errors=0
 
 
@@ -83,10 +84,13 @@ for i in range(df.shape[0]):
             map_obj=map(lambda x: imgdict(abc(x)),df[col].iloc[i].split(','))
             g[col]=list(map_obj)
         elif col in risk:
-            if df[col].iloc[i]=='NA':
+            if df[col].iloc[i] is None:
                 if col=='mark':
                     error=True
                     print(1)
+                    
+                else:
+                    g[col]=df[col].iloc[i]
             else:
                 if (df[col].iloc[i] in check[col]) :
                     g[col]=df[col].iloc[i]
@@ -126,9 +130,13 @@ for i in range(df.shape[0]):
                     error=True
                     print(4,itemlist[0])
                 h['ingredient']=_id[itemlist[0]]
+                h['directions']=None
                 if len(itemlist)>1:
                     map_obj=map(lambda x: abc(x),itemlist[1:])
-                    h['directions']=list(map_obj)
+                    blank=''+list(map_obj)[0]
+                    for dirs in list(map_obj)[1:]:
+                       blank=blank+','+dirs
+                    h['directions']=blank
                 ingredients_list.append(h)
             g['ingredientdetails']=ingredients_list
         else:
