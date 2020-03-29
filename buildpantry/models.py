@@ -1,6 +1,8 @@
-from djongo import models
+from django.db import models
 from django import forms
+from django.contrib.postgres.fields import ArrayField
 # Create your models here.
+
 dishtypes=[
 ('Appetizers & Snacks','Appetizers & Snacks'),
 ('Bread Recipes','Bread Recipes'),
@@ -57,45 +59,35 @@ marks=[
       ('green','green'),('red','red'),('yellow','yellow')
 ]
 class ingredient(models.Model):
-    _id=models.ObjectIdField()
-    name=models.CharField(max_length=25)
-    category=models.CharField(max_length=25,choices=categories)
-    image=models.TextField()
+    name=models.CharField(max_length=25,primary_key=True)
+    category=models.CharField(max_length=25,choices=categories,blank=False)
+    image=models.URLField()
 
     def __str__(self):
         return self.name
 
-class image(models.Model):
-    url=models.TextField()
-
-    class Meta:
-        abstract=True
-
-class ingredientused(models.Model):
-    quantity=models.CharField(max_length=30)
-    ingredient=models.CharField(max_length=40)
-    directions=models.CharField(max_length=50,default=None,null=True,blank=True)
-    class Meta:
-        abstract=True
-
-class time(models.Model):
-    hh=models.IntegerField()
-    mm=models.IntegerField()
-    class Meta:
-        abstract=True
 
 class recipe(models.Model):
-    _id=models.ObjectIdField()
-    title=models.CharField(max_length=60)
+    title=models.CharField(max_length=40,primary_key=True)
     description=models.TextField()
-    image=models.ArrayField(model_container=image)
-    timetocook=models.EmbeddedField(model_container=time)
     instructions=models.TextField()
     cuisine=models.CharField(max_length=25,choices=cuisines,default='',null=True,blank=True)
     dishtype=models.CharField(max_length=35,choices=dishtypes,default='',null=True,blank=True)
     mark=models.CharField(max_length=7,choices=marks)
-    ingredientdetails=models.ArrayField(model_container=ingredientused)
+    ingredients=models.ManyToManyField(
+        ingredient,
+        through='ingredientList',
+        through_fields=('recipe_name','ingredient_name')
+    )
+    images=ArrayField(base_field=models.URLField())
+    timetocook=models.TimeField()
     
     def __str__(self):
         return self.title
 
+
+class ingredientList(models.Model):
+    recipe_name=models.ForeignKey(recipe,on_delete=models.CASCADE)
+    ingredient_name=models.ForeignKey(ingredient,on_delete=models.PROTECT)
+    quantity=models.CharField(max_length=40,blank=False)
+    directions=models.CharField(max_length=40,blank=True,null=True)
