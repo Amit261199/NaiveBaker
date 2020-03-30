@@ -1,0 +1,517 @@
+id,quantity,directions,ingredient_name_id,recipe_name_id
+1,3 tablespoons,,soy sauce,Asian Beef with Snow Peas
+2,2 tablespoons,,rice wine,Asian Beef with Snow Peas
+3,1 tablespoon,,brown sugar,Asian Beef with Snow Peas
+4,1/2 teaspoon,,cornstarch,Asian Beef with Snow Peas
+5,1 tablespoon,,vegetable oil,Asian Beef with Snow Peas
+6,1 tablespoon,minced fresh,ginger,Asian Beef with Snow Peas
+7,1 tablespoon,minced,garlic,Asian Beef with Snow Peas
+8,1 pound,round,beef steak,Asian Beef with Snow Peas
+9,8 ounces,,snow peas,Asian Beef with Snow Peas
+10,1/2 cup,,soy sauce,Asian Fire Meat
+11,1 tablespoon,,sesame oil,Asian Fire Meat
+12,2 tablespoons,,brown sugar,Asian Fire Meat
+13,3 cloves,crushed,garlic,Asian Fire Meat
+14,1 large,chopped,red onion,Asian Fire Meat
+15,to taste,ground,peppercorn,Asian Fire Meat
+16,1 teaspoon,,red pepper flake,Asian Fire Meat
+17,2 tablespoons,,sesame seed,Asian Fire Meat
+18,2,chopped,leek,Asian Fire Meat
+19,1 small,chopped,carrot,Asian Fire Meat
+20,1 pound,round,beef steak,Asian Fire Meat
+21,1 pound,lean,ground beef,Beef Egg Rolls
+22,1,,onion flake,Beef Egg Rolls
+23,1/2 teaspoon,dried minced,garlic,Beef Egg Rolls
+24,2 tablespoons,,soy sauce,Beef Egg Rolls
+25,1/2 teaspoon,,salt,Beef Egg Rolls
+26,1/2 teaspoon,ground,peppercorn,Beef Egg Rolls
+27,2 tablespoons,,sherry,Beef Egg Rolls
+28,1 teaspoon,,ground ginger,Beef Egg Rolls
+29,1,large headed,cabbage,Beef Egg Rolls
+30,1/4 cup,,water,Beef Egg Rolls
+31,1 tablespoon,,vegetable oil,Beef Egg Rolls
+32,1 teaspoon,,sugar,Beef Egg Rolls
+33,2 tablespoons,,soy sauce,Beef Egg Rolls
+34,2 tablespoons,,sherry,Beef Egg Rolls
+35,1/2 teaspoon,,salt,Beef Egg Rolls
+36,1/2 teaspoon,ground,peppercorn,Beef Egg Rolls
+37,2 quarts,,vegetable oil,Beef Egg Rolls
+38,1 (16 ounce) package,to make egg roll wrappers,egg,Beef Egg Rolls
+39,1 (8 ounce) package,,spaghetti,Beef Lo Mein
+40,1 teaspoon,dark,sesame oil,Beef Lo Mein
+41,1 tablespoon,,peanut oil,Beef Lo Mein
+42,4 cloves,minced,garlic,Beef Lo Mein
+43,1 tablespoon,minced fresh,ginger,Beef Lo Mein
+44,4 cups,,mixed vegetable,Beef Lo Mein
+45,1 pound,flank,beef steak,Beef Lo Mein
+46,3 tablespoons,reduced sodium,soy sauce,Beef Lo Mein
+47,2 tablespoons,,brown sugar,Beef Lo Mein
+48,1 tablespoon,,oyster sauce,Beef Lo Mein
+49,1 tablespoon,asian,chili paste,Beef Lo Mein
+50,1 tablespoon,paste,garlic,Beef Lo Mein
+51,1 1/2 pounds,,ground beef,Beefy Chinese Dumplings
+52,2 cups,shredded,cabbage,Beefy Chinese Dumplings
+53,1,shredded,carrot,Beefy Chinese Dumplings
+54,1,minced,onion,Beefy Chinese Dumplings
+55,1,,egg,Beefy Chinese Dumplings
+56,1 teaspoon,,sugar,Beefy Chinese Dumplings
+57,1 teaspoon,,salt,Beefy Chinese Dumplings
+58,1 tablespoon,,soy sauce,Beefy Chinese Dumplings
+59,1 tablespoon,,vegetable oil,Beefy Chinese Dumplings
+60,1 (14 ounce) package,,wonton wrapper,Beefy Chinese Dumplings
+61,2 tablespoons,,vegetable oil,Black Pepper Beef and Cabbage Stir Fry
+62,4 cloves,chopped,garlic,Black Pepper Beef and Cabbage Stir Fry
+63,1/2 pound,,ground beef,Black Pepper Beef and Cabbage Stir Fry
+64,1/2,small head,cabbage,Black Pepper Beef and Cabbage Stir Fry
+65,1,red,bell pepper,Black Pepper Beef and Cabbage Stir Fry
+66,2 tablespoons,,soy sauce,Black Pepper Beef and Cabbage Stir Fry
+67,1 teaspoon,,cornstarch,Black Pepper Beef and Cabbage Stir Fry
+68,1/2 cup,cold,water,Black Pepper Beef and Cabbage Stir Fry
+69,1 teaspoon or to taste,ground,peppercorn,Black Pepper Beef and Cabbage Stir Fry
+70,to taste,,salt,Black Pepper Beef and Cabbage Stir Fry
+71,8 cubes,,chicken broth,Chi Tan T'ang (Egg Drop Soup)
+72,6 cups,hot,water,Chi Tan T'ang (Egg Drop Soup)
+73,2 tablespoons,,cornstarch,Chi Tan T'ang (Egg Drop Soup)
+74,2 tablespoons,,soy sauce,Chi Tan T'ang (Egg Drop Soup)
+75,3 tablespoons,distilled,vinegar,Chi Tan T'ang (Egg Drop Soup)
+76,1,minced,scallion,Chi Tan T'ang (Egg Drop Soup)
+77,3,beaten,egg,Chi Tan T'ang (Egg Drop Soup)
+78,3 tablespoons,red,wine vinegar,Chinese Cabbage Salad II
+79,2 tablespoons,,sugar,Chinese Cabbage Salad II
+80,1/2 teaspoon,,salt,Chinese Cabbage Salad II
+81,1/4 teaspoon,ground,peppercorn,Chinese Cabbage Salad II
+82,1 (3 ounce) package,ramen,noodle,Chinese Cabbage Salad II
+83,1/2 cup,,vegetable oil,Chinese Cabbage Salad II
+84,1 (16 ounce) package,mixed with coleslaw,broccoli,Chinese Cabbage Salad II
+85,1/2 cup,chopped,scallion,Chinese Cabbage Salad II
+86,4 ounces,toasted,almond,Chinese Cabbage Salad II
+87,1/4 cup,toasted,sesame seed,Chinese Cabbage Salad II
+88,2 (3 ounce) packages,ramen,noodle,Chinese Fried Noodles
+89,3,beaten,egg,Chinese Fried Noodles
+90,1 tablespoon,,vegetable oil,Chinese Fried Noodles
+91,4,thinly sliced,scallion,Chinese Fried Noodles
+92,1,small,carrot,Chinese Fried Noodles
+93,1/2 cup,,peas,Chinese Fried Noodles
+94,1/4 cup,red,bell pepper,Chinese Fried Noodles
+95,2 tablespoons,,sesame oil,Chinese Fried Noodles
+96,2 tablespoons,,soy sauce,Chinese Fried Noodles
+97,1 cup,,vegetable oil,Chinese Green Bean Stir-Fry
+98,13 pounds,fresh,green beans,Chinese Green Bean Stir-Fry
+99,5 tablespoons,minced,garlic,Chinese Green Bean Stir-Fry
+100,5 tablespoons,minced fresh,ginger,Chinese Green Bean Stir-Fry
+101,2 tablespoons,preferably kosher salt,salt,Chinese Green Bean Stir-Fry
+102,1 tablespoon,coarsely ground,peppercorn,Chinese Green Bean Stir-Fry
+103,2 (8 ounce) bottles,sauced,black beans,Chinese Green Bean Stir-Fry
+104,1 pound,steaked,beef sirloin,Chinese Pepper Steak
+105,1/4 cup,,soy sauce,Chinese Pepper Steak
+106,2 tablespoons,,sugar,Chinese Pepper Steak
+107,2 tablespoons,,cornstarch,Chinese Pepper Steak
+108,1/2 teaspoon,,ground ginger,Chinese Pepper Steak
+109,3 tablespoons,divided,vegetable oil,Chinese Pepper Steak
+110,1,cut into 1,red onion,Chinese Pepper Steak
+111,1,green,bell pepper,Chinese Pepper Steak
+112,2,cut into wedges,tomato,Chinese Pepper Steak
+113,1 tablespoon,active,yeast,Chinese Steamed Buns
+114,1 teaspoon,,sugar,Chinese Steamed Buns
+115,1/4 cup,,all purpose flour,Chinese Steamed Buns
+116,1/4 cup,,water,Chinese Steamed Buns
+117,1/2 cup,warm,water,Chinese Steamed Buns
+118,1/2 cup,,all purpose flour,Chinese Steamed Buns
+119,1/4 teaspoon,,salt,Chinese Steamed Buns
+120,2 tablespoons,,sugar,Chinese Steamed Buns
+121,1 tablespoon,,vegetable oil,Chinese Steamed Buns
+122,1/2 teaspoon,,baking powder,Chinese Steamed Buns
+123,1 cup,,sugar,Chinese Style Sesame Sauce
+124,1/4 cup,,cornstarch,Chinese Style Sesame Sauce
+125,1 cup,,chicken broth,Chinese Style Sesame Sauce
+126,1/2 cup,,water,Chinese Style Sesame Sauce
+127,1/8 cup,white,vinegar,Chinese Style Sesame Sauce
+128,2 tablespoons,dark,soy sauce,Chinese Style Sesame Sauce
+129,2 tablespoons,,sesame oil,Chinese Style Sesame Sauce
+130,1 teaspoon,,chili paste,Chinese Style Sesame Sauce
+131,1 clove,minced,garlic,Chinese Style Sesame Sauce
+132,2 tablespoons,,oyster sauce,Chinese-Style Baby Bok Choy with Mushroom Sauce
+133,1 tablespoon,,soy sauce,Chinese-Style Baby Bok Choy with Mushroom Sauce
+134,2 teaspoons,,brown sugar,Chinese-Style Baby Bok Choy with Mushroom Sauce
+135,1 teaspoon,,potato starch,Chinese-Style Baby Bok Choy with Mushroom Sauce
+136,1 tablespoon,,water,Chinese-Style Baby Bok Choy with Mushroom Sauce
+137,2 pinches,,salt,Chinese-Style Baby Bok Choy with Mushroom Sauce
+138,1/4 teaspoon,,vegetable oil,Chinese-Style Baby Bok Choy with Mushroom Sauce
+139,4 heads,with small leaves,bok choy,Chinese-Style Baby Bok Choy with Mushroom Sauce
+140,3 tablespoons,,olive oil,Chinese-Style Baby Bok Choy with Mushroom Sauce
+141,2 tablespoons,minced,scallion,Chinese-Style Baby Bok Choy with Mushroom Sauce
+142,1 tablespoon,minced,garlic,Chinese-Style Baby Bok Choy with Mushroom Sauce
+143,1 (8 ounce) package,sliced,portobello mushroom,Chinese-Style Baby Bok Choy with Mushroom Sauce
+144,1 (14 ounce) package,small,wonton wrapper,Crab Rangoon I
+145,2 (8 ounce) packages,softened,cream cheese,Crab Rangoon I
+146,1 teaspoon,mince fresh,ginger,Crab Rangoon I
+147,1/2 teaspoon,chopped,cilantro,Crab Rangoon I
+148,2 teaspoon,dried,parsley,Crab Rangoon I
+149,3 tablespoons,dark,soy sauce,Crab Rangoon I
+150,1 pound,shredded meat,crab,Crab Rangoon I
+151,1 quart,for frying,canola oil,Crab Rangoon I
+152,3/4 cup,,cornstarch,Crispy Ginger Beef
+153,1/2 cup,,water,Crispy Ginger Beef
+154,2,,egg,Crispy Ginger Beef
+155,1 pound,flank,beef steak,Crispy Ginger Beef
+156,1/2 cup,,canola oil,Crispy Ginger Beef
+157,1,large,carrot,Crispy Ginger Beef
+158,1,green,bell pepper,Crispy Ginger Beef
+159,1,red,bell pepper,Crispy Ginger Beef
+160,3,chopped,scallion,Crispy Ginger Beef
+161,1/4 cup,minced fresh,ginger,Crispy Ginger Beef
+162,5 cloves,minced,garlic,Crispy Ginger Beef
+163,1/2 cup,,sugar,Crispy Ginger Beef
+164,1/4 cup,,rice vinegar,Crispy Ginger Beef
+165,3 tablespoons,,soy sauce,Crispy Ginger Beef
+166,1 tablespoon,,sesame oil,Crispy Ginger Beef
+167,1 tablespoon or to taste,,red pepper flake,Crispy Ginger Beef
+168,1 1/2 pounds,top,beef sirloin,Crispy Orange Beef
+169,1/3 cup,,sugar,Crispy Orange Beef
+170,1/3 cup,,rice vinegar,Crispy Orange Beef
+171,2 tablespoons,frozen concentrate,orange juice,Crispy Orange Beef
+172,1 teaspoon,,salt,Crispy Orange Beef
+173,1 tablespoon,,soy sauce,Crispy Orange Beef
+174,1 cup,long grain,rice,Crispy Orange Beef
+175,2 cups,,water,Crispy Orange Beef
+176,1/4 cup,,cornstarch,Crispy Orange Beef
+177,2 teaspoons,zest only,orange,Crispy Orange Beef
+178,3 tablespoons,grated fresh,ginger,Crispy Orange Beef
+179,1 1/2 tablespoons,minced,garlic,Crispy Orange Beef
+180,8 florets,lightly steamed or blanched,broccoli,Crispy Orange Beef
+181,2 cups,for frying,canola oil,Crispy Orange Beef
+182,1 (15 ounce) can,cooked into creamed corn,corn,Easy Chinese Corn Soup
+183,1 (14.5 ounce) can,low sodium,chicken broth,Easy Chinese Corn Soup
+184,1,beaten,egg,Easy Chinese Corn Soup
+185,1 tablespoon,,cornstarch,Easy Chinese Corn Soup
+186,2 tablespoons,,water,Easy Chinese Corn Soup
+187,1 cup,,chicken broth,Egg Drop Soup (Better than Restaurant Quality!)
+188,1/4 teaspoon,,soy sauce,Egg Drop Soup (Better than Restaurant Quality!)
+189,1/4 teaspoon,,sesame oil,Egg Drop Soup (Better than Restaurant Quality!)
+190,1 teaspoon,(optional),cornstarch,Egg Drop Soup (Better than Restaurant Quality!)
+191,2 teaspoons,(optional),water,Egg Drop Soup (Better than Restaurant Quality!)
+192,1,beaten,egg,Egg Drop Soup (Better than Restaurant Quality!)
+193,1 drop,yellow,food colour,Egg Drop Soup (Better than Restaurant Quality!)
+194,1 teaspoon,fresh chopped,chive,Egg Drop Soup (Better than Restaurant Quality!)
+195,1/8 teaspoon,(optional),salt,Egg Drop Soup (Better than Restaurant Quality!)
+196,1/2 teaspoon,dried,bell pepper,Egg Drop Soup (Better than Restaurant Quality!)
+197,4 cups,,water,Egg Drop Soup I
+198,4 cubes,,chicken broth,Egg Drop Soup I
+199,2,,egg,Egg Drop Soup I
+200,1 teaspoon,dried,parsley,Egg Drop Soup I
+201,1 tablespoon,,onion powder,Egg Drop Soup I
+202,1 tablespoon,,cornstarch,Egg Drop Soup I
+203,2 (14.5 ounce) cans,,chicken broth,Egg Drop Soup II
+204,1 tablespoon,,cornstarch,Egg Drop Soup II
+205,1,lightly beaten,egg,Egg Drop Soup II
+206,2 tablespoons,chopped,scallion,Egg Drop Soup II
+207,3 tablespoons,,canola oil,Eggplant with Garlic Sauce
+208,4,chinese,eggplant,Eggplant with Garlic Sauce
+209,1 cup,,water,Eggplant with Garlic Sauce
+210,1 tablespoon,crushed,red pepper flake,Eggplant with Garlic Sauce
+211,3 tablespoons,,garlic powder,Eggplant with Garlic Sauce
+212,5 teaspoons,,sugar,Eggplant with Garlic Sauce
+213,1 teaspoon,,cornstarch,Eggplant with Garlic Sauce
+214,2 tablespoons,light,soy sauce,Eggplant with Garlic Sauce
+215,2 tablespoons,,oyster sauce,Eggplant with Garlic Sauce
+216,2 cups,,brown rice,Flavorful Beef Stir-Fry
+217,4 cups,,water,Flavorful Beef Stir-Fry
+218,2 tablespoons,,cornstarch,Flavorful Beef Stir-Fry
+219,2 teaspoons,,sugar,Flavorful Beef Stir-Fry
+220,6 tablespoons,,soy sauce,Flavorful Beef Stir-Fry
+221,1/4 cup,,white wine,Flavorful Beef Stir-Fry
+222,1 tablespoon,miced fresh,ginger,Flavorful Beef Stir-Fry
+223,1 pound,wound,beef steak,Flavorful Beef Stir-Fry
+224,1 tablespoon,,vegetable oil,Flavorful Beef Stir-Fry
+225,3 cups,florets,broccoli,Flavorful Beef Stir-Fry
+226,2,thinly sliced,carrot,Flavorful Beef Stir-Fry
+227,1 (6 ounce) package,pods only,peas,Flavorful Beef Stir-Fry
+228,2 tablespoons,chopped,onion,Flavorful Beef Stir-Fry
+229,1 (8 ounce) can,sliced,water chestnut,Flavorful Beef Stir-Fry
+230,1 cup,chinese,cabbage,Flavorful Beef Stir-Fry
+231,2 heads,large,bok choy,Flavorful Beef Stir-Fry
+232,1 tablespoon,,vegetable oil,Flavorful Beef Stir-Fry
+233,1 cup,,water,Honey Walnut Shrimp
+234,2/3 cup,,sugar,Honey Walnut Shrimp
+235,1/2 cup,,walnut,Honey Walnut Shrimp
+236,4,made into eggwhite,egg,Honey Walnut Shrimp
+237,2/3 cup,glutinous,rice flour,Honey Walnut Shrimp
+238,1/4 cup,,mayonnaise,Honey Walnut Shrimp
+239,1 pound,large,shrimp,Honey Walnut Shrimp
+240,2 tablespoons,,honey,Honey Walnut Shrimp
+241,1 tablespoon,canned sweetened,condensed milk,Honey Walnut Shrimp
+242,1 cup,for frying,vegetable oil,Honey Walnut Shrimp
+243,2,chinese,eggplant,Hot and Sour Chinese Eggplant
+244,1 1/2 tablespoons,,soy sauce,Hot and Sour Chinese Eggplant
+245,1 tablespoon,preferably red,wine vinegar,Hot and Sour Chinese Eggplant
+246,1 tablespoon,,sugar,Hot and Sour Chinese Eggplant
+247,1,green,chili pepper,Hot and Sour Chinese Eggplant
+248,1 teaspoon,,cornstarch,Hot and Sour Chinese Eggplant
+249,1/2 teaspoon or to taste,,chili oil,Hot and Sour Chinese Eggplant
+250,2 teaspoons,,salt,Hot and Sour Chinese Eggplant
+251,2 tablespoons,,vegetable oil,Hot and Sour Chinese Eggplant
+252,3/4 pound,boneless tender,beef steak,Hot and Tangy Broccoli Beef
+253,1 tablespoon,,cornstarch,Hot and Tangy Broccoli Beef
+254,3 tablespoons,kikkoman preferably,soy sauce,Hot and Tangy Broccoli Beef
+255,1 clove,large,garlic,Hot and Tangy Broccoli Beef
+256,1/2 teaspoon,,sugar,Hot and Tangy Broccoli Beef
+257,1 pound,fresh,broccoli,Hot and Tangy Broccoli Beef
+258,4 teaspoons,,cornstarch,Hot and Tangy Broccoli Beef
+259,1/2 teaspoon,crushed,red pepper flake,Hot and Tangy Broccoli Beef
+260,3 tablespoons,divided,vegetable oil,Hot and Tangy Broccoli Beef
+261,1,medium,onion flake,Hot and Tangy Broccoli Beef
+262,2 teaspoons,kikkoman preferably,rice vinegar,Hot and Tangy Broccoli Beef
+263,1 pound,sirloin or round,beef steak,Kikkoman Chinese Pepper Steak
+264,1 tablespoon,kikkoman preferably,hoisin sauce,Kikkoman Chinese Pepper Steak
+265,2 tablespoons,divided,vegetable oil,Kikkoman Chinese Pepper Steak
+266,2,medium,bell pepper,Kikkoman Chinese Pepper Steak
+267,2,medium,onion,Kikkoman Chinese Pepper Steak
+268,1/4 cup,kikkoman preferably,hoisin sauce,Kikkoman Chinese Pepper Steak
+269,2 teaspoons,,vegetable oil,Mongolian Beef and Spring Onions
+270,1 tablespoon,finely chopped,garlic,Mongolian Beef and Spring Onions
+271,1/2 teaspoon,grated fresh,ginger,Mongolian Beef and Spring Onions
+272,1/2 cup,,soy sauce,Mongolian Beef and Spring Onions
+273,1/2 cup,fresh,water,Mongolian Beef and Spring Onions
+274,2/3 cup,dark,brown sugar,Mongolian Beef and Spring Onions
+275,1 pound,flank,beef broth,Mongolian Beef and Spring Onions
+276,1/4 cup,,cornstarch,Mongolian Beef and Spring Onions
+277,1 cup,for frying,vegetable oil,Mongolian Beef and Spring Onions
+278,2 bunches,green,onion,Mongolian Beef and Spring Onions
+279,1 teaspoon,,sesame seed,Mongolian Beef I
+280,1 tablespoon,,soy sauce,Mongolian Beef I
+281,1 tablespoon,,cornstarch,Mongolian Beef I
+282,2 cloves,minced,garlic,Mongolian Beef I
+283,1 pound,round,beef steak,Mongolian Beef I
+284,3/4 cup,,water,Mongolian Beef I
+285,2 tablespoons,,soy sauce,Mongolian Beef I
+286,2 1/2 teaspoons,,cornstarch,Mongolian Beef I
+287,1/2 teaspoon,,sugar,Mongolian Beef I
+288,1 teaspoon,,red pepper flake,Mongolian Beef I
+289,2 tablespoons,divided,vegetable oil,Mongolian Beef I
+290,2,thinly sliced,carrot,Mongolian Beef I
+291,1 bunch,cut into 2 inch pieces,scallion,Mongolian Beef I
+292,2 pounds,tip roast,beef sirloin,Mongolian Beef II
+293,1/2 cup,,soy sauce,Mongolian Beef II
+294,2 tablespoons,dry,sherry,Mongolian Beef II
+295,2 teaspoons,,sesame oil,Mongolian Beef II
+296,3 tablespoons,,cornstarch,Mongolian Beef II
+297,2 tablespoons,,brown sugar,Mongolian Beef II
+298,2 teaspoons,,red pepper flake,Mongolian Beef II
+299,5 whole,red,chili pepper,Mongolian Beef II
+300,3/8 cup,divided,vegetable oil,Mongolian Beef II
+301,4 bunches,cut into 2 inch pieces,scallion,Mongolian Beef II
+302,1/4 teaspoon,,salt,Pan-Fried Chinese Pancakes
+303,3/4 cup,warm,water,Pan-Fried Chinese Pancakes
+304,1 1/4 cup,,all purpose flour,Pan-Fried Chinese Pancakes
+305,1/4 teaspoon,(optional),vegetable oil,Pan-Fried Chinese Pancakes
+306,1 tablespoon,,vegetable oil,Pan-Fried Chinese Pancakes
+307,1 tablespoon or ot taste,asian (toasted),sesame oil,Pan-Fried Chinese Pancakes
+308,1/2 cup,finely chopped,scallion,Pan-Fried Chinese Pancakes
+309,1 tablespoon or as needed,,vegetable oil,Pan-Fried Chinese Pancakes
+310,1 (4 pound) whole,dressed,duck,Peking Duck
+311,1/2 teaspoon,ground,cinnamon,Peking Duck
+312,1/2 teaspoon,,ground ginger,Peking Duck
+313,1/4 teaspoon,,ground nutmeg,Peking Duck
+314,1/4 teaspoon,ground,bell pepper,Peking Duck
+315,1/8 teaspoon,ground,clove,Peking Duck
+316,3 tablespoons,,soy sauce,Peking Duck
+317,1 tablespoon,,honey,Peking Duck
+318,1,sliced in rounds,orange,Peking Duck
+319,1 tablespoon,chopped fresh,parsley,Peking Duck
+320,5,,scallion,Peking Duck
+321,1/2 cup,,plum jam,Peking Duck
+322,1 1/2 teaspoons,,sugar,Peking Duck
+323,1 1/2 teaspoons,distilled,vinegar,Peking Duck
+324,1/4 cup,finely chopped,chutney,Peking Duck
+325,1 cup,uncooked,rice,Pineapple Fried Rice II
+326,2 cups,,water,Pineapple Fried Rice II
+327,2 tablespoons,,sesame oil,Pineapple Fried Rice II
+328,3,thinly sliced including tops,scallion,Pineapple Fried Rice II
+329,1 cup,diced,ham,Pineapple Fried Rice II
+330,1/2 cup,,peas,Pineapple Fried Rice II
+331,1 (8 ounce) can,chunks,pineapple,Pineapple Fried Rice II
+332,1,beaten,egg,Pineapple Fried Rice II
+333,1 tablespoon,,sugar,Pineapple Fried Rice II
+334,1 teaspoon,,salt,Pineapple Fried Rice II
+335,1/2 teaspoon,dried,bell pepper,Pineapple Fried Rice II
+336,1/2 teaspoon,,garlic powder,Pineapple Fried Rice II
+337,1/4 cup,,soy sauce,Pineapple Fried Rice II
+338,1 pound,raw,shrimp,Potstickers (Chinese Dumplings)
+339,4 pounds,,ground beef,Potstickers (Chinese Dumplings)
+340,1 tablespoon,minced fresh,ginger,Potstickers (Chinese Dumplings)
+341,1,minced,shallot,Potstickers (Chinese Dumplings)
+342,1 bunch,chopped,scallion,Potstickers (Chinese Dumplings)
+343,3 leaves,napa,cabbage,Potstickers (Chinese Dumplings)
+344,2 tablespoons,,soy sauce,Potstickers (Chinese Dumplings)
+345,1 teaspoon,asian (toasted),sesame oil,Potstickers (Chinese Dumplings)
+346,to taste,,salt,Potstickers (Chinese Dumplings)
+347,to taste,dried,bell pepper,Potstickers (Chinese Dumplings)
+348,1 pinch,,sugar,Potstickers (Chinese Dumplings)
+349,1 (10 ounce) package,round,wonton wrapper,Potstickers (Chinese Dumplings)
+350,as needed,,vegetable oil,Potstickers (Chinese Dumplings)
+351,1/4 cup,,water,Potstickers (Chinese Dumplings)
+352,2 tablespoons,,vegetable oil,Quick Beef Stir-Fry
+353,1 pound,cut into 2 inch strips,beef sirloin,Quick Beef Stir-Fry
+354,1 1/2 cups,fresh florets,broccoli,Quick Beef Stir-Fry
+355,1,red,bell pepper,Quick Beef Stir-Fry
+356,2,thinly sliced,carrot,Quick Beef Stir-Fry
+357,1,chopped,scallion,Quick Beef Stir-Fry
+358,1 teaspoon,minced,garlic,Quick Beef Stir-Fry
+359,2 tablespoons,,soy sauce,Quick Beef Stir-Fry
+360,2 tablespoons,toasted,sesame seed,Quick Beef Stir-Fry
+361,1 (8 ounce) package,made of rice,noodle,Quick Chinese-Style Vermicelli (Rice Noodles)
+362,2 tablespoons,,vegetable oil,Quick Chinese-Style Vermicelli (Rice Noodles)
+363,1 clove,minced,garlic,Quick Chinese-Style Vermicelli (Rice Noodles)
+364,1 tablespoon,,soy sauce,Quick Chinese-Style Vermicelli (Rice Noodles)
+365,1/2 tablespoon,,chili sauce,Quick Chinese-Style Vermicelli (Rice Noodles)
+366,to taste,,chili pepper,Quick Chinese-Style Vermicelli (Rice Noodles)
+367,to taste,,salt,Quick Chinese-Style Vermicelli (Rice Noodles)
+368,1,chopped,scallion,Quick Chinese-Style Vermicelli (Rice Noodles)
+369,4 cups,divided,chicken broth,Restaurant Style Egg Drop Soup
+370,1/8 teaspoon,,ground ginger,Restaurant Style Egg Drop Soup
+371,2 tablespoons,freshly chopped,chive,Restaurant Style Egg Drop Soup
+372,1/4 teaspoon,,salt,Restaurant Style Egg Drop Soup
+373,1 1/2 tablespoons,,cornstarch,Restaurant Style Egg Drop Soup
+374,2,,egg,Restaurant Style Egg Drop Soup
+375,1,made into yolk,egg,Restaurant Style Egg Drop Soup
+376,1 pound,flank,beef steak,Slow Cooker Mongolian Beef
+377,1/4 cup,,cornstarch,Slow Cooker Mongolian Beef
+378,2 teaspoons,,olive oil,Slow Cooker Mongolian Beef
+379,1,,onion flake,Slow Cooker Mongolian Beef
+380,1 tablespoon,minced,garlic,Slow Cooker Mongolian Beef
+381,3,large,scallion,Slow Cooker Mongolian Beef
+382,1/2 cup,,soy sauce,Slow Cooker Mongolian Beef
+383,1/2 cup,,water,Slow Cooker Mongolian Beef
+384,1/2 cup,,brown sugar,Slow Cooker Mongolian Beef
+385,1/2 teaspoon,minced fresh,ginger,Slow Cooker Mongolian Beef
+386,1/2 cup,,hoisin sauce,Slow Cooker Mongolian Beef
+387,1/4 cup,,cornstarch,Spicy Crispy Beef
+388,1/4 tablespoon,,salt,Spicy Crispy Beef
+389,to taste,,peppercorn,Spicy Crispy Beef
+390,12 ounces,flank,beef steak,Spicy Crispy Beef
+391,1 quart,for frying,canola oil,Spicy Crispy Beef
+392,4 tablespoons,,soy sauce,Spicy Crispy Beef
+393,1 tablespoon,,rice vinegar,Spicy Crispy Beef
+394,1/2 tablespoon,,rice wine,Spicy Crispy Beef
+395,1 1/2 tablespoons,,honey,Spicy Crispy Beef
+396,7 tablespoons,,sugar,Spicy Crispy Beef
+397,1/2 tablespoon,,chili paste,Spicy Crispy Beef
+398,1/4 cup,,water,Spicy Crispy Beef
+399,3 tablespoons,fresh chopped,ginger,Spicy Crispy Beef
+400,1 tablespoon,,vegetable oil,Spicy Crispy Beef
+401,2 cloves,chopped,garlic,Spicy Crispy Beef
+402,1/4 cup,sliced,onion,Spicy Crispy Beef
+403,1/4 cup,red,bell pepper,Spicy Crispy Beef
+404,1 pound,cut into 1/2 inch strips,beef tenderloin,Spicy Orange Zest Beef
+405,1/4 cup,,orange juice,Spicy Orange Zest Beef
+406,1/4 cup,seasoned,rice vinegar,Spicy Orange Zest Beef
+407,2 tablespoons,,soy sauce,Spicy Orange Zest Beef
+408,1 tablespoon,hot chilli,chili paste,Spicy Orange Zest Beef
+409,1 tablespoon or to taste,,brown sugar,Spicy Orange Zest Beef
+410,2 cloves,minced,garlic,Spicy Orange Zest Beef
+411,1/4 cup,,water,Spicy Orange Zest Beef
+412,1 teaspoon,,cornstarch,Spicy Orange Zest Beef
+413,1,,cooking spray,Spicy Orange Zest Beef
+414,2 tablespoons,zested,orange,Spicy Orange Zest Beef
+415,1 bunch,sliced,scallion,Spicy Orange Zest Beef
+416,to taste,,salt,Spicy Orange Zest Beef
+417,to taste,ground,peppercorn,Spicy Orange Zest Beef
+418,1 pound,preferably hallibut fish,fish fillets,Steamed Fish with Ginger
+419,1 teaspoon,preferably kosher,salt,Steamed Fish with Ginger
+420,1 tablespoon,fresh minced,ginger,Steamed Fish with Ginger
+421,3 tablespoons,thinly sliced,scallion,Steamed Fish with Ginger
+422,1 tablespoon,dark,soy sauce,Steamed Fish with Ginger
+423,1 tablespoon,light,soy sauce,Steamed Fish with Ginger
+424,1 tablespoon,,peanut oil,Steamed Fish with Ginger
+425,2 teaspoons,toasted,sesame oil,Steamed Fish with Ginger
+426,1/4 cup,springs,cilantro,Steamed Fish with Ginger
+427,1/4 cup,,soy sauce,"Super-Simple, Super-Spicy Mongolian Beef"
+428,1 tablespoon,,hoisin sauce,"Super-Simple, Super-Spicy Mongolian Beef"
+429,1 tablespoon,,sesame oil,"Super-Simple, Super-Spicy Mongolian Beef"
+430,2 teaspoons,,sugar,"Super-Simple, Super-Spicy Mongolian Beef"
+431,1 tablespoon,minced,garlic,"Super-Simple, Super-Spicy Mongolian Beef"
+432,1 tablespoon,(optional),red pepper flake,"Super-Simple, Super-Spicy Mongolian Beef"
+433,1 pound,flank,beef steak,"Super-Simple, Super-Spicy Mongolian Beef"
+434,1 tablespoon,,peanut oil,"Super-Simple, Super-Spicy Mongolian Beef"
+435,2,large,scallion,"Super-Simple, Super-Spicy Mongolian Beef"
+436,1 (1 1/4 pound),tenderloin,pork,Sweet and Sour Pork Tenderloin
+437,to taste,,salt,Sweet and Sour Pork Tenderloin
+438,to taste,ground,peppercorn,Sweet and Sour Pork Tenderloin
+439,1/3 cup,,ketchup,Sweet and Sour Pork Tenderloin
+440,1/3 cup,seasoned,rice vinegar,Sweet and Sour Pork Tenderloin
+441,1 (8 ounce) can,chunks,pineapple,Sweet and Sour Pork Tenderloin
+442,2 tablespoons,,brown sugar,Sweet and Sour Pork Tenderloin
+443,4 cloves,minced,garlic,Sweet and Sour Pork Tenderloin
+444,2 teaspoons,hot chili,chili sauce,Sweet and Sour Pork Tenderloin
+445,1 teaspoon,,soy sauce,Sweet and Sour Pork Tenderloin
+446,1 pinch,,red pepper flake,Sweet and Sour Pork Tenderloin
+447,1 tablespoon,,vegetable oil,Sweet and Sour Pork Tenderloin
+448,1 teaspoon,,butter,Sweet and Sour Pork Tenderloin
+449,1/4 cup,chopped(white part only),scallion,Sweet and Sour Pork Tenderloin
+450,2 tablespoons,chopped top,scallion,Sweet and Sour Pork Tenderloin
+451,1 pound,sirloin,beef steak,Szechuan Beef
+452,1 tablespoon,,soy sauce,Szechuan Beef
+453,2 teaspoons,,cornstarch,Szechuan Beef
+454,1/4 teaspoon,,red pepper flake,Szechuan Beef
+455,1 clove,minced,garlic,Szechuan Beef
+456,2 tablespoons,,vegetable oil,Szechuan Beef
+457,3 cups,floreted,broccoli,Szechuan Beef
+458,2,small,onion,Szechuan Beef
+459,1 (8 ounce) can,drained,water chestnut,Szechuan Beef
+460,1/4 cup,,chicken broth,Szechuan Beef
+461,1/2 cup,,peanut,Szechuan Beef
+462,4 tablespoons,,water,Szechwan Shrimp
+463,2 tablespoons,,ketchup,Szechwan Shrimp
+464,1 tablespoon,,soy sauce,Szechwan Shrimp
+465,2 teaspoons,,cornstarch,Szechwan Shrimp
+466,1 teaspoon,,honey,Szechwan Shrimp
+467,1/2 teaspoon,,red pepper flake,Szechwan Shrimp
+468,1/4 teaspoon,,ground ginger,Szechwan Shrimp
+469,1 tablespoon,,vegetable oil,Szechwan Shrimp
+470,1/4 cup,sliced,scallion,Szechwan Shrimp
+471,4 cloves,minced,garlic,Szechwan Shrimp
+472,12 ounces,cooked,shrimp,Szechwan Shrimp
+473,8 ounces,uncooked,spaghetti,Vegetable Lo Mein
+474,1/4 cup,,vegetable oil,Vegetable Lo Mein
+475,2 cups,fresh sliced,mushroom,Vegetable Lo Mein
+476,1 cup,shredded,carrot,Vegetable Lo Mein
+477,1/2 cup,red,bell pepper,Vegetable Lo Mein
+478,1,chopped,onion,Vegetable Lo Mein
+479,2 cloves,minced,garlic,Vegetable Lo Mein
+480,2 cups,fresh,bean sprouts,Vegetable Lo Mein
+481,1/2 cup,chooped,scallion,Vegetable Lo Mein
+482,1 tablespoon,,cornstarch,Vegetable Lo Mein
+483,1 cup,,chicken broth,Vegetable Lo Mein
+484,1/4 cup,,hoisin sauce,Vegetable Lo Mein
+485,2 tablespoons,,honey,Vegetable Lo Mein
+486,1 tablespoon,,soy sauce,Vegetable Lo Mein
+487,1 teaspoon,fresh grated,ginger,Vegetable Lo Mein
+488,1/4 teaspoon,made into pepper,cayenne,Vegetable Lo Mein
+489,1/4 teaspoon,,turmeric,Vegetable Lo Mein
+490,1/4 teaspoon,,chili powder,Vegetable Lo Mein
+491,1 cup,,milk,Besan (Gram Flour) Halwa
+492,1/2 cup,,water,Besan (Gram Flour) Halwa
+493,1/2 teaspoon,ground,cardamom,Besan (Gram Flour) Halwa
+494,3/4 cup,,ghee,Besan (Gram Flour) Halwa
+495,1 cup,,chickpea flour,Besan (Gram Flour) Halwa
+496,1 cup,,sugar,Besan (Gram Flour) Halwa
+497,1 1/4 cups,,milk,Kulfi
+498,1 1/4 cups,sweetened,condensed milk,Kulfi
+499,1 (16 ounce) container,frozen,whipped topping,Kulfi
+500,4 slices,white bread preferably,bread crumbs,Kulfi
+501,1/2 teaspoon,ground,cardamom,Kulfi
+502,1 quart,for deep frying,canola oil,Shahi Tukra (Indian Bread Pudding)
+503,8 slices,crusts removed and cut into 4 squares,bread,Shahi Tukra (Indian Bread Pudding)
+504,1/4 cup,,cashew,Shahi Tukra (Indian Bread Pudding)
+505,1/4 cup,sliced,almond,Shahi Tukra (Indian Bread Pudding)
+506,2 tablespoons,,pistachio,Shahi Tukra (Indian Bread Pudding)
+507,1 1/4 cups,,milk,Shahi Tukra (Indian Bread Pudding)
+508,5 tablespoons,,evaporated milk,Shahi Tukra (Indian Bread Pudding)
+509,3/4 cup,,sugar,Shahi Tukra (Indian Bread Pudding)
+510,1 teaspoon,ground,cardamom,Shahi Tukra (Indian Bread Pudding)
+511,1 pinch,,saffron,Shahi Tukra (Indian Bread Pudding)
+512,2 cups,(besan),chickpea flour,Besan Laddu
+513,1 cup,,ghee,Besan Laddu
+514,1 cup or to taste,,sugar,Besan Laddu
+515,2 teaspoons,finely chopped,pistachio,Besan Laddu
+516,1 teaspoon,finely chopped,cashew,Besan Laddu

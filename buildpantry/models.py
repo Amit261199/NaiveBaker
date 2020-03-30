@@ -1,8 +1,14 @@
 from django.db import models
 from django import forms
 from django.contrib.postgres.fields import ArrayField
+from django.utils.safestring import mark_safe
 # Create your models here.
-
+mealtypes=[
+        ('Breakfast and Brunch','Breakfast and Brunch'),
+('Desserts','Desserts'),
+('Dinners','Dinners'),
+('Lunch','Lunch')
+        ]
 dishtypes=[
 ('Appetizers & Snacks','Appetizers & Snacks'),
 ('Bread Recipes','Bread Recipes'),
@@ -62,32 +68,45 @@ class ingredient(models.Model):
     name=models.CharField(max_length=25,primary_key=True)
     category=models.CharField(max_length=25,choices=categories,blank=False)
     image=models.URLField()
-
+    def ingredient_image(self):
+        return mark_safe('<img src="%s" style="width: 150px; height=160px;" />' % self.image)
+    ingredient_image.allow_tags = True
     def __str__(self):
         return self.name
 
 
 class recipe(models.Model):
-    title=models.CharField(max_length=40,primary_key=True)
+    title=models.CharField(max_length=60,primary_key=True)
     description=models.TextField()
     instructions=models.TextField()
     cuisine=models.CharField(max_length=25,choices=cuisines,default='',null=True,blank=True)
     dishtype=models.CharField(max_length=35,choices=dishtypes,default='',null=True,blank=True)
+    mealtype=models.CharField(max_length=35,choices=mealtypes,default='',null=True,blank=True)
     mark=models.CharField(max_length=7,choices=marks)
     ingredients=models.ManyToManyField(
         ingredient,
-        through='ingredientList',
+        through='ingredientUsed',
         through_fields=('recipe_name','ingredient_name')
     )
     images=ArrayField(base_field=models.URLField())
     timetocook=models.TimeField()
+
+    def recipe_image(self):
+        s=''
+        for i in range(len(self.images)):
+            s=s+'<img src="%s" style="width: 150px; height=160px;float: left;padding: 5px" />' % self.images[i]+'\n'
+        return mark_safe(s)
+    recipe_image.allow_tags = True
     
     def __str__(self):
         return self.title
 
 
-class ingredientList(models.Model):
+class ingredientUsed(models.Model):
     recipe_name=models.ForeignKey(recipe,on_delete=models.CASCADE)
     ingredient_name=models.ForeignKey(ingredient,on_delete=models.PROTECT)
     quantity=models.CharField(max_length=40,blank=False)
     directions=models.CharField(max_length=40,blank=True,null=True)
+    
+
+    
