@@ -1,0 +1,37 @@
+body{
+	background-image: url(bg5.jpg);
+	background-size: 1550px 750px;
+}
+
+.bdy{
+	font-family: "Comic Sans MS", Times, serif;
+	color: black;
+}
+
+table{
+	width: 70%;
+	border: 2px hidden #4E6CBE;
+	border-spacing: 15px;
+	position: absolute;
+	left:5%;
+}
+
+.one{
+	width: 18%;
+	text-align: center;
+	border: 2px solid black;
+}
+
+.two{
+	text-align: center;
+	border: 2px solid black;
+}
+
+td{
+	border: 2px hidden #4E6CBE;
+}
+
+img{
+	height: 150px;
+	border: 1px solid black;
+}

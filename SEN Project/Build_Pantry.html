@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<meta http-equiv="Content-type" content="text/html" charset="UTF-8"/>
+	<meta name="description" content="Don't know what to cook with the ingredients you have or how to cook. Well, you have come to the right place!!">
+ 	<meta name="keywords" content="Recipe, Cook, Chef, Bake">
+  	<meta name="author" content="DAIICT Batch of 2021/Sem 6 - Subject:SEN/ Team 1">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Build Pantry</title>
+
+	<link rel="stylesheet" type="text/css" href="Build_Pantry.css">
+	<link rel="stylesheet" type="text/css" href="bootstrap.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+	<form class="srch">
+  		<input type="text" name="search" placeholder="Search by Recipe" class="search">
+  		<button class="button" onclick="openWin()"><h4>Go!</h4></button>
+	</form>
+
+	<a href="User_Profile_Page.html" class="userlink"><h2 class="user">JANAM VAIDYA</h2></a>
+
+	<div class="half">
+
+		<div id="myDIV" class="header">
+  			<h2>Add Ingredients</h2>
+  			<input type="text" id="myInput" placeholder="Ingredient">
+  			<span onclick="newElement()" class="addBtn">Add</span>
+		</div>
+
+		<ul id="myUL">
+  			<li class="checked">Tomato</li>
+  			<li>Onion</li>
+  			<li>Chili Pepper</li>
+  			<li>Milk</li>
+  			<li>Bread</li>
+		</ul>
+
+	</div>
+
+
+	<form>
+
+		<div class="secondhalf">
+			<label><h2>Apply filter:</h2></label> 
+
+			<label><strong><i>Veg/Non Veg</i></strong></label>
+			<br>
+				<select name="v/nv">
+					<option value="v" disabled selected hidden>Select Your Option</option>
+					<option>Any</option>
+					<option>Veg</option>
+					<option>Non-veg</option>
+				</select>
+				<br><br>
+
+			<label><strong><i>Type of Cuisine</i></strong></label>
+			<br>
+				<select name="cuisine">
+					<option value="c" disabled selected hidden>Select Your Option</option>
+					<option>All</option>
+					<option>Indian</option>
+					<option>Italian</option>
+					<option>Chinese</option>
+					<option>Mexican</option>
+					<option>American</option>
+					<option>British</option>
+					<option>Cuban</option>
+					<option>Lebanese</option>
+					<option>Caribbean</option>
+					<option>French</option>
+					<option>Greek</option>
+					<option>Japanese</option>
+					<option>Mediterranean</option>
+					<option>Moroccon</option>
+					<option>Spanish</option>
+					<option>Thai</option>
+					<option>Turkish</option>
+					<option>Vietnamese</option>
+				</select>
+				<br><br>
+
+			<label><strong><i>Time to Cook</i></strong></label>
+			<br>
+				<select name="time">
+					<option value="t" disabled selected hidden>Select Your Option</option>
+					<option>All</option>
+					<option> < 5 minutes</option>
+					<option>5-10 minutes</option>
+					<option>10-15 minutes</option>
+					<option>15-30 minutes</option>
+					<option>30-60 minutes</option>
+					<option> > 60 minutes</option>	
+				</select>
+				<br><br>
+
+			<label><strong><i>Taste</i></strong></label>
+			<br>
+					<select name="taste">
+					<option value="y" disabled selected hidden>Select Your Option</option>
+					<option>All</option>
+					<option>Sweet</option>
+					<option>Sour</option>
+					<option>Spicy</option>
+					<option>Bitter</option>
+				</select>
+				<br><br>
+
+			<label><strong><i>Type of Dish</i></strong></label>
+			<br>
+					<select name="type">
+					<option value="f" disabled selected hidden>Select Your Option</option>
+					<option>All</option>
+					<option>Dessert</option>
+					<option>Soup</option>
+					<option>Drink</option>
+					<option>Appetizer</option>
+					<option>Main Dish</option>
+				</select>
+		</div>
+
+		<button class="go" onclick="openWins()"><h2>Get Recipe</h2></button>
+
+	</form>
+
+	<!--Optional Javascript-->
+	<!-- Inorder Scripts: JQuery, Popper.js, Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+
+	<script src="Build_Pantry_AddIngredients.js"></script>
+	<script src="Build_Pantry_Button.js"></script>
+
+</body>
+
+</html>
