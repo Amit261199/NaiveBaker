@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,7 +9,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="buildpantry.css">
 </head>
-<body>
+<body class="container">
     <section id="top">
         <nav id="mainNav" class="navbar navbar-light navbar-expand-md fixed-top">
             <a href="#" class="navbar-brand"><i class="fas fa-bread-slice p-1"></i>Naive Baker</a>
@@ -42,133 +43,234 @@
                         <li class="nav-item">
                             <img src="avatar.webp" class="border rounded-circle mt-2" style="width: 1.5 rem;height: 1.5rem;">
                         </li>
-            
                     </ul>
         </nav>
     </section>
 
-    <!-- <section id="pageContent">
-        <div class="conatiner">
-            <div class="row">
-                HOLA
-            </div>
-        </div>
-         -->
-        <!-- <div class="col-5">
-            <form class="srch">
-                <input type="text" name="search" placeholder="Search by Recipe" class="search">
-                <button class="button" onclick="openWin()"><h4>Go!</h4></button>
-            </form> 
-            <div class="half">
-                <div id="myDIV" class="header">
-                    <h2>Add Ingredients</h2>
-                    <input type="text" id="myInput" placeholder="Ingredient">
-                    <span onclick="newElement()" class="addBtn">Add</span>
+    <section id="pageContent">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-md-4 col-11 half">
+                        <div id="myDIV" class="header pb-2">
+                            <h2>Add Ingredients</h2>
+                            <div class="row">
+                                <div class="col-9 col-md-9 pr-0">
+                                    <input class="form-control form-control" type="text" id="myInput" placeholder="Ingredient">
+                                </div>
+                                <div class="col-3 col-md-3  pl-0">
+                                    <button onclick="newElement()" class="btn btn-success btn-lg addBtn">Add</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div >
+                            <ul id="ingList">
+                                <li class="checked">Tomato</li>
+                                <li>Onion</li>
+                                <li>Chili Pepper</li>
+                                <li>Milk</li>
+                                <li>Bread</li>
+                            </ul>
+                        </div>
+                        
                 </div>
-            </div>
-            
-        </div> -->
-        <!-- <a href="User_Profile_Page.html" class="userlink"><h2 class="user">JANAM VAIDYA</h2></a>
-    
-        <div class="half">
-    
-            
-        
-            <ul id="myUL">
-                    <li class="checked">Tomato</li>
-                    <li>Onion</li>
-                    <li>Chili Pepper</li>
-                    <li>Milk</li>
-                    <li>Bread</li>
-            </ul>
-    
-      </div>
-    
-    
-      <form>
-    
-          <div class="secondhalf">
-              <label><h2>Apply filter:</h2></label> 
-    
-              <label><strong><i>Veg/Non Veg</i></strong></label>
-              <br>
-                  <select name="v/nv">
-                      <option value="v" disabled selected hidden>Select Your Option</option>
-                      <option>Any</option>
-                      <option>Veg</option>
-                      <option>Non-veg</option>
-                  </select>
-                  <br><br>
-    
-              <label><strong><i>Type of Cuisine</i></strong></label>
-              <br>
-                  <select name="cuisine">
-                      <option value="c" disabled selected hidden>Select Your Option</option>
-                      <option>All</option>
-                      <option>Indian</option>
-                      <option>Italian</option>
-                      <option>Chinese</option>
-                      <option>Mexican</option>
-                      <option>American</option>
-                      <option>British</option>
-                      <option>Cuban</option>
-                      <option>Lebanese</option>
-                      <option>Caribbean</option>
-                      <option>French</option>
-                      <option>Greek</option>
-                      <option>Japanese</option>
-                      <option>Mediterranean</option>
-                      <option>Moroccon</option>
-                      <option>Spanish</option>
-                      <option>Thai</option>
-                      <option>Turkish</option>
-                      <option>Vietnamese</option>
-                  </select>
-                  <br><br>
-    
-              <label><strong><i>Time to Cook</i></strong></label>
-              <br>
-                  <select name="time">
-                      <option value="t" disabled selected hidden>Select Your Option</option>
-                      <option>All</option>
-                      <option> < 5 minutes</option>
-                      <option>5-10 minutes</option>
-                      <option>10-15 minutes</option>
-                      <option>15-30 minutes</option>
-                      <option>30-60 minutes</option>
-                      <option> > 60 minutes</option>	
-                  </select>
-                  <br><br>
-    
-              <label><strong><i>Taste</i></strong></label>
-              <br>
-                      <select name="taste">
-                      <option value="y" disabled selected hidden>Select Your Option</option>
-                      <option>All</option>
-                      <option>Sweet</option>
-                      <option>Sour</option>
-                      <option>Spicy</option>
-                      <option>Bitter</option>
-                  </select>
-                  <br><br>
-    
-              <label><strong><i>Type of Dish</i></strong></label>
-              <br>
-                      <select name="type">
-                      <option value="f" disabled selected hidden>Select Your Option</option>
-                      <option>All</option>
-                      <option>Dessert</option>
-                      <option>Soup</option>
-                      <option>Drink</option>
-                      <option>Appetizer</option>
-                      <option>Main Dish</option>
-                  </select>
-          </div>
-    
-          <button class="go" onclick="openWins()"><h2>Get Recipe</h2></button>
-    
-      </form> -->
-    </section>
+                <div class="p-3 col-md-2 col-11 d-flex justify-content-center h-75 ">
+                    <button class="btn btn-large btn-success go">Get Recipes</button>
+                </div>
+                <div class="p-2 col-md-6 col-11 secondhalf text-center">
+                    
+                    <label><h2>Apply filter:</h2></label> 
+                    <br>
+                    <div class="filters row">
+                        <div class="pt-3 eatpref col-12 text-center">
+                            <label><strong>Veg/Non Veg</strong></label>
+                             <br>
+                            <input type="checkbox" name="Veg" id="Veg">
+                            <label for="Veg">Veg</label>
+                            <input type="checkbox" name="NonVeg" id="NonVeg">
+                            <label for="NonVeg">NonVeg</label>
+                            <input type="checkbox" name="Contains-Egg" id="Contains Egg">
+                            <label for="Contains-Egg">Contains Egg</label>
+                            <br><br>
+                        </div>
+                        
+                        <div class="dishpref col-lg-6 col-12 text-left">
+                            <label><strong>Type of Dish</strong></label>
+                             <br>
+                            <ul>
+
+                                <li>
+                                    <input type="checkbox" name="Appetizers-&-Snacks" id="Appetizers-&-Snacks">
+                                    <label for="Veg">Appetizers & Snacks</label>
+                                    <br>
+                                </li>
+                                <li>    
+                                <input type="checkbox" name="Bread-Recipes" id="Bread-Recipes">
+                                    <label for="NonVeg">Bread Recipes</label>
+                                    <br>
+                                </li>
+                                <li>    
+                                <input type="checkbox" name="Cake-Recipes" id="Cake-Recipes">
+                                    <label for="Contains-Egg">Cake Recipes</label>
+                                    <br>
+                                </li>
+                                <li>    
+                                <input type="checkbox" name="Candy-and-Fudge" id="Candy-and-Fudge">
+                                    <label for="Veg">Candy and Fudge</label>
+                                    <br>
+                                </li>
+                                <li>    
+                                <input type="checkbox" name="Casserole-Recipes" id="Casserole-Recipes">
+                                    <label for="NonVeg">Casserole Recipes</label>
+                                    <br>
+                                </li>
+                                <li>    
+                                <input type="checkbox" name="Christmas-Cookies" id="Christmas-Cookies">
+                                    <label for="Contains-Egg">Christmas Cookies</label>
+                                    <br>
+                                </li>
+                                <li>    
+                                <input type="checkbox" name="Cocktail-Recipes" id="Cocktail-Recipes">
+                                    <label for="Veg">Cocktail Recipes</label>
+                                    <br>
+                                </li>
+                                <li>    
+                                <input type="checkbox" name="Cookie-Recipes" id="Cookie-Recipes">
+                                    <label for="NonVeg">Cookie Recipes</label>
+                                    <br>
+                                </li>
+                                <li>    
+                                <input type="checkbox" name="Mac-and-Cheese-Recipes" id="Mac-and-Cheese-Recipes">
+                                    <label for="Contains-Egg">Mac and Cheese Recipes</label>
+                                    <br>
+                                </li>
+                                <li>    
+                                <input type="checkbox" name="Main-Dish" id="Main-Dish">
+                                    <label for="Veg">Main Dish</label>
+                                    <br>
+                                </li>
+                                <li>    
+                                <input type="checkbox" name="Pasta-Salad-Recipes" id="Pasta-Salad-Recipes">
+                                    <label for="NonVeg">Pasta Salad Recipes</label>
+                                    <br>
+                                </li>
+                                <li>    
+                                <input type="checkbox" name="Pasta-Recipes" id="Pasta-Recipes">
+                                    <label for="Contains-Egg">Pasta Recipes</label>
+                                    <br>
+                                </li>
+                                <li>    
+                                <input type="checkbox" name="Pie-Recipes" id="Pie-Recipes">
+                                    <label for="Veg">Pie Recipes</label>
+                                    <br>
+                                </li>
+                                <li>    
+                                <input type="checkbox" name="Pizza" id="Pizza">
+                                    <label for="NonVeg">Pizza</label>
+                                    <br>
+                                </li>
+                                <li>    
+                                <input type="checkbox" name="Sandwiches" id="Sandwiches">
+                                    <label for="Contains-Egg">Sandwiches</label>
+                                    <br>
+                                </li>
+                                <li>    
+                                <input type="checkbox" name="Sauces-and-Condiments" id="Sauces-and-Condiments">
+                                    <label for="Veg">Sauces and Condiments</label>
+                                    <br>
+                                </li>
+                                <li>    
+                                <input type="checkbox" name="Smoothie-Recipes" id="Smoothie-Recipes">
+                                    <label for="NonVeg">Smoothie Recipes</label>
+                                    <br>
+                                </li>
+                                <li>    
+                                <input type="checkbox" name="Side-Dish" id="Side-Dish">
+                                    <label for="Contains-Egg">Side Dish</label>
+                                    <br>
+                                </li>
+                                    <input type="checkbox" name="Salad" id="Salad">
+                                    <label for="Contains-Egg">Salad</label>
+                            </ul>
+                            <br><br>
+                        
+                        </div>
+
+
+
+
+                        <div class="cuisinepref col-lg-6 col-12 text-left">
+                            <label><strong>Type of Cuisine</strong></label>
+                             <br>
+                            <ul>
+
+                                <li>
+                                    <input type="checkbox" name="Chinese" id="Chinese">
+                                    <label for="Veg">Chinese</label>
+                                    <br>
+                                </li>
+                                <li>    
+                                <input type="checkbox" name="Indian" id="Indian">
+                                    <label for="NonVeg">Indian</label>
+                                    <br>
+                                </li>
+                                <li>    
+                                <input type="checkbox" name="Mexican" id="Mexican">
+                                    <label for="Contains-Egg">Mexican</label>
+                                    <br>
+                                </li>
+                                <li>    
+                                <input type="checkbox" name="Italian" id="Italian">
+                                    <label for="Veg">Candy and Fudge</label>
+                                    <br>
+                                </li>
+                                <li>    
+                                <input type="checkbox" name="Thai" id="Thai">
+                                    <label for="NonVeg">Thai</label>
+                                    <br>
+                                </li>
+                                <li>    
+                                    <input type="checkbox" name="Southern" id="Southern">
+                                        <label for="Contains-Egg">Southern</label>
+                                        <br>
+                                </li>
+                            </ul>
+                            <br><br>
+                        
+                        </div>
+
+                        <div class="mealpref col-lg-6 col-12 text-left">
+                            <label><strong>Type of Meal</strong></label>
+                            <br>
+                            <ul>
+
+                                <li>
+                                    <input type="checkbox" name="Breakfast-and-Brunch" id="Breakfast-and-Brunch">
+                                    <label for="Veg">Breakfast and Brunch</label>
+                                    <br>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="Lunch" id="Lunch">
+                                    <label for="Veg">Lunch</label>
+                                    <br>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="Dinners" id="Dinners">
+                                    <label for="Veg">Dinners</label>
+                                    <br>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="Desserts" id="Desserts">
+                                    <label for="Veg">Desserts</label>
+                                    <br>
+                                </li>
+                            </ul>
+                            <br><br>
+                
+                        </div>
+                    </div>
+                </div>
+ 
+            </section>
     
 
     
