@@ -1,6 +1,7 @@
 body{
-
-    background: #F1FFF4  ;
+    background:url("ingredients.jpg") no-repeat ;
+    background-size: cover;
+    background-position: auto;
     font-family: 'Nunito', sans-serif;
 }
 button #mainNav{
@@ -30,3 +31,6 @@ button #mainNav{
     background: #DDDDDD   ;
     transition: background 200ms;
   }
+#pageCOntent{
+    margin-top: 250px;
+}
