@@ -1,0 +1,119 @@
+body{
+
+    background: #F1FFF4 ;
+    font-family: 'Nunito', sans-serif;
+}
+button #mainNav{
+    background:rgba(0,0,0,0.3);
+}
+#mainNav .nav-link{
+    color: black;
+}
+#mainNav .color-changed{
+    background-color : #F1FFF4!important;
+}
+#mainNav .fa-bars{
+color: white;
+font-size:28px;
+}
+#mainNav .fa-bars:hover{
+    color: #46C664;
+    font-size:28px;
+    }
+#mainNav .nav-link:hover ,#mainNav .active,#mainNav .navbar-brand{
+    color: #46C664;
+}
+#mainNav .navbar-brand{
+    font-size: 1.5 rem;
+    font-weight: 100;
+}
+#jumbo{
+    background: url("https://www.flyingfishlab.com/wp-content/uploads/2018/01/uni-food-background.jpg") no-repeat;
+    background-position:center;
+    background-size: cover;
+    padding: 5em inherit;
+}
+.content{
+    color: white;
+    text-shadow: 0px 1px 1px rgba(0,0,0,0.5),
+                 0px 2px 8px rgba(0,0,0,1),
+                 0px 2px 23px rgba(0,0,0,1);
+}
+hr{
+    color: black;
+    border-top:1px solid #f8f8f8;
+    border-bottom : 1px solid rgba(0,0,0,0.2);
+}
+.navbar.scrolled{
+    background: #D2D2D2   ;
+    transition: background 200ms;
+}
+
+* {box-sizing: border-box}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+/* Add padding to container elements */
+.container {
+  padding: 16px;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+     width: 100%;
+  }
+}
