@@ -52,7 +52,7 @@ hr{
 * {box-sizing: border-box}
 
 
-input[type=text], input[type=password] {
+input[type=text], input[type=password], input[type=email], input[type=number], input[type=tel] {
   width: 100%;
   padding: 15px;
   margin: 5px 0 22px 0;
@@ -61,7 +61,7 @@ input[type=text], input[type=password] {
   background: #f1f1f1;
 }
 
-input[type=text]:focus, input[type=password]:focus {
+input[type=text]:focus, input[type=password]:focus, input[type=email]:focus, input[type=number]:focus, input[type=tel]:focus {
   background-color: #ddd;
   outline: none;
 }
