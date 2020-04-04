@@ -62,7 +62,7 @@ categories=[
 ('Beverages','Beverages'),
 ]
 marks=[
-      ('green','green'),('red','red'),('yellow','yellow')
+      ('green','Veg'),('red','NonVeg'),('yellow','Contains Egg')
 ]
 class ingredient(models.Model):
     name=models.CharField(max_length=25,primary_key=True)

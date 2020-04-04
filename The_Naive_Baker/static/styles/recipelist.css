@@ -1,7 +1,7 @@
 body{
     background:url("../images/recipe.jpg") no-repeat ;
     background-size: cover;
-    background-position: auto;
+    background-position: center;
     font-family: 'Nunito', sans-serif;
 }
 
@@ -33,11 +33,7 @@ button #mainNav{
   transition: background 200ms;
 }
 
-.list {
-  width: 50%;
-  margin-left: 12%;
-  margin-top: 3%;
-}
+
 
 #myInput {
   
@@ -81,11 +77,6 @@ button #mainNav{
     background-color: white !important;
 }
 
-@media (max-width: 600px) {
-  .c {
-    width: 100%;
-  }
-}
 
 
 

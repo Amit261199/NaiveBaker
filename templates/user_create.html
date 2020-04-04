@@ -1,0 +1,8 @@
+{% block xcontent %}
+
+<form class="form-site" action="" method="POST"> {% csrf_token %}
+	{{form}}
+	<input type="submit" value="Save" name="" />
+</form>
+
+{% endblock %}

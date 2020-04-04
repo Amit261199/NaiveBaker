@@ -23,13 +23,13 @@
                
                     <ul class="navbar-nav border-bottom-0">
                         <li class="nav-item">
-                            <a href="../userprofile/" class="nav-link" href="#">Profile</a>
+                            <a href="../userprofile" class="nav-link" href="#">Profile</a>
                         </li>
                         <li class="nav-item">
                             <a href="" class="nav-link active" href="#">BuildPantry</a>
                         </li>
                         <li class="nav-item">
-                            <a href="../Recipes" class="nav-link" href="#">Recipes</a>
+                            <a href="../recipes" class="nav-link" href="#">Recipes</a>
                         </li>
                         <li class="nav-item">
                             <a href="#" class="nav-link" href="#">Contact Us</a>
@@ -58,7 +58,7 @@
                 
                     <div class="col-md-4 col-11 half">
                         <div id="myDIV" class="header pb-2">
-                            <h2>Add Ingredients</h2>
+                            <h2 style="background:#A4A4A4" class="rounded">Add Ingredients</h2>
                             <div class="row">
                             
                                 <div class="col-9 col-md-9 pr-0">
@@ -79,6 +79,7 @@
                             </div>
                         </div>
                         <div >
+                            <h4 style="background:#A4A4A4" class="rounded">My pantry</h4>
                             <ul id="ingList">
                                 <li class="checked">tomato</li>
                                 <li>onion</li>
@@ -97,18 +98,16 @@
 
                     <div class="p-2 col-md-6 col-11 secondhalf text-center">
                     
-                        <label><h2>Apply filter:</h2></label> 
+                        <h2 style="background:#A4A4A4" class="rounded pb-0 mb-0">Apply filter:</h2>
                         <br>
                         <div class="filters row">
                             <div class="pt-3 eatpref col-12 text-center">
                                 <label><strong>Veg/Non Veg</strong></label>
                                  <br>
-                                <input type="checkbox" name="Veg" id="green">
-                                <label for="Veg">Veg</label>
-                                <input type="checkbox" name="NonVeg" id="red">
-                                <label for="NonVeg">NonVeg</label>
-                                <input type="checkbox" name="Contains-Egg" id="yellow">
-                                <label for="Contains-Egg">Contains Egg</label>
+                                 {%for mark in marks%}
+                                <input type="checkbox" name="mark" value="{{mark.0}}">
+                                <label for="{{mark.0}}">{{mark.1}}</label>
+                                {%endfor%}
                                 <br><br>
                             </div>
                             
@@ -116,104 +115,13 @@
                                 <label><strong>Type of Dish</strong></label>
                                  <br>
                                 <ul>
-    
+                                    {%for dishtype in dishtypes%}
                                     <li>
-                                        <input type="checkbox" name="Appetizers-&-Snacks" id="Appetizers-&-Snacks">
-                                        <label for="Veg">Appetizers & Snacks</label>
+                                        <input type="checkbox" name="dishtype" value="{{dishtype.0}}">
+                                        <label for="{{dishtype.0}}">{{dishtype.0}}</label>
                                         <br>
                                     </li>
-                                    <li>    
-                                    <input type="checkbox" name="Bread-Recipes" id="Bread-Recipes">
-                                        <label for="NonVeg">Bread Recipes</label>
-                                        <br>
-                                    </li>
-                                    <li>    
-                                    <input type="checkbox" name="Cake-Recipes" id="Cake-Recipes">
-                                        <label for="Contains-Egg">Cake Recipes</label>
-                                        <br>
-                                    </li>
-                                    <li>    
-                                    <input type="checkbox" name="Candy-and-Fudge" id="Candy-and-Fudge">
-                                        <label for="Veg">Candy and Fudge</label>
-                                        <br>
-                                    </li>
-                                    <li>    
-                                    <input type="checkbox" name="Casserole-Recipes" id="Casserole-Recipes">
-                                        <label for="NonVeg">Casserole Recipes</label>
-                                        <br>
-                                    </li>
-                                    <li>    
-                                    <input type="checkbox" name="Christmas-Cookies" id="Christmas-Cookies">
-                                        <label for="Contains-Egg">Christmas Cookies</label>
-                                        <br>
-                                    </li>
-                                    <li>    
-                                    <input type="checkbox" name="Cocktail-Recipes" id="Cocktail-Recipes">
-                                        <label for="Veg">Cocktail Recipes</label>
-                                        <br>
-                                    </li>
-                                    <li>    
-                                    <input type="checkbox" name="Cookie-Recipes" id="Cookie-Recipes">
-                                        <label for="NonVeg">Cookie Recipes</label>
-                                        <br>
-                                    </li>
-                                    <li>    
-                                    <input type="checkbox" name="Mac-and-Cheese-Recipes" id="Mac-and-Cheese-Recipes">
-                                        <label for="Contains-Egg">Mac and Cheese Recipes</label>
-                                        <br>
-                                    </li>
-                                    <li>    
-                                    <input type="checkbox" name="Main-Dish" id="Main-Dish">
-                                        <label for="Veg">Main Dish</label>
-                                        <br>
-                                    </li>
-                                    <li>    
-                                    <input type="checkbox" name="Pasta-Salad-Recipes" id="Pasta-Salad-Recipes">
-                                        <label for="NonVeg">Pasta Salad Recipes</label>
-                                        <br>
-                                    </li>
-                                    <li>    
-                                    <input type="checkbox" name="Pasta-Recipes" id="Pasta-Recipes">
-                                        <label for="Contains-Egg">Pasta Recipes</label>
-                                        <br>
-                                    </li>
-                                    <li>    
-                                    <input type="checkbox" name="Pie-Recipes" id="Pie-Recipes">
-                                        <label for="Veg">Pie Recipes</label>
-                                        <br>
-                                    </li>
-                                    <li>    
-                                    <input type="checkbox" name="Pizza" id="Pizza">
-                                        <label for="NonVeg">Pizza</label>
-                                        <br>
-                                    </li>
-                                    <li>    
-                                    <input type="checkbox" name="Sandwiches" id="Sandwiches">
-                                        <label for="Contains-Egg">Sandwiches</label>
-                                        <br>
-                                    </li>
-                                    <li>    
-                                    <input type="checkbox" name="Sauces-and-Condiments" id="Sauces-and-Condiments">
-                                        <label for="Veg">Sauces and Condiments</label>
-                                        <br>
-                                    </li>
-                                    <li>    
-                                    <input type="checkbox" name="Soups,-Stews,-and-Chili" id="Soups,-Stews,-and-Chili">
-                                        <label for="NonVeg">Soups,-Stews, and Chili</label>
-                                        <br>
-                                    </li>
-                                    <li>    
-                                        <input type="checkbox" name="Smoothie-Recipes" id="Smoothie-Recipes">
-                                            <label for="NonVeg">Smoothie Recipes</label>
-                                            <br>
-                                        </li>
-                                    <li>    
-                                    <input type="checkbox" name="Side-Dish" id="Side-Dish">
-                                        <label for="Contains-Egg">Side Dish</label>
-                                        <br>
-                                    </li>
-                                        <input type="checkbox" name="Salad" id="Salad">
-                                        <label for="Contains-Egg">Salad</label>
+                                    {%endfor%}
                                 </ul>
                                 <br><br>
                             
@@ -226,37 +134,13 @@
                                 <label><strong>Type of Cuisine</strong></label>
                                  <br>
                                 <ul>
-    
+                                    {%for cuisine in cuisines%}
                                     <li>
-                                        <input type="checkbox" name="Chinese" id="Chinese">
-                                        <label for="Veg">Chinese</label>
+                                        <input type="checkbox" name="cuisine" value="{{cuisine.0}}" >
+                                        <label for="{{cuisine.0}}">{{cuisine.0}}</label>
                                         <br>
                                     </li>
-                                    <li>    
-                                    <input type="checkbox" name="Indian" id="Indian">
-                                        <label for="NonVeg">Indian</label>
-                                        <br>
-                                    </li>
-                                    <li>    
-                                    <input type="checkbox" name="Mexican" id="Mexican">
-                                        <label for="Contains-Egg">Mexican</label>
-                                        <br>
-                                    </li>
-                                    <li>    
-                                    <input type="checkbox" name="Italian" id="Italian">
-                                        <label for="Veg">Candy and Fudge</label>
-                                        <br>
-                                    </li>
-                                    <li>    
-                                    <input type="checkbox" name="Thai" id="Thai">
-                                        <label for="NonVeg">Thai</label>
-                                        <br>
-                                    </li>
-                                    <li>    
-                                        <input type="checkbox" name="Southern" id="Southern">
-                                            <label for="Contains-Egg">Southern</label>
-                                            <br>
-                                    </li>
+                                    {%endfor%}
                                 </ul>
                                 <br><br>
                             
@@ -266,27 +150,13 @@
                                 <label><strong>Type of Meal</strong></label>
                                 <br>
                                 <ul>
-    
+                                    {%for mealtype in mealtypes%}
                                     <li>
-                                        <input type="checkbox" name="Breakfast-and-Brunch" id="Breakfast-and-Brunch">
-                                        <label for="Veg">Breakfast and Brunch</label>
+                                        <input type="checkbox" name="mealtype" value="{{mealtype.0}}">
+                                        <label for="{{mealtype.0}}">{{mealtype.0}}</label>
                                         <br>
                                     </li>
-                                    <li>
-                                        <input type="checkbox" name="Lunch" id="Lunch">
-                                        <label for="Veg">Lunch</label>
-                                        <br>
-                                    </li>
-                                    <li>
-                                        <input type="checkbox" name="Dinners" id="Dinners">
-                                        <label for="Veg">Dinners</label>
-                                        <br>
-                                    </li>
-                                    <li>
-                                        <input type="checkbox" name="Desserts" id="Desserts">
-                                        <label for="Veg">Desserts</label>
-                                        <br>
-                                    </li>
+                                    {%endfor%}
                                 </ul>
                                 <br><br>
                     
