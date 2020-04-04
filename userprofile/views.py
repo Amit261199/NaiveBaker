@@ -11,7 +11,8 @@ def signup_view(request):
 	if request.method=='POST':
 		form = UserCreationForm(request.POST )
 		if form.is_valid():
-			form.save()
+			user=form.save()
+			login(request,user)
 			return redirect('buildpantry:getRecipe')
 	else:
 		form = UserCreationForm()
@@ -19,3 +20,18 @@ def signup_view(request):
 		'form' : form
 	}
 	return render(request,'user_create.html',context)
+
+def login_view(request):
+	if request.method=='POST':
+		form = AuthenticationForm(data=request.POST)
+		if form.is_valid():
+			user = form.get_user()
+			login(request,user)
+			return redirect('buildpantry:getRecipe')
+	else:
+		form = AuthenticationForm()
+	context = {
+		'form' : form
+	}
+	return render(request,'login.html',context)
+
