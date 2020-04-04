@@ -1,0 +1,119 @@
+body{
+    background:url("../images/ingredients.jpg");
+    background-size: 100% auto;
+    background-position: top;
+    font-family: 'Nunito', sans-serif;
+    margin-top: 250px;
+}
+button #mainNav{
+    background:rgba(0,0,0,0.3);
+}
+#mainNav .nav-link{
+    color: black;
+}
+
+#mainNav .fa-bars{
+    color: black;
+    font-size:28px;
+    }
+
+#mainNav .fa-bars:hover{
+    color: #46C664;
+    font-size:28px;
+    }
+#mainNav .nav-link:hover ,#mainNav .active,#mainNav .navbar-brand{
+    color: #46C664;
+}
+#mainNav .navbar-brand{
+    font-size: 1.5 rem;
+    font-weight: 100;
+}
+.navbar.scrolled{
+    background: #DDDDDD   ;
+    transition: background 200ms;
+  }
+#pageCOntent{
+    margin-top: 250px;
+}
+.secondhalf label{
+    padding-right: 4px;
+}
+.secondhalf .filters{
+    background: #eee;
+}
+
+.addBtn {
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  #ingList {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  #ingList li {
+    cursor: pointer;
+    position: relative;
+    padding: 12px 16px 12px 16px;;
+    background: #eee;
+    font-size: 18px;
+    transition: 0.2s;
+  
+    /* make the list items unselectable */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+.half{
+    text-align:center;
+
+}
+
+.half .addBtn{
+    height:auto;
+    font-size: 85%;
+    padding: 
+}
+
+
+.close {
+
+    position: absolute;
+    right: 0;   
+    top: 0;
+    padding: 12px 16px 12px 16px;
+  }
+  
+  .close:hover {
+    background-color: #f44336;
+    color: white;
+  }
+  @media(max-width:992px){
+    #myInput{
+        width: 90%;
+    }
+  }
+  .dishpref ul {
+    list-style: none;
+    height: 200px;
+    overflow: auto;
+    width: auto;
+    padding-left:5%;
+}
+
+.cuisinepref ul{
+    list-style: none;
+    height: 200px;
+    overflow: auto;
+    width: auto;
+    padding-left:5%;
+}
+.mealpref ul{
+    list-style: none;
+    height: 200px;
+    overflow: auto;
+    width: auto;
+    padding-left:5%;
+}

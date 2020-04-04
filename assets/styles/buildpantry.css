@@ -96,7 +96,7 @@ button #mainNav{
     }
   }
 
-.dishpref ul{
+.dishpref ul {
     list-style: none;
     height: 200px;
     overflow: auto;
@@ -104,3 +104,17 @@ button #mainNav{
     padding-left:5%;
 }
 
+.cuisinepref ul{
+    list-style: none;
+    height: 200px;
+    overflow: auto;
+    width: auto;
+    padding-left:5%;
+}
+.mealpref ul{
+    list-style: none;
+    height: 200px;
+    overflow: auto;
+    width: auto;
+    padding-left:5%;
+}

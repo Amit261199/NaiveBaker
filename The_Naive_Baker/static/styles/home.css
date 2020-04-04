@@ -1,0 +1,56 @@
+body{
+
+    background: #F1FFF4 ;
+    font-family: 'Nunito', sans-serif;
+}
+button #mainNav{
+    background:rgba(0,0,0,0.3);
+}
+#mainNav .nav-link{
+    color: black;
+}
+#mainNav .color-changed{
+    background-color : #F1FFF4!important;
+}
+#mainNav .fa-bars{
+color: white;
+font-size:28px;
+}
+#mainNav .fa-bars:hover{
+    color: #46C664;
+    font-size:28px;
+    }
+#mainNav .nav-link:hover ,#mainNav .active,#mainNav .navbar-brand{
+    color: #46C664;
+}
+#mainNav .navbar-brand{
+    font-size: 1.5 rem;
+    font-weight: 100;
+}
+#jumbo{
+    background: url("https://images.unsplash.com/photo-1473093295043-cdd812d0e601?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80main-eater.jpg") no-repeat;
+    background-position:center;
+    background-size: cover;
+    padding: 5em inherit;
+}
+.content{
+    color: white;
+    text-shadow: 0px 1px 1px rgba(0,0,0,0.5),
+                 0px 2px 8px rgba(0,0,0,1),
+                 0px 2px 23px rgba(0,0,0,1);
+}
+hr{
+    color: black;
+    border-top:1px solid #f8f8f8;
+    border-bottom : 1px solid rgba(0,0,0,0.2);
+}
+.navbar.scrolled{
+    background: #D2D2D2   ;
+    transition: background 200ms;
+  }
+
+.boldpar{
+    color: #46C664;
+}
+
+
