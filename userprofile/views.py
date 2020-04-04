@@ -4,4 +4,4 @@ from django.http import HttpResponse
 
 
 def userprofilepage(request):
-    return render(request,'User_Profile_page.html')
+    return render(request,'userprofilepage.html')
