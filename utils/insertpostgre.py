@@ -1,10 +1,11 @@
 import pandas as pd
 import psycopg2
+import datetime
 df=pd.read_excel('xl.xlsx')
 df.fillna('None',inplace=True)
 df=df.replace(['None'],[None])
 
-
+df['timetocook']=df['timetocook'].map(lambda x: datetime.timedelta(hours=int(x.split(':')[0]),minutes=int(x.split(':')[1])))
 
 
 try:

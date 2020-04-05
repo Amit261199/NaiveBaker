@@ -64,7 +64,7 @@
                                 <div class="col-9 col-md-9 pr-0">
                                     
                            
-                                    <input class="form-control form-control" list="ingredients" autocomplete="off" type="text" id="myInput" placeholder="Ingredient">
+                                    <input onkeypress="return noenter()" class="form-control form-control" list="ingredients" autocomplete="off" type="text" id="myInput" placeholder="Ingredient">
                                     <datalist id="ingredients">
                                         {% for ing in ingredients%}
                                         <option class="list" value="{{ing.name}}">
@@ -73,8 +73,8 @@
                                     
                                 </div>
                                 <div class="col-3 col-md-3 pl-0">
-                                    <button type="button" onclick="newElement()" class="btn btn-success btn-lg addBtn">Add</button>
-                                </div>
+                                    <button type="button" id="AddBtn"  onclick="newElement()" class="btn btn-success btn-lg addBtn">Add</button>
+                              </div>
                             
                             </div>
                         </div>
@@ -105,7 +105,7 @@
                                 <label><strong>Veg/Non Veg</strong></label>
                                  <br>
                                  {%for mark in marks%}
-                                <input type="checkbox" name="mark" value="{{mark.0}}">
+                                <input onkeypress="return noenter()" type="checkbox" name="mark" value="{{mark.0}}">
                                 <label for="{{mark.0}}">{{mark.1}}</label>
                                 {%endfor%}
                                 <br><br>
@@ -117,7 +117,7 @@
                                 <ul>
                                     {%for dishtype in dishtypes%}
                                     <li>
-                                        <input type="checkbox" name="dishtype" value="{{dishtype.0}}">
+                                        <input onkeypress="return noenter()" type="checkbox" name="dishtype" value="{{dishtype.0}}">
                                         <label for="{{dishtype.0}}">{{dishtype.0}}</label>
                                         <br>
                                     </li>
@@ -136,7 +136,7 @@
                                 <ul>
                                     {%for cuisine in cuisines%}
                                     <li>
-                                        <input type="checkbox" name="cuisine" value="{{cuisine.0}}" >
+                                        <input onkeypress="return noenter()" type="checkbox" name="cuisine" value="{{cuisine.0}}" >
                                         <label for="{{cuisine.0}}">{{cuisine.0}}</label>
                                         <br>
                                     </li>
@@ -146,13 +146,13 @@
                             
                             </div>
     
-                            <div class="mealpref col-lg-6 col-12 text-left">
+                            <div class="mealpref col-lg-6 col-12 text-left input-group">
                                 <label><strong>Type of Meal</strong></label>
                                 <br>
                                 <ul>
                                     {%for mealtype in mealtypes%}
                                     <li>
-                                        <input type="checkbox" name="mealtype" value="{{mealtype.0}}">
+                                        <input onkeypress="return noenter()" type="checkbox" name="mealtype" value="{{mealtype.0}}">
                                         <label for="{{mealtype.0}}">{{mealtype.0}}</label>
                                         <br>
                                     </li>
@@ -161,6 +161,20 @@
                                 <br><br>
                     
                             </div>
+
+                            <div class="timepref col-lg-6 col-12 text-left">
+                                
+                                Max. time to cook:
+                                <br>
+                                <label for="hh"><b>hrs</b></label>
+                                <input type="number" onkeypress="return noenter()" placeholder="hh" name="hh" max="5" min="0" style="width:25%">
+                                <label for="mm"><b>mins</b></label>
+                                <input type="number" onkeypress="return noenter()" placeholder="mm" name="mm" max="59" min="0" style="width:25%">                            
+              
+  
+                            </div>
+
+                            
                         </div>
                     </div>
 
@@ -188,7 +202,10 @@
             $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height() );
         });
     });
-
 </script>
+<script type="text/javascript">
+    function noenter() {
+      return !(window.event && window.event.keyCode == 13); }
+    </script>
 </body>
 </html

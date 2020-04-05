@@ -27,7 +27,7 @@ try:
     # Print PostgreSQL version
     postgres_insert_query = """ INSERT INTO buildpantry_ingredientused (id,quantity,directions,ingredient_name_id,recipe_name_id) VALUES (%s,%s,%s,%s,%s)"""
     count=0
-    for i in range(0,df.shape[0]):
+    for i in range(df.shape[0]):
         l=list(df.loc[i])
         l[0]=int(l[0])
         record_to_insert = tuple(l)

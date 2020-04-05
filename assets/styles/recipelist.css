@@ -1,7 +1,7 @@
 body{
     background:url("../images/recipe.jpg") no-repeat ;
     background-size: cover;
-    background-position: auto;
+    background-position: center;
     font-family: 'Nunito', sans-serif;
 }
 

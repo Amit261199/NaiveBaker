@@ -89,7 +89,7 @@ class recipe(models.Model):
         through_fields=('recipe_name','ingredient_name')
     )
     images=ArrayField(base_field=models.URLField())
-    timetocook=models.TimeField()
+    timetocook=models.DurationField()
 
     def recipe_image(self):
         s=''

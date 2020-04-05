@@ -95,8 +95,7 @@ button #mainNav{
         width: 90%;
     }
   }
-
-.dishpref ul {
+  .dishpref ul {
     list-style: none;
     height: 200px;
     overflow: auto;
@@ -118,3 +117,5 @@ button #mainNav{
     width: auto;
     padding-left:5%;
 }
+
+
