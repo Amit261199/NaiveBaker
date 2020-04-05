@@ -5,7 +5,15 @@ from django.db.models import Q,Case,IntegerField,Sum,When,F,Count
 import datetime
 
 # Create your views here.
+def displayRecipe(request, recipe_title):
+    r=recipe.objects.get(pk__exact=recipe_title)
+    ings=r.ingredientused_set.all()
+    return render(request,'recipedisplay.html',{'recipe':r,'ingList':ings})
 
+def recipes_all(request):
+    results=recipe.objects.all()
+    context={'result':results}
+    return render(request,'recipelist.html',context)
 
 def buildpantry(request):
     ingList=ingredient.objects.all()

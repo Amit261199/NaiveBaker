@@ -16,12 +16,14 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from django.urls import include
-from userprofile.views import signup_view,login_view
+from userprofile.views import signup_view,login_view,home
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('userprofile.urls')),
+    path('userprofile/', include('userprofile.urls')),
+    path('', home),
     path('buildpantry/', include('buildpantry.urls')),
     path('signup/', signup_view),
     path('login/', login_view),
+    path('recipes/',include('buildpantry.urls'))
 ]

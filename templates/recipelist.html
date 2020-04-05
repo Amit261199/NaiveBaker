@@ -25,13 +25,13 @@
             <div id="navbarSupportedContent" class="px-2 collapse navbar-collapse">
                 <ul class="navbar-nav border-bottom-0">
                     <li class="nav-item">
-                        <a href="#" class="nav-link" href="#">Profile</a>
+                        <a href="../userprofile" class="nav-link" href="#">Profile</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link" href="#">BuildPantry</a>
+                        <a href="../buildpantry" class="nav-link" href="#">BuildPantry</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link active" href="#">Recipes</a>
+                        <a href="" class="nav-link active" href="#">Recipes</a>
                     </li>
                     <li class="nav-item">
                         <a href="#" class="nav-link" href="#">Contact Us</a>
@@ -66,14 +66,21 @@
             
             <div class="row justify-content between ">
                 {% for recipe in result%}
+                
                 <div class="mx-3 card col-md-5 col-lg-3 col-11 mt-3" style="width: 18rem;">
+                    <a href="./display/{{recipe.title}}" style="color:inherit;">
                     <img class="card-img-top" src= "{{recipe.images.0}}" styles="height: auto,width:100%" alt="Card image cap">
                     <div class="card-body ">
-                        <h5 class="card-title">{{recipe.title}}</h5>
-                        <a href="#" class="btn btn-primary"></a>
+                        <h5 class="card-title" style="font-size:1.125rem;">{{recipe.title}}</h5>
+                        <div style="font-size:0.85rem">
+                            {{recipe.description|slice:":150"}}...
+                        </div>
+                        
 
                     </div>
+                    </a>
                 </div>
+                
                 {%endfor%}
             </div>
 		   

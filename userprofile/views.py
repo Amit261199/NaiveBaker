@@ -5,8 +5,11 @@ from django.contrib.auth import authenticate, login
 # Create your views here.
 
 
+def home(request):
+	return render(request,'home.html')
+
 def userprofilepage(request):
-    return render(request,'home.html')
+    return render(request,'userprofilepage.html')
 
 def signup_view(request):
 	if request.method=='POST':

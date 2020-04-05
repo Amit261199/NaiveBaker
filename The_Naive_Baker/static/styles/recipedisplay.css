@@ -1,5 +1,5 @@
 body{
-    background:url("https://c1.wallpaperflare.com/preview/914/15/585/food-knife-background-wooden.jpg") no-repeat ;
+    background:url("../images/bg-main.jpg") no-repeat ;
     background-size: cover;
     background-position: auto;
     font-family: 'Nunito', sans-serif;
@@ -51,4 +51,17 @@ button #mainNav{
 
 #output5, #output7, #output8, #output9, #output10{
     font-size: 0.9em;
+}
+.box{
+    background:#EEE;
+}
+@media(max-width:752px)
+{
+    .inghead h3{
+       
+        font-size: 1.12rem;
+    }
+    .ingrow h5{
+        font-size: 0.92rem;
+    }
 }
