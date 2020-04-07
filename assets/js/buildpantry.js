@@ -93,19 +93,24 @@ function newElement() {
   
   for (i = 0; i < close.length; i++) {
     close[i].onclick = function() {
-      var p=this.parentElement.textContent
+      var p=this.parentElement.textContent;
+      var q=p.slice(0,p.length-1);
+      console.log(q);
       function checkcurrent(name){
-      if (p===name)
-      {
-        return true;
+        if (q===name)
+        {
+          console.log(true)
+          return true;
+        }
+        else{
+          console.log(false);
+          return false;}
       }
-      else return false;
-    }
-    Names.splice(Names.findIndex(checkcurrent),1)
+      Names.splice(Names.findIndex(checkcurrent),1)
+      console.log(Names)
       this.parentElement.remove();
     }
-  }
-}
+}}
 
 
 function openWins(){
