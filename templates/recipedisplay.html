@@ -24,28 +24,28 @@
             <div id="navbarSupportedContent" class="px-2 collapse navbar-collapse">
                 <ul class="navbar-nav border-bottom-0">
                     <li class="nav-item">
-                        <a href="../../../userprofile" class="nav-link" href="#">Profile</a>
+                        <a href="../../../userprofile" class="nav-link">Profile</a>
                     </li>
                     <li class="nav-item">
-                        <a href="../../" class="nav-link" href="#">BuildPantry</a>
+                        <a href="../../" class="nav-link" >BuildPantry</a>
                     </li>
                     <li class="nav-item">
-                        <a href="../../getallrecipe" class="nav-link" href="#">Recipes</a>
+                        <a href="../../getallrecipe" class="nav-link" >Recipes</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link" href="#">Contact Us</a>
+                        <a href="../../../contact" class="nav-link" >Contact Us</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link" href="#">Log Out</a>
+                        <a href="../../../logout" class="nav-link" >Log Out</a>
                     </li>
         
                 </ul>
                 <ul class="navbar-nav border-bottom-0 ml-auto">
                     <li class="nav-item ">
-                        <a href="#" class="nav-link" href="#">Amit Agarwal</a>
+                        <a href="#" class="nav-link" href="#">{{request.user.username}}</a>
                     </li>
                     <li class="nav-item">
-                        <img src="{%static './images/avatar.webp'%}" class="border rounded-circle mt-2" style="width: 1.5 rem;height: 1.5rem;">
+                        <img src="{{request.user.profile.profilepicture.url}}" class="border rounded-circle mt-2" style="width: 1.5 rem;height: 1.5rem;">
                     </li>
         
                 </ul>
@@ -55,7 +55,12 @@
 
     <section class="lower">
         <div class="container" style="margin-top:150px;">
-            <div class="row">
+            <div class="row justify-content-center">
+                <div class="col-6 "></div>
+              
+                       
+                </div>
+                
                 <div class="box col-11 my-2 rounded py-2">
                     <div class="row">
                         <div class="col-md-4 col-10 order-md-1 order-2">
@@ -69,6 +74,7 @@
                         <div class="col-md-6 col-10 order-md-2 order-1">
                             <img id="output3" src="{{recipe.images.0}}" alt="Recipe Image" class="img-fluid">
                         </div>
+                        
                     </div>
                     
                     

@@ -25,28 +25,28 @@
             <div id="navbarSupportedContent" class="px-2 collapse navbar-collapse">
                 <ul class="navbar-nav border-bottom-0">
                     <li class="nav-item">
-                        <a href="../userprofile" class="nav-link" href="#">Profile</a>
+                        <a href="../../userprofile" class="nav-link" >Profile</a>
                     </li>
                     <li class="nav-item">
-                        <a href="../buildpantry" class="nav-link" href="#">BuildPantry</a>
+                        <a href="../../buildpantry" class="nav-link" >BuildPantry</a>
                     </li>
                     <li class="nav-item">
-                        <a href="" class="nav-link active" href="#">Recipes</a>
+                        <a  class="nav-link active" >Recipes</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link" href="#">Contact Us</a>
+                        <a  class="nav-link" href="../../contact">Contact Us</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link" href="#">Log Out</a>
+                        <a  class="nav-link" href="../../logout">Log Out</a>
                     </li>
         
                 </ul>
                 <ul class="navbar-nav border-bottom-0 ml-auto">
                     <li class="nav-item ">
-                        <a href="#" class="nav-link" href="#">Amit Agarwal</a>
+                        <a href="#" class="nav-link" href="#">{{request.user.username}}</a>
                     </li>
                     <li class="nav-item">
-                        <img src="{%static './images/avatar.webp' %}" class="border rounded-circle mt-2" style="width: 1.5 rem;height: 1.5rem;">
+                        <img src="{{request.user.profile.profilepicture.url}}" class="border rounded-circle mt-2" style="width: 1.5 rem;height: 1.5rem;">
                     </li>
         
                 </ul>
@@ -68,14 +68,16 @@
                 {% for recipe in result%}
                 
                 <div class="mx-3 card col-md-5 col-lg-3 col-11 mt-3" style="width: 18rem;">
-                    <a href="./display/{{recipe.title}}" style="color:inherit;">
+                    <a href="../display/{{recipe.title}}/" style="color:inherit;">
                     <img class="card-img-top" src= "{{recipe.images.0}}" styles="height: auto,width:100%" alt="Card image cap">
                     <div class="card-body ">
                         <h5 class="card-title" style="font-size:1.125rem;">{{recipe.title}}</h5>
                         <div style="font-size:0.85rem">
                             {{recipe.description|slice:":150"}}...
                         </div>
-                        
+                        <div style="font-size:0.85rem ">   
+                            
+                        </div>
 
                     </div>
                     </a>

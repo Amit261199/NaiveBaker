@@ -1,25 +1,41 @@
-from django.shortcuts import render
+from django.shortcuts import render,redirect,reverse
+from django.urls import reverse
 from .models import recipe,ingredient,ingredientUsed
 from .models import cuisines,dishtypes,mealtypes,marks
 from django.db.models import Q,Case,IntegerField,Sum,When,F,Count
+from django.contrib import messages
 import datetime
-
+from userprofile.models import profile
 # Create your views here.
+
 def displayRecipe(request, recipe_title):
+    if not request.user.is_authenticated:
+        messages.info(request,'Permission Denied. You need to Log in first')
+        return redirect(reverse('login'))
+    
     r=recipe.objects.get(pk__exact=recipe_title)
     ings=r.ingredientused_set.all()
     return render(request,'recipedisplay.html',{'recipe':r,'ingList':ings})
 
 def recipes_all(request):
+    if not request.user.is_authenticated:
+        messages.info(request,'Permission Denied. You need to Log in first')
+        return redirect(reverse('login'))
     results=recipe.objects.all()
     context={'result':results}
     return render(request,'recipelist.html',context)
 
 def buildpantry(request):
+    if not request.user.is_authenticated:
+        messages.info(request,'Permission Denied. You need to Log in first')
+        return redirect(reverse('login'))
     ingList=ingredient.objects.all()
     return render(request,'buildpantry.html',{'ingredients':ingList,'cuisines':cuisines,'dishtypes':dishtypes,'mealtypes':mealtypes,'marks':marks})
 
 def getRecipe(request):
+    if not request.user.is_authenticated:
+        messages.info(request,'Permission Denied. You need to Log in first')
+        return redirect(reverse('login'))
     queries={}
     filters=['cuisine','dishtype','mealtype','mark']
     hh=request.POST['hh']
@@ -72,7 +88,7 @@ def getRecipe(request):
     else:
         results=recipe.objects.filter(query)
 
-    return render(request,'recipelist.html',{'result':results})
+    return render(request,'recipelist.html',{'ingList':ingList,'result':results})
 
     
 

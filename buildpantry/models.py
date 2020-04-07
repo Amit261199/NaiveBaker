@@ -107,6 +107,7 @@ class ingredientUsed(models.Model):
     ingredient_name=models.ForeignKey(ingredient,on_delete=models.PROTECT)
     quantity=models.CharField(max_length=40,blank=False)
     directions=models.CharField(max_length=40,blank=True,null=True)
-    
+
+ 
 
     

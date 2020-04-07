@@ -7,10 +7,10 @@
     <meta name="keywords" content="Recipe, Cook, Chef, Bake">
     <meta name="author" content="DAIICT Batch of 2021/Sem 6 - Subject:SEN/ Team 1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NaiveBaker-Login</title>
+    <title>NaiveBaker-SignUp</title>
     <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="{%static './styles/login.css' %}">
+    <link rel="stylesheet" href="{%static './styles/signup.css' %}">
 </head>
 
 <body>
@@ -23,16 +23,16 @@
             <div id="navbarSupportedContent" class="px-2 collapse navbar-collapse">
                     <ul class="navbar-nav border-bottom-0 flex-column flex-md-row">
                         <li class="nav-item">
-                            <a href="../" class="nav-link active" >Home</a>
+                            <a href="../" class="nav-link" >Home</a>
                         </li>
                         <li class="nav-item">
                             <a href="../contact" class="nav-link" >Contact Us</a>
                         </li>
                         <li class="nav-item">
-                            <a href="../signup" class="nav-link" >Sign Up</a>
+                            <a  class="nav-link active" >Sign Up</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" >Log In</a>
+                            <a href="../login" class="nav-link" >Log In</a>
                         </li>
             
                     </ul>
@@ -53,8 +53,8 @@
         </div>
     </section>
 
-
     <section>
+
         <div class="container">
             {%for message in messages%}
             {% if forloop.first %}
@@ -64,52 +64,56 @@
                 
               </div>
             {%endfor%}
-            
-        <form class="site-form border-0" action="/login/" method="POST"> 
-           
-            
-            
+        <form action="/signup/" style="border:1px solid #ccc" method="POST">
+
+
             {% csrf_token %}
-            
-                <table >
-                    
-                        <b>{{ form.username.label_tag }}<b>
-                        <b>{{ form.username }}<b>
-                    </tr> 
-                    <tr>
-                        <b>{{ form.password.label_tag }}<b>
-                        <b>{{ form.password }}<b>
-                    </tr>
-                </table>
-                <button type="submit">Login</button>
-                <input type="hidden" name="next" value="/userprofile">
 
-                
-                <!-- <label>
-                <input type="checkbox" checked="checked" name="remember"> Remember me
-                </label> -->
+            <div class="container">
+  
+                <p>Please fill in this form to create an account.</p>
+                <hr>
+
+                <label for="uname"><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" name="uname" required>
+
+                <label for="age"><b>Age</b></label>
+                <input type="number" placeholder="Enter Age" name="age" required>
+
+                <label for="email"><b>Email</b></label>
+                <input type="email" placeholder="Enter Email" name="email" required>
+
+
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+
+                <label for="psw-repeat"><b>Repeat Password</b></label>
+                <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+    
+    
+                <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Conditions</a>.</p>
+
+                <div class="clearfix">
+                    <button type="submit" class="signupbtn">Sign Up</button>
+                </div>
             </div>
-
-            <div class="container" >
-                <a href="#">Forget password?</a>
-            </div>
-
         </form>
 
     </section>
-    
-<script src="https://kit.fontawesome.com/824416a126.js" crossorigin="anonymous"></script>
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-<script>
-    $(function(){
-        $(document).scroll(function(){
-            var $nav=$("#mainNav");
-            $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height() );
+
+    <script src="https://kit.fontawesome.com/824416a126.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script>
+        $(function(){
+            $(document).scroll(function(){
+                var $nav=$("#mainNav");
+                $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height() );
+            });
         });
-    });
-</script>
+    </script>
+
 </body>
 
 </html>

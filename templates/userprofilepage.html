@@ -1,4 +1,6 @@
 {%load static%}
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,7 +25,7 @@
             <div id="navbarSupportedContent" class="px-2 collapse navbar-collapse">
                 <ul class="navbar-nav border-bottom-0">
                     <li class="nav-item">
-                        <a href="" class="nav-link active">Profile</a>
+                        <a  class="nav-link active">Profile</a>
                     </li>
                     <li class="nav-item">
                         <a href="../buildpantry/" class="nav-link" >BuildPantry</a>
@@ -32,19 +34,20 @@
                         <a href="../buildpantry/getallrecipe" class="nav-link" >Recipes</a>
                     </li>
                     <li class="nav-item">
-                        <a href="contact/" class="nav-link" >Contact Us</a>
+                        <a href="../contact" class="nav-link" >Contact Us</a>
                     </li>
                     <li class="nav-item">
-                        <a href="Logout/" class="nav-link" >Log Out</a>
+                        <a href="../logout" class="nav-link" >Log Out</a>
                     </li>
         
                 </ul>
                 <ul class="navbar-nav border-bottom-0 ml-auto">
                     <li class="nav-item ">
-                        <a href="#" class="nav-link" href="#">Amit Agarwal</a>
+                        <a href="#" class="nav-link" >{{request.user.username}}</a>
                     </li>
+                    {{profile.profilepicture.url}}
                     <li class="nav-item">
-                        <img src="{%static './images/avatar.webp' %}" class="border rounded-circle mt-2" style="width: 1.5 rem;height: 1.5rem;">
+                        <img src="{{request.user.profile.profilepicture.url}}" class="border rounded-circle mt-2" style="width: 1.5 rem;height: 1.5rem;">
                     </li>
         
                 </ul>
@@ -57,20 +60,17 @@
             <div class="container">
                 <div class="row mt-4 justify-content-around">
                     <div class="col-10 col-md-4">
-                        <img src="{%static './images/avatar.webp' %}" class="border rounded-circle img-fluid">
+                        <img src="{{request.user.profile.profilepicture.url}}" class="border rounded-circle img-fluid">
                     </div>
                     <div class="col-10 col-md-5 written">
                         <div class="row">
-                            Name : Amit Agarwal
+                            Name : {{request.user.username}}
                         </div>
                         <div class="row">
-                            email: 201701060@daiict.ac.in
+                        email: {{request.user.email}}
                         </div>
                         <div class="row">
-                            age: 20 years
-                        </div>
-                        <div class="row">
-                            Contact no. : 5465483165484
+                            age: {{request.user.profile.age}}
                         </div>
                     </div>
                     <div class="p-3 col-11 col-md-2">

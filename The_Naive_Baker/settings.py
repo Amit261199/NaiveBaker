@@ -32,6 +32,7 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'buildpantry.apps.BuildpantryConfig',
+    'userprofile.apps.UserprofileConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -128,3 +129,9 @@ STATICFILES_DIRS=[
     os.path.join(BASE_DIR,'The_Naive_Baker/static'),
 ]
 STATIC_ROOT=os.path.join(BASE_DIR,'assets')
+
+MEDIA_URL='/media/'
+MEDIA_ROOT=os.path.join(BASE_DIR,'media')
+
+
+# LOGIN_REDIRECT_URL='/userprofile/'
