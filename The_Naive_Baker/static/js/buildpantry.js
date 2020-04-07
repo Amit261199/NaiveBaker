@@ -29,15 +29,21 @@ var close = document.getElementsByClassName("close");
 var i;
 for (i = 0; i < close.length; i++) {
   close[i].onclick = function() {
-    var p=this.parentElement.textContent
+    var p=this.parentElement.textContent;
+    var q=p.slice(0,p.length-1);
+    console.log(q);
     function checkcurrent(name){
-      if (p===name)
+      if (q===name)
       {
+        console.log(true)
         return true;
       }
-      else return false;
+      else{
+        console.log(false);
+        return false;}
     }
     Names.splice(Names.findIndex(checkcurrent),1)
+    console.log(Names)
     this.parentElement.remove();
   }
 }
