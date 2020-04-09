@@ -11,6 +11,8 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="{%static './styles/signup.css' %}">
+
+    
 </head>
 
 <body>
@@ -75,20 +77,38 @@
                 <hr>
 
                 <label for="uname"><b>Username</b></label>
-                <input type="text" placeholder="Enter Username" name="uname" required>
+                <input class="form-control" type="text" placeholder="Enter Username" name="uname" required>
 
-                <label for="age"><b>Age</b></label>
-                <input type="number" placeholder="Enter Age" name="age" required>
+                <label for="dob"><b>Date of birth</b></label>
+             
+                    <div class="form-group">
+                      <div id="filterDate2">
+                        
+                        <!-- Datepicker as text field -->         
+                        <div class="input-group date" data-date-format="dd.mm.yyyy">
+                            
+                            <input class="form-control" id="dob" name="dob" placeholder="dd/mm/yyyy" type="text" required/>
+                            
+                          <div class="input-group-addon" >
+                            
+                          </div>
+                        </div>
+                        
+                      </div>    
+                    </div>
+              
+                
+                
 
                 <label for="email"><b>Email</b></label>
-                <input type="email" placeholder="Enter Email" name="email" required>
+                <input class="form-control" type="email" placeholder="Enter Email" name="email" required>
 
 
                 <label for="psw"><b>Password</b></label>
-                <input type="password" placeholder="Enter Password" name="psw" required>
+                <input class="form-control" type="password" placeholder="Enter Password" name="psw" required>
 
                 <label for="psw-repeat"><b>Repeat Password</b></label>
-                <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+                <input class="form-control" type="password" placeholder="Repeat Password" name="psw-repeat" required>
     
     
                 <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Conditions</a>.</p>
@@ -105,6 +125,8 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
     <script>
         $(function(){
             $(document).scroll(function(){
@@ -113,6 +135,23 @@
             });
         });
     </script>
+
+    
+    <script>
+        $(document).ready(function(){
+            var date_input=$('input[name="dob"]'); //our date input has the name "date"
+            var container=$('.input-group date').length>0 ? $('.input-group date').parent() : "body";
+            var options={
+              format: 'dd/mm/yyyy',
+              container: container,
+              todayHighlight: true,
+              autoclose: true,
+            };
+            date_input.datepicker(options);
+          })
+    </script>
+
+    
 
 </body>
 
