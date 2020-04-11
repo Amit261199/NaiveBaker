@@ -8,8 +8,8 @@ from django.utils.safestring import mark_safe
 
 class profile(models.Model):
     user=models.OneToOneField(User,on_delete=models.CASCADE,primary_key=True)
-    age=models.IntegerField()
-    profilepicture=models.ImageField(upload_to='pics',default='pics/avatar.webp')
+    dateofbirth=models.DateField(auto_now=False,auto_now_add=False)
+    profilepicture=models.ImageField(upload_to='pics',default='pics/avatar.jpg')
     favourites=models.ManyToManyField(recipe,related_name='favouriteof')
     searchhistory=models.ManyToManyField(recipe,related_name='searchedby')
 

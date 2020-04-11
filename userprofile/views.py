@@ -8,6 +8,9 @@ from django.urls import reverse
 from django.db import transaction, IntegrityError
 from .models import profile
 from django.contrib.auth.models import User
+import datetime
+import os
+from django.conf import settings
 
 # Create your views here.
 
@@ -32,23 +35,33 @@ def logoutfromsite(request):
 @transaction.atomic
 def signup_view(request):
 	if request.method=='POST':
-		if int(request.POST['age'])<=15:
-			messages.info(request,'age is below minimum age')
+		dob=datetime.date(int(request.POST['dob'].split('/')[2]),int(request.POST['dob'].split('/')[1]),int(request.POST['dob'].split('/')[0]))
+		today=datetime.date.today()
+		expected=datetime.date(int(request.POST['dob'].split('/')[2])+15,int(request.POST['dob'].split('/')[1]),int(request.POST['dob'].split('/')[0]))
+		if today<expected:
+			messages.info(request,'Your age is below minimum age. You must be aged atleast 15 years to continue.')
 			return redirect('../signup')
 		if request.POST['psw']!=request.POST['psw-repeat']:
-			messages.info(request,'passwords do not match')
+			messages.info(request,'Your passwords do not match. Please enter them correctly.')
 			return redirect('../signup')
 		if User.objects.filter(username__exact=request.POST['uname']).exists():
-			messages.info(request,'username already taken')
+			messages.info(request,'This username already taken. Please try another one.')
 			return redirect('../signup')
 		try:
 			with transaction.atomic():
 				u=User.objects.create_user(username=request.POST['uname'],email=request.POST['email'],password=request.POST['psw'],is_staff=False)
-				p=profile(user=u,age=request.POST['age'])
+				imgname=request.POST['uname']+'_'+request.FILES['profilepicture'].name
+				picturepath=os.path.join('pics/',imgname)
+				path=os.path.join(settings.MEDIA_ROOT,picturepath)
+				fout=open(path,'wb+')
+				for chunk in request.FILES['profilepicture'].chunks():
+					fout.write(chunk)
+				fout.close()
+				p=profile(user=u,dateofbirth=dob,profilepicture=picturepath)
 				p.save()
 				return redirect('../login')
 		except IntegrityError:
-			messages.info(request,'Some error occurred. signup failed. please try again')
+			messages.info(request,'Server error occurred. signup failed. please try again')
 			return redirect('../signup')
 	else:
 		if request.user.is_authenticated:
@@ -62,10 +75,14 @@ def login_view(request):
 		form = AuthenticationForm(data=request.POST)
 		if form.is_valid():
 			user = form.get_user()
-			login(request,user)
-			return redirect('../userprofile')
+			if user.is_staff:
+				messages.info(request,'You are not permitted to access this page. Please login through the admin page.')
+				return redirect('../login')
+			else:
+				login(request,user)
+				return redirect('../userprofile')
 		else:
-			messages.info(request,'Your username and password is incorrect. Please try again.')
+			messages.info(request,'Your username and/or password is incorrect. Please try again.')
 			return redirect('../login')
 	else:
 		if request.user.is_authenticated:

@@ -117,3 +117,12 @@ button:hover {
      width: 100%;
   }
 }
+
+#profileImage
+{
+    cursor: pointer;
+}
+#imageUpload
+{
+    display: none;
+}

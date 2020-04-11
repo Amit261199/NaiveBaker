@@ -66,55 +66,66 @@
                 
               </div>
             {%endfor%}
-        <form action="/signup/" style="border:1px solid #ccc" method="POST">
+        <form action="/signup/" style="border:1px solid #ccc" method="POST" enctype="multipart/form-data">
 
 
             {% csrf_token %}
 
             <div class="container">
-  
+               
                 <p>Please fill in this form to create an account.</p>
                 <hr>
+                <div class="row justify-content-around">
+                    <div class="col-11 col-md-7">
+                        <label for="uname"><b>Username</b></label>
+                        <input class="form-control" type="text" placeholder="Enter Username" name="uname" required>
 
-                <label for="uname"><b>Username</b></label>
-                <input class="form-control" type="text" placeholder="Enter Username" name="uname" required>
-
-                <label for="dob"><b>Date of birth</b></label>
+                        <label for="dob"><b>Date of birth</b></label>
              
-                    <div class="form-group">
-                      <div id="filterDate2">
-                        
-                        <!-- Datepicker as text field -->         
-                        <div class="input-group date" data-date-format="dd.mm.yyyy">
+                        <div class="form-group">
+                          <div id="filterDate2">
                             
-                            <input class="form-control" id="dob" name="dob" placeholder="dd/mm/yyyy" type="text" required/>
+                            <!-- Datepicker as text field -->         
+                            <div class="input-group date" data-date-format="dd.mm.yyyy">
+                                
+                                <input class="form-control" id="dob" name="dob" placeholder="dd/mm/yyyy" type="text" required/>
+                                
+                              <div class="input-group-addon" >
+                                
+                              </div>
+                            </div>
                             
-                          <div class="input-group-addon" >
-                            
-                          </div>
+                          </div>    
                         </div>
-                        
-                      </div>    
+                        <label for="email"><b>Email</b></label>
+                        <input class="form-control" type="email" placeholder="Enter Email" name="email" required>
                     </div>
-              
-                
-                
 
-                <label for="email"><b>Email</b></label>
-                <input class="form-control" type="email" placeholder="Enter Email" name="email" required>
+                    <div class=" pb-2 col-7 col-md-3">
+                        <div id="profile-container ">
+                            <label for="profile_photo"><b>Set profile picture</b></label><br>
+                           
+                                <img class="rounded-circle img-fluid" id="profileImage" src="{%static './images/avatar.jpg' %}" />
+                         </div>
+                         <input class="pt-2" id="imageUpload" type="file" name="profilepicture" placeholder="Photo" required="">
+                    </div>
+                    
+                </div>
+                <div class="row justify-content-around">
+                    <div class="col-11">
+                        <label for="psw"><b>Password</b></label>
+                        <input class="form-control" type="password" placeholder="Enter Password" name="psw" required>
+        
+                        <label for="psw-repeat"><b>Repeat Password</b></label>
+                        <input class="form-control" type="password" placeholder="Repeat Password" name="psw-repeat" required>
+                    </div>
+                    <div class="col-11">
+                        <p>By pressing the Signup button, you agree to our <a href="#" style="color:dodgerblue">Terms & Conditions</a>.</p>
 
-
-                <label for="psw"><b>Password</b></label>
-                <input class="form-control" type="password" placeholder="Enter Password" name="psw" required>
-
-                <label for="psw-repeat"><b>Repeat Password</b></label>
-                <input class="form-control" type="password" placeholder="Repeat Password" name="psw-repeat" required>
-    
-    
-                <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Conditions</a>.</p>
-
-                <div class="clearfix">
-                    <button type="submit" class="signupbtn">Sign Up</button>
+                        <div class="clearfix">
+                            <button type="submit" class="signupbtn" style="width:100%;">Sign Up</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </form>
@@ -150,8 +161,24 @@
             date_input.datepicker(options);
           })
     </script>
-
-    
+    <script>
+        $("#profileImage").click(function(e) {
+            $("#imageUpload").click();
+        });
+        
+        function fasterPreview( uploader ) {
+            if ( uploader.files && uploader.files[0] ){
+                  $('#profileImage').attr('src', 
+                     window.URL.createObjectURL(uploader.files[0]) );
+                     
+            }
+        }
+    </script>
+    <script>
+        $("#imageUpload").change(function(){
+            fasterPreview( this );
+        });
+    </script>
 
 </body>
 
