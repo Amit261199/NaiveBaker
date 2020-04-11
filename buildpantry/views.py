@@ -1,13 +1,41 @@
-from django.shortcuts import render,redirect,reverse
+from django.shortcuts import render,redirect
+from django.http import HttpResponse
+from django.http import JsonResponse
+from django.http import HttpResponseNotAllowed
 from django.urls import reverse
 from .models import recipe,ingredient,ingredientUsed
 from .models import cuisines,dishtypes,mealtypes,marks
 from django.db.models import Q,Case,IntegerField,Sum,When,F,Count
 from django.contrib import messages
 import datetime
+from django.contrib.auth.models import User
 from userprofile.models import profile
 # Create your views here.
 
+def favourite(request):
+    if not request.is_ajax() or not request.method=='POST':
+        return HttpResponseNotAllowed(['POST'])
+    else:
+        
+        r=recipe.objects.get(pk=request.POST['recipe_title'])
+        
+        u=request.user
+        if request.POST['isFavourite']=='true':
+            
+            if not u.profile.favourites.filter(title__exact=request.POST['recipe_title']).exists():
+                
+                u.profile.favourites.add(r)
+            
+            return JsonResponse(data={"success":True})
+        else:
+            
+            if u.profile.favourites.filter(title__exact=r.title).exists():
+                u.profile.favourites.remove(r)
+
+            
+            return JsonResponse(data={"success":True})
+        
+            
 def displayRecipe(request, recipe_title):
     if not request.user.is_authenticated:
         messages.info(request,'Permission Denied. You need to Log in first')
@@ -15,7 +43,12 @@ def displayRecipe(request, recipe_title):
     
     r=recipe.objects.get(pk__exact=recipe_title)
     ings=r.ingredientused_set.all()
-    return render(request,'recipedisplay.html',{'recipe':r,'ingList':ings})
+    if request.user.profile.favourites.filter(title__exact=r.title).exists():
+        favourite=True
+    else:
+        favourite=False
+
+    return render(request,'recipedisplay.html',{'recipe':r,'ingList':ings,'favourite':favourite})
 
 def recipes_all(request):
     if not request.user.is_authenticated:
