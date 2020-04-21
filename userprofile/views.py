@@ -50,15 +50,19 @@ def signup_view(request):
 		try:
 			with transaction.atomic():
 				u=User.objects.create_user(username=request.POST['uname'],email=request.POST['email'],password=request.POST['psw'],is_staff=False)
-				imgname=request.POST['uname']+'_'+request.FILES['profilepicture'].name
-				picturepath=os.path.join('pics/',imgname)
-				path=os.path.join(settings.MEDIA_ROOT,picturepath)
-				fout=open(path,'wb+')
-				for chunk in request.FILES['profilepicture'].chunks():
-					fout.write(chunk)
-				fout.close()
-				p=profile(user=u,dateofbirth=dob,profilepicture=picturepath)
-				p.save()
+				if 'profilepicture' in request.FILES.keys():
+					imgname=request.POST['uname']+'_'+request.FILES['profilepicture'].name
+					picturepath=os.path.join('pics/',imgname)
+					path=os.path.join(settings.MEDIA_ROOT,picturepath)
+					fout=open(path,'wb+')
+					for chunk in request.FILES['profilepicture'].chunks():
+						fout.write(chunk)
+					fout.close()
+					p=profile(user=u,dateofbirth=dob,profilepicture=picturepath)
+					p.save()
+				else:
+					p=profile(user=u,dateofbirth=dob)
+					p.save()
 				return redirect('../login')
 		except IntegrityError:
 			messages.info(request,'Server error occurred. signup failed. please try again')

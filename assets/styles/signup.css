@@ -72,7 +72,7 @@ hr {
 }
 
 
-button {
+.clearfix button {
   background-color: #4CAF50;
   color: white;
   padding: 14px 20px;
@@ -83,7 +83,7 @@ button {
   opacity: 0.9;
 }
 
-button:hover {
+.clearfix button:hover {
   opacity:1;
 }
 
