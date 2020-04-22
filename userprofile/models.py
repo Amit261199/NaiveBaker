@@ -11,7 +11,20 @@ class profile(models.Model):
     dateofbirth=models.DateField(auto_now=False,auto_now_add=False)
     profilepicture=models.ImageField(upload_to='pics',default='pics/avatar.jpg')
     favourites=models.ManyToManyField(recipe,related_name='favouriteof')
-    searchhistory=models.ManyToManyField(recipe,related_name='searchedby')
-
+    searchhistory=models.ManyToManyField(
+        recipe,
+        through='history',
+        through_fields=('userprofile','recipe_searched'))
     def image(self):
         return mark_safe('<img src="%s" style="width: 150px; height=160px;" />' % self.profilepicture.url)
+
+
+class history(models.Model):
+    number=models.BigAutoField(primary_key=True)
+    userprofile=models.ForeignKey(profile,on_delete=models.CASCADE)
+    recipe_searched=models.ForeignKey(recipe,on_delete=models.CASCADE)
+    timestamp=models.TimeField()
+    class Meta:
+        constraints = [
+            models.UniqueConstraint(fields=['userprofile', 'recipe_searched','timestamp'], name='unique_history')
+        ]

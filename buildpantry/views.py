@@ -8,8 +8,9 @@ from .models import cuisines,dishtypes,mealtypes,marks
 from django.db.models import Q,Case,IntegerField,Sum,When,F,Count
 from django.contrib import messages
 import datetime
+from datetime import timezone
 from django.contrib.auth.models import User
-from userprofile.models import profile
+from userprofile.models import profile,history
 # Create your views here.
 
 def favourite(request):
@@ -17,6 +18,7 @@ def favourite(request):
         return HttpResponseNotAllowed(['POST'])
     else:
         
+        print(request.POST['recipe_title'])
         r=recipe.objects.get(pk=request.POST['recipe_title'])
         
         u=request.user
@@ -47,7 +49,19 @@ def displayRecipe(request, recipe_title):
         favourite=True
     else:
         favourite=False
-
+    row=request.user.profile.searchhistory.filter(title__exact=r.title)
+    if row.exists():
+        old=history.objects.get(userprofile__exact=request.user.profile,recipe_searched__exact=r)
+        
+        old.timestamp=datetime.datetime.utcnow()
+        
+        old.save()
+    else:
+        h=history(userprofile=request.user.profile,recipe_searched=r,timestamp=datetime.datetime.utcnow())
+        h.save()
+        if request.user.profile.searchhistory.count() > 8:
+            extra=history.objects.all().order_by('timestamp')[0]
+            extra.delete()
     return render(request,'recipedisplay.html',{'recipe':r,'ingList':ings,'favourite':favourite})
 
 def recipes_all(request):

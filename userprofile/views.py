@@ -1,19 +1,37 @@
 from django.shortcuts import render,redirect
 from django.http import HttpResponse
+from django.http import HttpResponseNotAllowed
+from django.http import JsonResponse
 from django.contrib.auth.forms import UserCreationForm,AuthenticationForm
 from django.contrib.auth import authenticate, login, logout
 from django.contrib import messages
 from django.contrib.auth.models import User
 from django.urls import reverse
 from django.db import transaction, IntegrityError
-from .models import profile
+from .models import profile,history
 from django.contrib.auth.models import User
+from buildpantry.models import recipe
 import datetime
 import os
 from django.conf import settings
 
 # Create your views here.
+def removeFromSearch(request):
+	if not request.is_ajax() or not request.method=='POST':
+		return HttpResponseNotAllowed(['POST'])
+	else:
+		r=recipe.objects.get(pk=request.POST['recipe_title'])
+		h=history.objects.get(userprofile__exact=request.user.profile,recipe_searched__exact=r)
+		h.delete()
+		return JsonResponse(data={"success":True})
 
+
+def viewhistory(request):
+	hist=history.objects.all().order_by('-timestamp')
+	return render(request,'history.html',{'history':hist})
+
+def viewfavlist(request):
+	return render(request,'favlist.html')
 
 def home(request):
 	return render(request,'home.html')

@@ -11,7 +11,10 @@ for(i=0;i<imgs.length;i++){
         modalImg.src = this.src;
         captionText.innerHTML = this.alt;
         var inds=document.getElementsByClassName("carousel-indicators")
-        inds[0].classList.add('d-none')
+        arr = inds[0].className.split(" ");
+        if (arr.indexOf("d-none") == -1) {
+         inds[0].className += " " + "d-none";
+        }
         
       }
 }
@@ -24,6 +27,10 @@ var span = document.getElementsByClassName("close")[0];
 span.onclick = function() {
   modal.style.display = "none";
   var inds=document.getElementsByClassName("carousel-indicators")
-  inds[0].classList.remove('d-none')
+  arr = inds[0].className.split(" ");
+        if (arr.indexOf("d-none") != -1) {
+          arr2=inds[0].className.split(" d-none")
+         inds[0].className=arr2[0];
+        }
   
 } 

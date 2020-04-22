@@ -56,9 +56,9 @@
     </section>
 
     <section id="usercontent">
-        <div id="jumbo" class="jumbotron jumbotron-fluid">
+        <div id="jumbo" class="jumbotron jumbotron-fluid mb-2 pb-4">
             <div class="container">
-                <div class="row mt-4 justify-content-around">
+                <div class="row mt-3 justify-content-around">
                     <div class="col-10 col-md-4">
                         <img src="{{request.user.profile.profilepicture.url}}" class="border rounded-circle img-fluid">
                     </div>
@@ -84,70 +84,41 @@
         <div class="fluid-container">
             <div class="row mx-0">
                 <div class="col-md-3 col-11 ">
-                    <div class="row my-2 justify-content-center d-flex">
-                        <button type="button" class="btn btn-large btn-outline-success">My Favourites</button>             
+                    {% csrf_token %}
+                    <div class="row mt-1 mb-2 justify-content-center d-flex">
+                        <button type="button" class="btn btn-large btn-outline-success active " id="fav">My Favourites</button>             
                     </div>
-                    <div class="row my-2 justify-content-center d-flex">
-                        <button type="button" class="btn btn-large btn-outline-success">Search History</button>         
+                    <div class="row mb-2 justify-content-center d-flex">
+                        <button type="button" class="btn btn-large btn-outline-success " id="history">Recently viewed</button>         
                     </div>
-                    <div class="row my-2 justify-content-center d-flex">
-                        <button type="button" class="btn btn-large btn-outline-success">Top Recipes</button>             
+                    <!-- ADD THESE LATER <div class="row mb-2 justify-content-center d-flex">
+                        <button type="button" class="btn btn-large btn-outline-success active">Top Recipes</button>             
                     </div>
-                    <div class="row my-2 justify-content-center d-flex">
+                    <div class="row mb-2 justify-content-center d-flex">
                         <button type="button" class="btn btn-large btn-outline-success">Recommended For You</button>          
-                    </div>
+                    </div> -->
                 </div>
                 <div class="col-1 line d-none d-md-block px-0"></div>
                 <div class="col-md-7 col-11 border recipes">
-                    <div class="row d-flex justify-content-around">
-                        <div class="card col-lg-5 col-xl-3 col-11 mt-3" style="width: 18rem;">
-                            <img class="card-img-top" src="#" alt="Card image cap">
-                            <div class="card-body">
-                              <h5 class="card-title">Card title</h5>
-                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                              <a href="#" class="btn btn-primary">Go somewhere</a>
-                            </div>
-                          </div>
-                          <div class="card col-lg-5 col-xl-3 col-11 mt-3" style="width: 18rem;">
-                            <img class="card-img-top" src="#" alt="Card image cap">
-                            <div class="card-body">
-                              <h5 class="card-title">Card title</h5>
-                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                              <a href="#" class="btn btn-primary">Go somewhere</a>
-                            </div>
-                          </div>
-                          <div class="card col-lg-5 col-xl-3 col-11 mt-3" style="width: 18rem;">
-                            <img class="card-img-top" src="#" alt="Card image cap">
-                            <div class="card-body">
-                              <h5 class="card-title">Card title</h5>
-                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                              <a href="#" class="btn btn-primary">Go somewhere</a>
-                            </div>
-                          </div>
+                    <div id="ajax-content" class="row d-flex justify-content-around">
+                        <!--dynamic content here-->
                     </div>
-                   
                 </div>
+                   
             </div>
         </div>
-    </section>
+    </div>
+</section>
    
    
-    <section id="paginator">
-        <ul class="pagination">
-            <li class="page-item"><a class="page-link" href="#">Previous</a></li>
-            <li class="page-item"><a class="page-link" href="#">1</a></li>
-            <li class="page-item"><a class="page-link" href="#">2</a></li>
-            <li class="page-item"><a class="page-link" href="#">3</a></li>
-            <li class="page-item"><a class="page-link" href="#">Next</a></li>
-          </ul>
-    </section>
-
+ 
 
 
 <script src="https://kit.fontawesome.com/824416a126.js" crossorigin="anonymous"></script>
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="{%static './js/userprofile.js' %}"></script>
 <script>
     $(function(){
         $(document).scroll(function(){
@@ -155,6 +126,39 @@
             $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height() );
         });
     });
+</script>
+<script>
+    $( document ).ajaxComplete(function () {
+        var rems=document.getElementsByClassName('remove');
+        for(var i=0;i<rems.length;i++)
+        {
+            rems[i].addEventListener('click',function(){
+                cardiv=this.parentElement.parentElement;
+                dat={}
+                dat['csrfmiddlewaretoken']=$('input[name="csrfmiddlewaretoken"]').val();
+                dat['recipe_title']=cardiv.querySelector('h5').textContent;
+                ID=cardiv.getAttribute('class').split(' ')[0];
+                var dynamic_url='';
+                if(ID=='fav')
+                {dynamic_url+="../buildpantry/favourite/";
+                    dat['isFavourite']='false';
+                }
+                else
+                {
+                    dynamic_url="./removeFromSearch/";
+                }
+                $.ajax({
+                    url : dynamic_url,
+                        data: dat,
+                        type : 'POST',
+                        dataType : 'json',
+                        success: function(result) { 
+                            cardiv.className+=" d-none";
+                        }
+                })
+            });
+        };
+        });
 </script>
 </body>
 </html>

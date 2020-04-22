@@ -1,0 +1,21 @@
+{% for recipe in request.user.profile.favourites.all %}
+                        <div class="fav card col-lg-5 col-xl-3 col-11 mt-3 mx-2" style="width: 18rem;">
+                            <a href="../buildpantry/display/{{recipe.title}}" style="color:inherit;">
+                                <img class="pt-1 card-img-top" src="{{recipe.images.0}}" alt="Card image cap">
+                                <div class="card-body d-flex flex-column justify-content-between">
+                                    
+                                    <div class="notbttn">
+                                        <h5 class="card-title" style="font-size:1.125rem;">{{recipe.title}}</h5>
+                                        <div style="font-size:0.85rem">
+                                            {{recipe.description|slice:":80"}}...
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="bttn my-2 d-flex  justify-content-center">
+                                <button class="btn btn-large btn-danger remove">
+                                    Remove
+                                </button>
+                            </div>
+                        </div>
+{%endfor%}
