@@ -9,13 +9,11 @@ class TestViews(TestCase):
     def test_home(self):
         client=Client()
         response=client.get(reverse(home))
-        #print(response)
         self.assertEquals(response.status_code,200)
         self.assertTemplateUsed(response,'home.html')
 
     def test_removeFromSearch(self):      
         client=Client()
-        user=get_user_model()
         self.client.login(username='rasik', password='Naive@123')
         response = self.client.post(reverse(login_view))
         response=client.get(reverse(removeFromSearch))
@@ -73,18 +71,20 @@ class TestViews(TestCase):
         self.assertEquals(response.status_code,200)
     
     def test_login(self):
-        client=Client()
-        user=get_user_model()
+        # client=Client()
+        # user=get_user_model()
         self.client.login(username='rasik', password='Naive@123')
         response = self.client.post(reverse(login_view))
         self.assertEquals(response.status_code,302)
-    '''
+    
     def test_signup(self):
-        client=Client()
-        response = self.client.post('/signup/',{
-            'username':'john',
-            'password':'corona',
-            'dob': '1997-03-02'
+        response =self.client.post('/signup/',{
+            'uname':'john',
+            'psw':'corona',
+            'psw-repeat':'corona',
+            'dob': '02/03/1997',
+            'email':'test_email@gmail.com'
         })
         self.assertEquals(response.status_code,302)
-    '''
+        self.assertEquals(response.url,"../login")
+    
