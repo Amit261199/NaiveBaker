@@ -1,5 +1,5 @@
 from buildpantry.models import ingredient, recipe, ingredientUsed
-from django.test import SimpleTestCase
+from django.test import TestCase
 
 class TestModels(TestCase):
 	print("In class")
