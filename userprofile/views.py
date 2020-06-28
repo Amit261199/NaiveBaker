@@ -27,7 +27,7 @@ def removeFromSearch(request):
 
 
 def viewhistory(request):
-	hist=history.objects.all().order_by('-timestamp')
+	hist=history.objects.filter(userprofile__exact=request.user.profile).order_by('-timestamp')
 	return render(request,'history.html',{'history':hist})
 
 def viewfavlist(request):
