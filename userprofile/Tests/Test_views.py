@@ -6,6 +6,7 @@ import datetime
 
 class TestViews(TestCase):
     
+    
     def test_home(self):
         client=Client()
         response=client.get(reverse(home))
