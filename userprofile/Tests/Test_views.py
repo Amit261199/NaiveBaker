@@ -78,7 +78,7 @@ class TestViews(TestCase):
         self.client.login(username='rasik', password='Naive@123')
         response = self.client.post(reverse(login_view))
         self.assertEquals(response.status_code,302)
-    
+    '''
     def test_signup(self):
         client=Client()
         response = self.client.post('/signup/',{
@@ -87,3 +87,4 @@ class TestViews(TestCase):
             'dob': '1997-03-02'
         })
         self.assertEquals(response.status_code,302)
+    '''
