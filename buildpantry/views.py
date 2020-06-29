@@ -52,9 +52,7 @@ def displayRecipe(request, recipe_title):
     row=request.user.profile.searchhistory.filter(title__exact=r.title)
     if row.exists():
         old=history.objects.get(userprofile__exact=request.user.profile,recipe_searched__exact=r)
-        
         old.timestamp=datetime.datetime.utcnow()
-        
         old.save()
     else:
         h=history(userprofile=request.user.profile,recipe_searched=r,timestamp=datetime.datetime.utcnow())

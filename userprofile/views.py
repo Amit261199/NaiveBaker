@@ -27,7 +27,7 @@ def removeFromSearch(request):
 
 
 def viewhistory(request):
-	hist=history.objects.all().order_by('-timestamp')
+	hist=history.objects.filter(userprofile__exact=request.user.profile).order_by('-timestamp')
 	return render(request,'history.html',{'history':hist})
 
 def viewfavlist(request):
@@ -43,7 +43,10 @@ def userprofilepage(request):
 	return render(request,'userprofilepage.html')
 		
 def contactpage(request):
-	return render(request,'contact.html')
+	if request.user.is_authenticated:
+		return render(request,'contact.html',{'login':True})
+	else:
+		return render(request,'contact.html',{'login':False})
 
 def logoutfromsite(request):
 	logout(request)
