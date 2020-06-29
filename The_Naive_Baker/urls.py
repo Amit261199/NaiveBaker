@@ -18,7 +18,7 @@ from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import path
 from django.urls import include
-from userprofile.views import home,login_view,contactpage,logoutfromsite,signup_view
+from userprofile.views import home,login_view,contactpage,logoutfromsite,signup_view,termsPage
 from django.contrib.auth import views as auth_views
 
 
@@ -35,6 +35,7 @@ urlpatterns = [
     path('logout/', logoutfromsite,name='logoutfromsite'),
     path('recipes/',include('buildpantry.urls')),
     path('contact/',contactpage,name='contactpage'),
+    path('terms/',termsPage,name='termsPage'),
     
 ]
 

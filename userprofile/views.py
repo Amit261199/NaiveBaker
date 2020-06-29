@@ -25,7 +25,8 @@ def removeFromSearch(request):
 		h.delete()
 		return JsonResponse(data={"success":True})
 
-
+def termsPage(request):
+	return render(request,'Terms_and_Conditions.html')
 def viewhistory(request):
 	hist=history.objects.filter(userprofile__exact=request.user.profile).order_by('-timestamp')
 	return render(request,'history.html',{'history':hist})
