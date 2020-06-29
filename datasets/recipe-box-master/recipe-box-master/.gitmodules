@@ -1,3 +1,0 @@
-[submodule "recipe-scraper"]
-	path = src/recipe-scraper
-	url = git@github.com:rtlee9/recipe-scraper.git

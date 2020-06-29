@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 
 import os
 import sys
+import django_heroku
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -21,12 +22,12 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '(w6a=^o9z-t+7bky6wr67qn7$rv-k7t#)@c#m#7)(emg3_(%r1'
+SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['naivebaker.herokuapp.com']
 
 
 # Application definition
@@ -40,6 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'storages'
 ]
 
 MIDDLEWARE = [
@@ -144,8 +146,20 @@ STATICFILES_DIRS=[
 ]
 STATIC_ROOT=os.path.join(BASE_DIR,'assets')
 
+STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
+
 MEDIA_URL='/media/'
 MEDIA_ROOT=os.path.join(BASE_DIR,'media')
 
+AWS_ACCESS_KEY_ID=os.environ.get('AWS_ACCESS_KEY_ID')
+AWS_SECRET_ACCESS_KEY=os.environ.get('AWS_SECRET_ACCESS_KEY')
+AWS_SESSION_TOKEN=os.environ.get('AWS_SESSION_TOKEN')
 
+AWS_S3_FILE_OWERWRITE=False
+AWS_DEFAULT_ACL=None
+DEFAULT_FILE_STORAGES='storages.backends.s3boto3.S3Boto3Storage'
 # LOGIN_REDIRECT_URL='/userprofile/'
+
+# Activate Django-Heroku.
+django_heroku.settings(locals())
+

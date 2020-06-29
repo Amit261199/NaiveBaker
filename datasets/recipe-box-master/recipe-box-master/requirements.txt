@@ -1,2 +1,0 @@
-setuptools==28.6.1
-beautifulsoup4==4.5.3

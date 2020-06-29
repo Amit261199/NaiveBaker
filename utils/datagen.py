@@ -1,5 +1,4 @@
 import pandas as pd
-
 ing=pd.read_excel('recipes.xlsx',sheet_name=['Ingredients_Suppercook'])
 categories=list(ing['Ingredients_Suppercook'].columns)
 inglist=[]

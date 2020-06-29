@@ -73,14 +73,14 @@ def signup_view(request):
 			with transaction.atomic():
 				u=User.objects.create_user(username=request.POST['uname'],email=request.POST['email'],password=request.POST['psw'],is_staff=False)
 				if 'profilepicture' in request.FILES.keys():
-					imgname=request.POST['uname']+'_'+request.FILES['profilepicture'].name
-					picturepath=os.path.join('pics/',imgname)
-					path=os.path.join(settings.MEDIA_ROOT,picturepath)
-					fout=open(path,'wb+')
-					for chunk in request.FILES['profilepicture'].chunks():
-						fout.write(chunk)
-					fout.close()
-					p=profile(user=u,dateofbirth=dob,profilepicture=picturepath)
+					# imgname=request.POST['uname']+'_'+request.FILES['profilepicture'].name
+					# picturepath=os.path.join('pics/',imgname)
+					# path=os.path.join(settings.MEDIA_ROOT,picturepath)
+					# fout=open(path,'wb+')
+					# for chunk in request.FILES['profilepicture'].chunks():
+					# 	fout.write(chunk)
+					# fout.close()
+					p=profile(user=u,dateofbirth=dob,profilepicture=request.FILES['profilepicture'])
 					p.save()
 				else:
 					p=profile(user=u,dateofbirth=dob)
