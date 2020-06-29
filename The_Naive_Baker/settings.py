@@ -86,7 +86,7 @@ if 'test' in sys.argv:
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'naiveBaker',
         'USER' : 'postgres',
-        'PASSWORD':'00000',
+        'PASSWORD':'0000',
         'HOST' : 'localhost',
         }
     }

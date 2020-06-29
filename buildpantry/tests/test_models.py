@@ -15,8 +15,7 @@ class TestModels(TestCase):
 		self.recipe1 = recipe.objects.create(
 				title= "Beefy Chinese Dumplings",
 				description= "I couldn't find a good lo mein recipe on here, so I'm posting mine.",
-				#ingredients: self.ingredientUsed1
-				cuisine = "Chinese",
+			cuisine = "Chinese",
 				dishtype = "cc",
 				mealtype = "main course",
 				mark = "aa",

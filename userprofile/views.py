@@ -43,7 +43,10 @@ def userprofilepage(request):
 	return render(request,'userprofilepage.html')
 		
 def contactpage(request):
-	return render(request,'contact.html')
+	if request.user.is_authenticated:
+		return render(request,'contact.html',{'login':True})
+	else:
+		return render(request,'contact.html',{'login':False})
 
 def logoutfromsite(request):
 	logout(request)
