@@ -20,13 +20,6 @@ class TestViews(TestCase):
         response=client.get(reverse(removeFromSearch))
         self.assertEquals(response.status_code,405)
     
-    def test_viewhistory(self):
-        client=Client()
-        response=client.get(reverse(viewhistory))
-        #print(response)
-        self.assertEquals(response.status_code,200)
-        self.assertTemplateUsed(response,'history.html')
-    
     def test_viewfavlist(self):
         client=Client()
         user=get_user_model()
